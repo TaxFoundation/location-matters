@@ -1,0 +1,19 @@
+{
+  "name": "location-matters",
+  "version": "0.1.0",
+  "description": "Interactive digital publication accompanying Tax Foundation's Location Matters report, 2015.",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/TaxFoundation/location-matters.git"
+  },
+  "author": "Tom VanAntwerp",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/TaxFoundation/location-matters/issues"
+  },
+  "homepage": "https://github.com/TaxFoundation/location-matters",
+  "dependencies": {
+    "d3": "^3.5.6",
+    "jquery": "^2.1.4"
+  }
+}
