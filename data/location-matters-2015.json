@@ -1,0 +1,102 @@
+[
+  {
+    "name": "Alabama",
+    "tier1": "Birmingham",
+    "tier2": "Montgomery",
+    "firms": [
+      {
+        "name": "Corporate Headquarters",
+        "tier": "tier1",
+        "taxes": [
+          {
+            "name": "Property Tax",
+            "new": 0,
+            "old": 0.0123
+          }
+        ]
+      },
+      {
+        "name": "R&D Headquarters",
+        "tier": "tier1",
+        "taxes": [
+          {
+            "name": "Property Tax",
+            "new": 0,
+            "old": 0.0123
+          }
+        ]
+      },
+      {
+        "name": "Retail Store",
+        "tier": "tier1",
+        "taxes": [
+          {
+            "name": "Property Tax",
+            "new": 0,
+            "old": 0.0123
+          }
+        ]
+      },
+      {
+        "name": "Call Center",
+        "tier": "tier2",
+        "taxes": [
+          {
+            "name": "Property Tax",
+            "new": 0,
+            "old": 0.0123
+          }
+        ]
+      },
+      {
+        "name": "Distribution Center",
+        "tier": "tier2",
+        "taxes": [
+          {
+            "name": "Property Tax",
+            "new": 0,
+            "old": 0.0123
+          }
+        ]
+      },
+      {
+        "name": "Capital-Intensive Manufacturing",
+        "tier": "tier2",
+        "taxes": [
+          {
+            "name": "Property Tax",
+            "new": 0,
+            "old": 0.0123
+          }
+        ]
+      },
+      {
+        "name": "Labor-Intensive Manufacturing",
+        "tier": "tier2",
+        "taxes": [
+          {
+            "name": "Property Tax",
+            "new": 0,
+            "old": 0.0123
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Alaska",
+    "firms": [
+      {
+        "name": "Corporate Headquarters",
+        "location": "Anchorage",
+        "taxes": [
+          {
+            "name": "Property Tax",
+            "new": 0,
+            "old": 0.0123
+          }
+        ]
+      }
+    ]
+  }
+]
