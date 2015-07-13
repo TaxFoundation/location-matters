@@ -16,7 +16,11 @@
   app = {
     initialize: function(data) {
       this.data = data;
-      views.stateBars(this.filter());
+      views.stateBars(app.filter());
+
+      $('#state-select').change(function(e) { // Watch for changes to the state selection dropdown and call app.filter
+        app.filter($(e.target).attr('value'));
+      });
     },
 
     filter: function(value) {
@@ -34,7 +38,6 @@
       var _this = this;
 
       this.data = data;
-      console.log(this.data);
       this.element = d3.select('#state-charts');
       this.svg = this.element.append('svg');
       this.x = d3.scale.ordinal().rangeRoundBands([0, 600]);
