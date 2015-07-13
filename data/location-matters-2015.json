@@ -7,96 +7,937 @@
       {
         "name": "Corporate Headquarters",
         "tier": "tier1",
-        "taxes": [
-          {
-            "name": "Property Tax",
-            "new": 0,
-            "old": 0.0123
-          }
-        ]
+        "new": {
+          "Income Tax": "0.027735849",
+          "UI Tax": "0.008113208",
+          "Sales Tax": "0.073584906",
+          "Property Tax": "0.023396226"
+        },
+        "old": {
+          "Income Tax": "0.056564691",
+          "UI Tax": "0.006851498",
+          "Sales Tax": "0.047004461",
+          "Property Tax": "0.019120459"
+        }
       },
       {
-        "name": "R&D Headquarters",
+        "name": "R&amp;D Headquarters",
         "tier": "tier1",
-        "taxes": [
-          {
-            "name": "Property Tax",
-            "new": 0,
-            "old": 0.0123
-          }
-        ]
+        "new": {
+          "Income Tax": "0.038910506",
+          "UI Tax": "0.008560311",
+          "Sales Tax": "0.0692607",
+          "Property Tax": "0.042023346"
+        },
+        "old": {
+          "Income Tax": "0.074254413",
+          "UI Tax": "0.00669507",
+          "Sales Tax": "0.031040779",
+          "Property Tax": "0.034083993"
+        }
       },
       {
         "name": "Retail Store",
         "tier": "tier1",
-        "taxes": [
-          {
-            "name": "Property Tax",
-            "new": 0,
-            "old": 0.0123
-          }
-        ]
+        "new": {
+          "Income Tax": "0.059701493",
+          "UI Tax": "0.014925373",
+          "Sales Tax": "0.113432836",
+          "Property Tax": "0.101492537"
+        },
+        "old": {
+          "Income Tax": "0.054817276",
+          "UI Tax": "0.008305648",
+          "Sales Tax": "0.033222591",
+          "Property Tax": "0.034883721"
+        }
       },
       {
         "name": "Call Center",
         "tier": "tier2",
-        "taxes": [
-          {
-            "name": "Property Tax",
-            "new": 0,
-            "old": 0.0123
-          }
-        ]
+        "new": {
+          "Income Tax": "0.004976775",
+          "UI Tax": "0.04313205",
+          "Sales Tax": "0.078633046",
+          "Property Tax": "0.044790975"
+        },
+        "old": {
+          "Income Tax": "0.043140206",
+          "UI Tax": "0.032605969",
+          "Sales Tax": "0.034361675",
+          "Property Tax": "0.0248307"
+        }
       },
       {
         "name": "Distribution Center",
         "tier": "tier2",
-        "taxes": [
-          {
-            "name": "Property Tax",
-            "new": 0,
-            "old": 0.0123
-          }
-        ]
+        "new": {
+          "Income Tax": "0.005944798",
+          "UI Tax": "0.008917197",
+          "Sales Tax": "0.103609342",
+          "Property Tax": "0.104458599"
+        },
+        "old": {
+          "Income Tax": "0.046975547",
+          "UI Tax": "0.006756757",
+          "Sales Tax": "0.044723295",
+          "Property Tax": "0.065958816"
+        }
       },
       {
         "name": "Capital-Intensive Manufacturing",
         "tier": "tier2",
-        "taxes": [
-          {
-            "name": "Property Tax",
-            "new": 0,
-            "old": 0.0123
-          }
-        ]
+        "new": {
+          "Income Tax": "0.000580473",
+          "UI Tax": "0.001625324",
+          "Sales Tax": "0.054757943",
+          "Property Tax": "0.01435703"
+        },
+        "old": {
+          "Income Tax": "0.050776154",
+          "UI Tax": "0.001402296",
+          "Sales Tax": "0.020056092",
+          "Property Tax": "0.020545265"
+        }
       },
       {
         "name": "Labor-Intensive Manufacturing",
         "tier": "tier2",
-        "taxes": [
-          {
-            "name": "Property Tax",
-            "new": 0,
-            "old": 0.0123
-          }
-        ]
+        "new": {
+          "Income Tax": "0.001051967",
+          "UI Tax": "0.004348131",
+          "Sales Tax": "0.055052949",
+          "Property Tax": "0.006802721"
+        },
+        "old": {
+          "Income Tax": "0.041509053",
+          "UI Tax": "0.003278358",
+          "Sales Tax": "0.031825289",
+          "Property Tax": "0.008775912"
+        }
       }
     ]
   },
   {
     "name": "Alaska",
+    "tier1": "Anchorage",
+    "tier2": "Fairbanks",
     "firms": [
       {
         "name": "Corporate Headquarters",
-        "location": "Anchorage",
-        "taxes": [
-          {
-            "name": "Property Tax",
-            "new": 0,
-            "old": 0.0123
-          }
-        ]
+        "tier": "tier1",
+        "new": {
+          "Income Tax": "0.056792453",
+          "UI Tax": "0.040188679",
+          "Sales Tax": "0",
+          "Property Tax": "0.026792453"
+        },
+        "old": {
+          "Income Tax": "0.057830174",
+          "UI Tax": "0.033933408",
+          "Sales Tax": "0",
+          "Property Tax": "0.020073283"
+        }
+      },
+      {
+        "name": "R&amp;D Headquarters",
+        "tier": "tier1",
+        "new": {
+          "Income Tax": "0.07165109",
+          "UI Tax": "0.040498442",
+          "Sales Tax": "0",
+          "Property Tax": "0.045950156"
+        },
+        "old": {
+          "Income Tax": "0.078562728",
+          "UI Tax": "0.031668697",
+          "Sales Tax": "0",
+          "Property Tax": "0.03410475"
+        }
+      },
+      {
+        "name": "Retail Store",
+        "tier": "tier1",
+        "new": {
+          "Income Tax": "0.053731343",
+          "UI Tax": "0.03880597",
+          "Sales Tax": "0",
+          "Property Tax": "0.074626866"
+        },
+        "old": {
+          "Income Tax": "0.067993367",
+          "UI Tax": "0.023217247",
+          "Sales Tax": "0",
+          "Property Tax": "0.034825871"
+        }
+      },
+      {
+        "name": "Call Center",
+        "tier": "tier2",
+        "new": {
+          "Income Tax": "0.065715234",
+          "UI Tax": "0.138732161",
+          "Sales Tax": "0",
+          "Property Tax": "0.078991039"
+        },
+        "old": {
+          "Income Tax": "0.072503763",
+          "UI Tax": "0.104867035",
+          "Sales Tax": "0",
+          "Property Tax": "0.059708981"
+        }
+      },
+      {
+        "name": "Distribution Center",
+        "tier": "tier2",
+        "new": {
+          "Income Tax": "0.059023355",
+          "UI Tax": "0.030997877",
+          "Sales Tax": "0",
+          "Property Tax": "0.108704883"
+        },
+        "old": {
+          "Income Tax": "0.077541828",
+          "UI Tax": "0.023487773",
+          "Sales Tax": "0",
+          "Property Tax": "0.164414414"
+        }
+      },
+      {
+        "name": "Capital-Intensive Manufacturing",
+        "tier": "tier2",
+        "new": {
+          "Income Tax": "0.040089776",
+          "UI Tax": "0.007971519",
+          "Sales Tax": "0",
+          "Property Tax": "0.007971519"
+        },
+        "old": {
+          "Income Tax": "0.105857031",
+          "UI Tax": "0.00681581",
+          "Sales Tax": "0",
+          "Property Tax": "0.010566136"
+        }
+      },
+      {
+        "name": "Labor-Intensive Manufacturing",
+        "tier": "tier2",
+        "new": {
+          "Income Tax": "0.07173913",
+          "UI Tax": "0.021178121",
+          "Sales Tax": "0",
+          "Property Tax": "0.014446003"
+        },
+        "old": {
+          "Income Tax": "0.084535458",
+          "UI Tax": "0.015837789",
+          "Sales Tax": "0",
+          "Property Tax": "0.016342177"
+        }
       }
+    ]
+  },
+  {
+    "name": "Arizona",
+    "tier1": "Phoenix",
+    "tier2": "Prescott",
+    "firms": [
+      {
+        "name": "Corporate Headquarters",
+        "tier": "tier1",
+        "new": {
+          "Income Tax": "0.03754717",
+          "UI Tax": "0.005283019",
+          "Sales Tax": "0.064339623",
+          "Property Tax": "0.062641509"
+        },
+        "old": {
+          "Income Tax": "0.043658381",
+          "UI Tax": "0.00446144",
+          "Sales Tax": "0.041108987",
+          "Property Tax": "0.0347355"
+        }
+      },
+      {
+        "name": "R&amp;D Headquarters",
+        "tier": "tier1",
+        "new": {
+          "Income Tax": "0",
+          "UI Tax": "0.005447471",
+          "Sales Tax": "0.020233463",
+          "Property Tax": "0.106614786"
+        },
+        "old": {
+          "Income Tax": "0",
+          "UI Tax": "0.004260499",
+          "Sales Tax": "0.01339014",
+          "Property Tax": "0.061472915"
+        }
+      },
+      {
+        "name": "Retail Store",
+        "tier": "tier1",
+        "new": {
+          "Income Tax": "0.041791045",
+          "UI Tax": "0.008955224",
+          "Sales Tax": "0.098507463",
+          "Property Tax": "0.182089552"
+        },
+        "old": {
+          "Income Tax": "0.054635762",
+          "UI Tax": "0.006622517",
+          "Sales Tax": "0.028145695",
+          "Property Tax": "0.062913907"
+        }
+      },
+      {
+        "name": "Call Center",
+        "tier": "tier2",
+        "new": {
+          "Income Tax": "0.014603385",
+          "UI Tax": "0.02787919",
+          "Sales Tax": "0.065715234",
+          "Property Tax": "0.099236641"
+        },
+        "old": {
+          "Income Tax": "0.016307075",
+          "UI Tax": "0.021073758",
+          "Sales Tax": "0.0286001",
+          "Property Tax": "0.054942298"
+        }
+      },
+      {
+        "name": "Distribution Center",
+        "tier": "tier2",
+        "new": {
+          "Income Tax": "0.003398471",
+          "UI Tax": "0.005522515",
+          "Sales Tax": "0.086236194",
+          "Property Tax": "0.231096007"
+        },
+        "old": {
+          "Income Tax": "0.015448986",
+          "UI Tax": "0.0041841",
+          "Sales Tax": "0.03733505",
+          "Property Tax": "0.145799807"
+        }
+      },
+      {
+        "name": "Capital-Intensive Manufacturing",
+        "tier": "tier2",
+        "new": {
+          "Income Tax": "0.003443873",
+          "UI Tax": "0.001083466",
+          "Sales Tax": "0.020663236",
+          "Property Tax": "0.117401231"
+        },
+        "old": {
+          "Income Tax": "0.011902821",
+          "UI Tax": "0.000913093",
+          "Sales Tax": "0.016403065",
+          "Property Tax": "0.04532855"
+        }
+      },
+      {
+        "name": "Labor-Intensive Manufacturing",
+        "tier": "tier2",
+        "new": {
+          "Income Tax": "0.007785103",
+          "UI Tax": "0.002805443",
+          "Sales Tax": "0.041660822",
+          "Property Tax": "0.055968579"
+        },
+        "old": {
+          "Income Tax": "0.009734692",
+          "UI Tax": "0.00211843",
+          "Sales Tax": "0.02859881",
+          "Property Tax": "0.019368506"
+        }
+      }
+    ]
+  },
+  {
+    "name": "Arkansas",
+    "tier1": "Little Rock",
+    "tier2": "Fort Smith",
+    "firms": [
+      {
+        "name": "Corporate Headquarters",
+        "tier": "tier1",
+        "new": {
+          "Combined Tax": "0.088679245"
+        },
+        "old": {
+          "Income Tax": "0.046685787",
+          "UI Tax": "0.015296367",
+          "Sales Tax": "0.053218611",
+          "Property Tax": "0.020873168"
+        }
+      },
+      {
+        "name": "R&amp;D Headquarters",
+        "tier": "tier1",
+        "new": {
+          "Combined Tax": "0.081712062"
+        },
+        "old": {
+          "Income Tax": "0.057821059",
+          "UI Tax": "0.014607425",
+          "Sales Tax": "0.031649422",
+          "Property Tax": "0.037127206"
+        }
+      },
+      {
+        "name": "Retail Store",
+        "tier": "tier1",
+        "new": {
+          "Combined Tax": "0.059701493"
+        },
+        "old": {
+          "Income Tax": "0.056384743",
+          "UI Tax": "0.019900498",
+          "Sales Tax": "0.033167496",
+          "Property Tax": "0.043117745"
+        }
+      },
+      {
+        "name": "Call Center",
+        "tier": "tier2",
+        "new": {
+          "Combined Tax": "0.108529705"
+        },
+        "old": {
+          "Income Tax": "0.055694932",
+          "UI Tax": "0.072252885",
+          "Sales Tax": "0.036377321",
+          "Property Tax": "0.039387858"
+        }
+      },
+      {
+        "name": "Distribution Center",
+        "tier": "tier2",
+        "new": {
+          "Combined Tax": "0.27940552"
+        },
+        "old": {
+          "Income Tax": "0.058880309",
+          "UI Tax": "0.014800515",
+          "Sales Tax": "0.04954955",
+          "Property Tax": "0.105855856"
+        }
+      },
+      {
+        "name": "Capital-Intensive Manufacturing",
+        "tier": "tier2",
+        "new": {
+          "Combined Tax": "0.019387044"
+        },
+        "old": {
+          "Income Tax": "0.085537257",
+          "UI Tax": "0.003130605",
+          "Sales Tax": "0.020446763",
+          "Property Tax": "0.052600685"
+        }
+      },
+      {
+        "name": "Labor-Intensive Manufacturing",
+        "tier": "tier2",
+        "new": {
+          "Combined Tax": "0.07287137"
+        },
+        "old": {
+          "Income Tax": "0.064262295",
+          "UI Tax": "0.007263556",
+          "Sales Tax": "0.038789407",
+          "Property Tax": "0.014880202"
+        }
+      }
+    ]
+  },
+  {
+    "name": "California",
+    "tier1": "Los Angeles",
+    "tier2": "Merced",
+    "firms": [
+      {
+        "name": "Corporate Headquarters",
+        "tier": "tier1",
+        "new": {
+          "Income Tax": "0.096603774",
+          "UI Tax": "0.009245283",
+          "Sales Tax": "0.069622642",
+          "Property Tax": "0.033396226"
+        },
+        "old": {
+          "Income Tax": "0.097355003",
+          "UI Tax": "0.007807521",
+          "Sales Tax": "0.044455067",
+          "Property Tax": "0.01848311"
+        }
+      },
+      {
+        "name": "R&amp;D Headquarters",
+        "tier": "tier1",
+        "new": {
+          "Income Tax": "0.021806854",
+          "UI Tax": "0.009345794",
+          "Sales Tax": "0.04517134",
+          "Property Tax": "0.057632399"
+        },
+        "old": {
+          "Income Tax": "0.017052375",
+          "UI Tax": "0.007308161",
+          "Sales Tax": "0.022533496",
+          "Property Tax": "0.032886724"
+        }
+      },
+      {
+        "name": "Retail Store",
+        "tier": "tier1",
+        "new": {
+          "Income Tax": "0.07761194",
+          "UI Tax": "0.017910448",
+          "Sales Tax": "0.107462687",
+          "Property Tax": "0.098507463"
+        },
+        "old": {
+          "Income Tax": "0.086235489",
+          "UI Tax": "0.009950249",
+          "Sales Tax": "0.029850746",
+          "Property Tax": "0.034825871"
+        }
+      },
+      {
+        "name": "Call Center",
+        "tier": "tier2",
+        "new": {
+          "Income Tax": "0.008629273",
+          "UI Tax": "0.048788583",
+          "Sales Tax": "0.059077332",
+          "Property Tax": "0.075340192"
+        },
+        "old": {
+          "Income Tax": "0.009282489",
+          "UI Tax": "0.036879077",
+          "Sales Tax": "0.025840442",
+          "Property Tax": "0.041896638"
+        }
+      },
+      {
+        "name": "Distribution Center",
+        "tier": "tier2",
+        "new": {
+          "Income Tax": "0",
+          "UI Tax": "0.009766454",
+          "Sales Tax": "0.077707006",
+          "Property Tax": "0.175796178"
+        },
+        "old": {
+          "Income Tax": "0",
+          "UI Tax": "0.007400257",
+          "Sales Tax": "0.033462033",
+          "Property Tax": "0.111003861"
+        }
+      },
+      {
+        "name": "Capital-Intensive Manufacturing",
+        "tier": "tier2",
+        "new": {
+          "Income Tax": "0.038001625",
+          "UI Tax": "0.001857513",
+          "Sales Tax": "0.047482683",
+          "Property Tax": "0.089315429"
+        },
+        "old": {
+          "Income Tax": "0.110129142",
+          "UI Tax": "0.001597965",
+          "Sales Tax": "0.016142708",
+          "Property Tax": "0.034470389"
+        }
+      },
+      {
+        "name": "Labor-Intensive Manufacturing",
+        "tier": "tier2",
+        "new": {
+          "Income Tax": "0.072094817",
+          "UI Tax": "0.004979311",
+          "Sales Tax": "0.043270917",
+          "Property Tax": "0.042569605"
+        },
+        "old": {
+          "Income Tax": "0.088923636",
+          "UI Tax": "0.003732473",
+          "Sales Tax": "0.024210633",
+          "Property Tax": "0.014728135"
+        }
+      }
+    ]
+  },
+  {
+    "name": "Colorado",
+    "tier1": "Denver",
+    "tier2": "Fort Collins",
+    "firms": [
+
+    ]
+  },
+  {
+    "name": "Connecticutt",
+    "tier1": "Hartford",
+    "tier2": "Norwich",
+    "firms": [
+
+    ]
+  },
+  {
+    "name": "Delaware",
+    "tier1": "Wilmington",
+    "tier2": "Dover",
+    "firms": [
+
+    ]
+  },
+  {
+    "name": "Florida",
+    "tier1": "Miami",
+    "tier2": "Gainesville",
+    "firms": [
+
+    ]
+  },
+  {
+    "name": "Georgia",
+    "tier1": "Atlanta",
+    "tier2": "Macon",
+    "firms": [
+
+    ]
+  },
+  {
+    "name": "Hawaii",
+    "tier1": "Honolulu",
+    "tier2": "Hilo",
+    "firms": [
+
+    ]
+  },
+  {
+    "name": "Idaho",
+    "tier1": "Boise",
+    "tier2": "Coeur d' Alene",
+    "firms": [
+
+    ]
+  },
+  {
+    "name": "Illinois",
+    "tier1": "Chicago",
+    "tier2": "Springfield",
+    "firms": [
+
+    ]
+  },
+  {
+    "name": "Indiana",
+    "tier1": "Indianapolis",
+    "tier2": "Elkhart",
+    "firms": [
+
+    ]
+  },
+  {
+    "name": "Iowa",
+    "tier1": "Des Moines",
+    "tier2": "Cedar Rapids",
+    "firms": [
+
+    ]
+  },
+  {
+    "name": "Kansas",
+    "tier1": "Wichita",
+    "tier2": "Topeka",
+    "firms": [
+
+    ]
+  },
+  {
+    "name": "Kentucky",
+    "tier1": "Louisville",
+    "tier2": "Lexington",
+    "firms": [
+
+    ]
+  },
+  {
+    "name": "Louisiana",
+    "tier1": "New Orleans",
+    "tier2": "Shreveport",
+    "firms": [
+
+    ]
+  },
+  {
+    "name": "Maine",
+    "tier1": "Portland",
+    "tier2": "Bangor",
+    "firms": [
+
+    ]
+  },
+  {
+    "name": "Maryland",
+    "tier1": "Baltimore",
+    "tier2": "Salisbury",
+    "firms": [
+
+    ]
+  },
+  {
+    "name": "Massachusetts",
+    "tier1": "Boston",
+    "tier2": "Worcester",
+    "firms": [
+
+    ]
+  },
+  {
+    "name": "Michigan",
+    "tier1": "Detroit",
+    "tier2": "Saginaw",
+    "firms": [
+
+    ]
+  },
+  {
+    "name": "Minnesota",
+    "tier1": "Minneapolis",
+    "tier2": "Rochester",
+    "firms": [
+
+    ]
+  },
+  {
+    "name": "Mississippi",
+    "tier1": "Jackson",
+    "tier2": "Gulfport",
+    "firms": [
+
+    ]
+  },
+  {
+    "name": "Missouri",
+    "tier1": "St. Louis",
+    "tier2": "Joplin",
+    "firms": [
+
+    ]
+  },
+  {
+    "name": "Montana",
+    "tier1": "Billings",
+    "tier2": "Missoula",
+    "firms": [
+
+    ]
+  },
+  {
+    "name": "Nebraska",
+    "tier1": "Omaha",
+    "tier2": "Lincoln",
+    "firms": [
+
+    ]
+  },
+  {
+    "name": "Nevada",
+    "tier1": "Las Vegas",
+    "tier2": "Reno",
+    "firms": [
+
+    ]
+  },
+  {
+    "name": "New Hampshire",
+    "tier1": "Manchester",
+    "tier2": "Concord",
+    "firms": [
+
+    ]
+  },
+  {
+    "name": "New Jersey",
+    "tier1": "Newark",
+    "tier2": "Trenton",
+    "firms": [
+
+    ]
+  },
+  {
+    "name": "New Mexico",
+    "tier1": "Albuquerque",
+    "tier2": "Santa Fe",
+    "firms": [
+
+    ]
+  },
+  {
+    "name": "New York",
+    "tier1": "New York",
+    "tier2": "Utica",
+    "firms": [
+
+    ]
+  },
+  {
+    "name": "North Carolina",
+    "tier1": "Raleigh",
+    "tier2": "Wilmington",
+    "firms": [
+
+    ]
+  },
+  {
+    "name": "North Dakota",
+    "tier1": "Fargo",
+    "tier2": "Grand Forks",
+    "firms": [
+
+    ]
+  },
+  {
+    "name": "Ohio",
+    "tier1": "Cincinnati",
+    "tier2": "Canton",
+    "firms": [
+
+    ]
+  },
+  {
+    "name": "Oklahoma",
+    "tier1": "Oklahoma City",
+    "tier2": "Lawton",
+    "firms": [
+
+    ]
+  },
+  {
+    "name": "Oregon",
+    "tier1": "Portland",
+    "tier2": "Salem",
+    "firms": [
+
+    ]
+  },
+  {
+    "name": "Pennsylvania",
+    "tier1": "Philadelphia",
+    "tier2": "Reading",
+    "firms": [
+
+    ]
+  },
+  {
+    "name": "Rhode Island",
+    "tier1": "Providence",
+    "tier2": "Providence",
+    "firms": [
+
+    ]
+  },
+  {
+    "name": "South Carolina",
+    "tier1": "Columbia",
+    "tier2": "Spartanburg",
+    "firms": [
+
+    ]
+  },
+  {
+    "name": "South Dakota",
+    "tier1": "Sioux Falls",
+    "tier2": "Rapid City",
+    "firms": [
+
+    ]
+  },
+  {
+    "name": "Tennessee",
+    "tier1": "Nashville",
+    "tier2": "Clarksville",
+    "firms": [
+
+    ]
+  },
+  {
+    "name": "Texas",
+    "tier1": "Dallas",
+    "tier2": "Lubbock",
+    "firms": [
+
+    ]
+  },
+  {
+    "name": "Utah",
+    "tier1": "Salt Lake City",
+    "tier2": "St. George",
+    "firms": [
+
+    ]
+  },
+  {
+    "name": "Vermont",
+    "tier1": "Burlington",
+    "tier2": "Rutland",
+    "firms": [
+
+    ]
+  },
+  {
+    "name": "Virginia",
+    "tier1": "Richmond",
+    "tier2": "Roanoke",
+    "firms": [
+
+    ]
+  },
+  {
+    "name": "Washington",
+    "tier1": "Seattle",
+    "tier2": "Spokane",
+    "firms": [
+
+    ]
+  },
+  {
+    "name": "West Virginia",
+    "tier1": "Charleston",
+    "tier2": "Parkersburg",
+    "firms": [
+
+    ]
+  },
+  {
+    "name": "Wisconsin",
+    "tier1": "Milwaukee",
+    "tier2": "Eau Claire",
+    "firms": [
+
+    ]
+  },
+  {
+    "name": "Wyoming",
+    "tier1": "Cheyenne",
+    "tier2": "Casper",
+    "firms": [
+
+    ]
+  },
+  {
+    "name": "District of Columbia",
+    "tier1": "Washington",
+    "firms": [
+
     ]
   }
 ]

@@ -15,14 +15,14 @@ The state-level data for Location Matters is structured in JSON as follows:
     {
       "name": "Corporate Headquarters",
       "tier": "tier1",
-      "taxes": [
-        {
-          "name": "Property Tax",
-          "new": 0.0113,
-          "old": 0.0113
-        },
+      "new": {
+        "tax": float_value,
         ...
-      ]
+      },
+      "old": {
+        "tax": float_value,
+        ...
+      }
     },
     ...
 },
