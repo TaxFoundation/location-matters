@@ -578,7 +578,118 @@
     "tier1": "Denver",
     "tier2": "Fort Collins",
     "firms": [
-
+      {
+        "name": "Corporate Headquarters",
+        "tier": "tier1",
+        "new": {
+          "Income Tax": "0.029056604",
+          "UI Tax": "0.008679245",
+          "Sales Tax": "0.058867925",
+          "Property Tax": "0.075283019"
+        },
+        "old": {
+          "Income Tax": "0.041108987",
+          "UI Tax": "0.007329509",
+          "Sales Tax": "0.037603569",
+          "Property Tax": "0.045251753"
+        }
+      },
+      {
+        "name": "R&amp;D Headquarters",
+        "tier": "tier1",
+        "new": {
+          "Income Tax": "0.024143302",
+          "UI Tax": "0.008566978",
+          "Sales Tax": "0.018691589",
+          "Property Tax": "0.130841121"
+        },
+        "old": {
+          "Income Tax": "0.040194884",
+          "UI Tax": "0.006699147",
+          "Sales Tax": "0.012180268",
+          "Property Tax": "0.080998782"
+        }
+      },
+      {
+        "name": "Retail Store",
+        "tier": "tier1",
+        "new": {
+          "Income Tax": "0.026865672",
+          "UI Tax": "0.017910448",
+          "Sales Tax": "0.089552239",
+          "Property Tax": "0.23880597"
+        },
+        "old": {
+          "Income Tax": "0.03807947",
+          "UI Tax": "0.009933775",
+          "Sales Tax": "0.026490066",
+          "Property Tax": "0.084437086"
+        }
+      },
+      {
+        "name": "Call Center",
+        "tier": "tier2",
+        "new": {
+          "Income Tax": "0.010285335",
+          "UI Tax": "0.04578633",
+          "Sales Tax": "0.057730591",
+          "Property Tax": "0.177504977"
+        },
+        "old": {
+          "Income Tax": "0.037120642",
+          "UI Tax": "0.034612491",
+          "Sales Tax": "0.02533233",
+          "Property Tax": "0.104589917"
+        }
+      },
+      {
+        "name": "Distribution Center",
+        "tier": "tier2",
+        "new": {
+          "Income Tax": "0.011889597",
+          "UI Tax": "0.009341826",
+          "Sales Tax": "0.076008493",
+          "Property Tax": "0.363057325"
+        },
+        "old": {
+          "Income Tax": "0.033783784",
+          "UI Tax": "0.007078507",
+          "Sales Tax": "0.032818533",
+          "Property Tax": "0.277992278"
+        }
+      },
+      {
+        "name": "Capital-Intensive Manufacturing",
+        "tier": "tier2",
+        "new": {
+          "Income Tax": "0.010680701",
+          "UI Tax": "0.001741419",
+          "Sales Tax": "0.013234782",
+          "Property Tax": "0.184706474"
+        },
+        "old": {
+          "Income Tax": "0.048884686",
+          "UI Tax": "0.00150013",
+          "Sales Tax": "0.010207409",
+          "Property Tax": "0.086420558"
+        }
+      },
+      {
+        "name": "Labor-Intensive Manufacturing",
+        "tier": "tier2",
+        "new": {
+          "Income Tax": "0.027281015",
+          "UI Tax": "0.004628656",
+          "Sales Tax": "0.032400589",
+          "Property Tax": "0.087944456"
+        },
+        "old": {
+          "Income Tax": "0.040603248",
+          "UI Tax": "0.003480278",
+          "Sales Tax": "0.021940886",
+          "Property Tax": "0.036921215"
+        }
+      }
     ]
   },
   {
@@ -586,7 +697,118 @@
     "tier1": "Hartford",
     "tier2": "Norwich",
     "firms": [
-
+      {
+        "name": "Corporate Headquarters",
+        "tier": "tier1",
+        "new": {
+          "Income Tax": "0.049811321",
+          "UI Tax": "0.025471698",
+          "Sales Tax": "0.067735849",
+          "Property Tax": "0.078490566"
+        },
+        "old": {
+          "Income Tax": "0.07791587",
+          "UI Tax": "0.021510516",
+          "Sales Tax": "0.047004461",
+          "Property Tax": "0.043658381"
+        }
+      },
+      {
+        "name": "R&amp;D Headquarters",
+        "tier": "tier1",
+        "new": {
+          "Income Tax": "0.021011673",
+          "UI Tax": "0.026459144",
+          "Sales Tax": "0.035797665",
+          "Property Tax": "0.13463035"
+        },
+        "old": {
+          "Income Tax": "0.027997565",
+          "UI Tax": "0.020693853",
+          "Sales Tax": "0.019476567",
+          "Property Tax": "0.077297626"
+        }
+      },
+      {
+        "name": "Retail Store",
+        "tier": "tier1",
+        "new": {
+          "Income Tax": "0.05988024",
+          "UI Tax": "0.047904192",
+          "Sales Tax": "0.086826347",
+          "Property Tax": "0.230538922"
+        },
+        "old": {
+          "Income Tax": "0.072968491",
+          "UI Tax": "0.028192371",
+          "Sales Tax": "0.028192371",
+          "Property Tax": "0.081260365"
+        }
+      },
+      {
+        "name": "Call Center",
+        "tier": "tier2",
+        "new": {
+          "Income Tax": "0.031861932",
+          "UI Tax": "0.134417524",
+          "Sales Tax": "0.056090275",
+          "Property Tax": "0.131430468"
+        },
+        "old": {
+          "Income Tax": "0.068740592",
+          "UI Tax": "0.10160562",
+          "Sales Tax": "0.026593076",
+          "Property Tax": "0.072754641"
+        }
+      },
+      {
+        "name": "Distribution Center",
+        "tier": "tier2",
+        "new": {
+          "Income Tax": "0.011464968",
+          "UI Tax": "0.027176221",
+          "Sales Tax": "0.078131635",
+          "Property Tax": "0.305732484"
+        },
+        "old": {
+          "Income Tax": "0.071727243",
+          "UI Tax": "0.020585397",
+          "Sales Tax": "0.037954326",
+          "Property Tax": "0.193309746"
+        }
+      },
+      {
+        "name": "Capital-Intensive Manufacturing",
+        "tier": "tier2",
+        "new": {
+          "Income Tax": "0.000154787",
+          "UI Tax": "0.00514666",
+          "Sales Tax": "0.017413513",
+          "Property Tax": "0.074878105"
+        },
+        "old": {
+          "Income Tax": "0.001239238",
+          "UI Tax": "0.004402557",
+          "Sales Tax": "0.013990347",
+          "Property Tax": "0.060070441"
+        }
+      },
+      {
+        "name": "Labor-Intensive Manufacturing",
+        "tier": "tier2",
+        "new": {
+          "Income Tax": "0.000210393",
+          "UI Tax": "0.013605442",
+          "Sales Tax": "0.042499474",
+          "Property Tax": "0.041166982"
+        },
+        "old": {
+          "Income Tax": "0.001008827",
+          "UI Tax": "0.010239596",
+          "Sales Tax": "0.030063052",
+          "Property Tax": "0.025674653"
+        }
+      }
     ]
   },
   {
@@ -594,7 +816,118 @@
     "tier1": "Wilmington",
     "tier2": "Dover",
     "firms": [
-
+      {
+        "name": "Corporate Headquarters",
+        "tier": "tier1",
+        "new": {
+          "Income Tax": "0.049433962",
+          "UI Tax": "0.011132075",
+          "Sales Tax": "0",
+          "Property Tax": "0.061320755"
+        },
+        "old": {
+          "Income Tax": "0.071690298",
+          "UI Tax": "0.009399395",
+          "Sales Tax": "0",
+          "Property Tax": "0.051776326"
+        }
+      },
+      {
+        "name": "R&amp;D Headquarters",
+        "tier": "tier1",
+        "new": {
+          "Income Tax": "0.056031128",
+          "UI Tax": "0.011673152",
+          "Sales Tax": "0",
+          "Property Tax": "0.113618677"
+        },
+        "old": {
+          "Income Tax": "0.055995131",
+          "UI Tax": "0.009129641",
+          "Sales Tax": "0",
+          "Property Tax": "0.088861838"
+        }
+      },
+      {
+        "name": "Retail Store",
+        "tier": "tier1",
+        "new": {
+          "Income Tax": "0.098507463",
+          "UI Tax": "0.020895522",
+          "Sales Tax": "0",
+          "Property Tax": "0.170149254"
+        },
+        "old": {
+          "Income Tax": "0.092868988",
+          "UI Tax": "0.011608624",
+          "Sales Tax": "0",
+          "Property Tax": "0.094527363"
+        }
+      },
+      {
+        "name": "Call Center",
+        "tier": "tier2",
+        "new": {
+          "Income Tax": "0.072685032",
+          "UI Tax": "0.058413541",
+          "Sales Tax": "0",
+          "Property Tax": "0.090939263"
+        },
+        "old": {
+          "Income Tax": "0.100351229",
+          "UI Tax": "0.044154541",
+          "Sales Tax": "0",
+          "Property Tax": "0.068740592"
+        }
+      },
+      {
+        "name": "Distribution Center",
+        "tier": "tier2",
+        "new": {
+          "Income Tax": "0.045435244",
+          "UI Tax": "0.011889597",
+          "Sales Tax": "0",
+          "Property Tax": "0.193205945"
+        },
+        "old": {
+          "Income Tax": "0.087516088",
+          "UI Tax": "0.009009009",
+          "Sales Tax": "0",
+          "Property Tax": "0.188545689"
+        }
+      },
+      {
+        "name": "Capital-Intensive Manufacturing",
+        "tier": "tier2",
+        "new": {
+          "Income Tax": "0.027203777",
+          "UI Tax": "0.002244408",
+          "Sales Tax": "0.001857441",
+          "Property Tax": "0.014395171"
+        },
+        "old": {
+          "Income Tax": "0.077515082",
+          "UI Tax": "0.001924018",
+          "Sales Tax": "0.001597913",
+          "Property Tax": "0.012131094"
+        }
+      },
+      {
+        "name": "Labor-Intensive Manufacturing",
+        "tier": "tier2",
+        "new": {
+          "Income Tax": "0.042008556",
+          "UI Tax": "0.005961147",
+          "Sales Tax": "0.001753279",
+          "Property Tax": "0.026088786"
+        },
+        "old": {
+          "Income Tax": "0.067490542",
+          "UI Tax": "0.00443884",
+          "Sales Tax": "0.001311475",
+          "Property Tax": "0.018764187"
+        }
+      }
     ]
   },
   {
@@ -602,7 +935,118 @@
     "tier1": "Miami",
     "tier2": "Gainesville",
     "firms": [
-
+      {
+        "name": "Corporate Headquarters",
+        "tier": "tier1",
+        "new": {
+          "Income Tax": "0.032254311",
+          "UI Tax": "0.007377316",
+          "Sales Tax": "0.049239293",
+          "Property Tax": "0.062449835"
+        },
+        "old": {
+          "Income Tax": "0.037125558",
+          "UI Tax": "0.006851498",
+          "Sales Tax": "0.034576163",
+          "Property Tax": "0.038240918"
+        }
+      },
+      {
+        "name": "R&amp;D Headquarters",
+        "tier": "tier1",
+        "new": {
+          "Income Tax": "0.019014642",
+          "UI Tax": "0.007746706",
+          "Sales Tax": "0.015493412",
+          "Property Tax": "0.107045395"
+        },
+        "old": {
+          "Income Tax": "0.024345709",
+          "UI Tax": "0.00669507",
+          "Sales Tax": "0.011564212",
+          "Property Tax": "0.067559343"
+        }
+      },
+      {
+        "name": "Retail Store",
+        "tier": "tier1",
+        "new": {
+          "Income Tax": "0.02994012",
+          "UI Tax": "0.01497006",
+          "Sales Tax": "0.083832335",
+          "Property Tax": "0.203592814"
+        },
+        "old": {
+          "Income Tax": "0.041528239",
+          "UI Tax": "0.008305648",
+          "Sales Tax": "0.023255814",
+          "Property Tax": "0.071428571"
+        }
+      },
+      {
+        "name": "Call Center",
+        "tier": "tier2",
+        "new": {
+          "Income Tax": "0.019575315",
+          "UI Tax": "0.04313205",
+          "Sales Tax": "0.04711347",
+          "Property Tax": "0.155275382"
+        },
+        "old": {
+          "Income Tax": "0.023325809",
+          "UI Tax": "0.032605969",
+          "Sales Tax": "0.020566842",
+          "Property Tax": "0.086280411"
+        }
+      },
+      {
+        "name": "Distribution Center",
+        "tier": "tier2",
+        "new": {
+          "Income Tax": "0.009766454",
+          "UI Tax": "0.008917197",
+          "Sales Tax": "0.061995754",
+          "Property Tax": "0.361783439"
+        },
+        "old": {
+          "Income Tax": "0.020592021",
+          "UI Tax": "0.006756757",
+          "Sales Tax": "0.026705277",
+          "Property Tax": "0.228764479"
+        }
+      },
+      {
+        "name": "Capital-Intensive Manufacturing",
+        "tier": "tier2",
+        "new": {
+          "Income Tax": "0",
+          "UI Tax": "0.001606296",
+          "Sales Tax": "0.012314935",
+          "Property Tax": "0.182085115"
+        },
+        "old": {
+          "Income Tax": "0.031111401",
+          "UI Tax": "0.001402296",
+          "Sales Tax": "0.009750848",
+          "Property Tax": "0.07112575"
+        }
+      },
+      {
+        "name": "Labor-Intensive Manufacturing",
+        "tier": "tier2",
+        "new": {
+          "Income Tax": "0",
+          "UI Tax": "0.004043355",
+          "Sales Tax": "0.025955733",
+          "Property Tax": "0.081649694"
+        },
+        "old": {
+          "Income Tax": "0.0257225",
+          "UI Tax": "0.003278358",
+          "Sales Tax": "0.019014475",
+          "Property Tax": "0.030362637"
+        }
+      }
     ]
   },
   {
@@ -610,7 +1054,103 @@
     "tier1": "Atlanta",
     "tier2": "Macon",
     "firms": [
-
+      {
+        "name": "Corporate Headquarters",
+        "tier": "tier1",
+        "new": {
+          "Income Tax": "0.028113208",
+          "UI Tax": "0.009622642",
+          "Sales Tax": "0.056037736",
+          "Property Tax": "0.040754717"
+        },
+        "old": {
+          "Income Tax": "0.05210325",
+          "UI Tax": "0.008126195",
+          "Sales Tax": "0.03585086",
+          "Property Tax": "0.028999363"
+        }
+      },
+      {
+        "name": "R&amp;D Headquarters",
+        "tier": "tier1",
+        "new": {
+          "Combined Tax": "0.077042802"
+        },
+        "old": {
+          "Income Tax": "0.001217285",
+          "UI Tax": "0.007912355",
+          "Sales Tax": "0.023737066",
+          "Property Tax": "0.051125989"
+        }
+      },
+      {
+        "name": "Retail Store",
+        "tier": "tier1",
+        "new": {
+          "Income Tax": "0.038922156",
+          "UI Tax": "0.017964072",
+          "Sales Tax": "0.086826347",
+          "Property Tax": "0.164670659"
+        },
+        "old": {
+          "Income Tax": "0.049833887",
+          "UI Tax": "0.009966777",
+          "Sales Tax": "0.024916944",
+          "Property Tax": "0.059800664"
+        }
+      },
+      {
+        "name": "Call Center",
+        "tier": "tier2",
+        "new": {
+          "Combined Tax": "-0.157650183"
+        },
+        "old": {
+          "Income Tax": "0.002257903",
+          "UI Tax": "0.038635223",
+          "Sales Tax": "0.024084295",
+          "Property Tax": "0.055444054"
+        }
+      },
+      {
+        "name": "Distribution Center",
+        "tier": "tier2",
+        "new": {
+          "Combined Tax": "0.129991504"
+        },
+        "old": {
+          "Income Tax": "0.000643708",
+          "UI Tax": "0.007724493",
+          "Sales Tax": "0.031219826",
+          "Property Tax": "0.147087222"
+        }
+      },
+      {
+        "name": "Capital-Intensive Manufacturing",
+        "tier": "tier2",
+        "new": {
+          "Combined Tax": "0.060444238"
+        },
+        "old": {
+          "Income Tax": "0.002478396",
+          "UI Tax": "0.001663134",
+          "Sales Tax": "0.009717919",
+          "Property Tax": "0.045719876"
+        }
+      },
+      {
+        "name": "Labor-Intensive Manufacturing",
+        "tier": "tier2",
+        "new": {
+          "Combined Tax": "0.027771934"
+        },
+        "old": {
+          "Income Tax": "0.00211843",
+          "UI Tax": "0.003883789",
+          "Sales Tax": "0.020881671",
+          "Property Tax": "0.019519822"
+        }
+      }
     ]
   },
   {
@@ -618,7 +1158,118 @@
     "tier1": "Honolulu",
     "tier2": "Hilo",
     "firms": [
-
+      {
+        "name": "Corporate Headquarters",
+        "tier": "tier1",
+        "new": {
+          "Income Tax": "0.024528302",
+          "UI Tax": "0.066981132",
+          "Sales Tax": "0.053207547",
+          "Property Tax": "0.021320755"
+        },
+        "old": {
+          "Income Tax": "0.033779477",
+          "UI Tax": "0.056564691",
+          "Sales Tax": "0.037762906",
+          "Property Tax": "0.018005099"
+        }
+      },
+      {
+        "name": "R&amp;D Headquarters",
+        "tier": "tier1",
+        "new": {
+          "Income Tax": "-0.00623053",
+          "UI Tax": "0",
+          "Sales Tax": "0",
+          "Property Tax": "0"
+        },
+        "old": {
+          "Income Tax": "0.009135201",
+          "UI Tax": "0",
+          "Sales Tax": "0",
+          "Property Tax": "0"
+        }
+      },
+      {
+        "name": "Retail Store",
+        "tier": "tier1",
+        "new": {
+          "Income Tax": "0.008928571",
+          "UI Tax": "0.068452381",
+          "Sales Tax": "0.092261905",
+          "Property Tax": "0.05952381"
+        },
+        "old": {
+          "Income Tax": "0.044776119",
+          "UI Tax": "0.039800995",
+          "Sales Tax": "0.039800995",
+          "Property Tax": "0.033167496"
+        }
+      },
+      {
+        "name": "Call Center",
+        "tier": "tier2",
+        "new": {
+          "Income Tax": "0.02256138",
+          "UI Tax": "0.222295952",
+          "Sales Tax": "0.036828135",
+          "Property Tax": "0.045454545"
+        },
+        "old": {
+          "Income Tax": "0.042649272",
+          "UI Tax": "0.168088309",
+          "Sales Tax": "0.017812343",
+          "Property Tax": "0.034370296"
+        }
+      },
+      {
+        "name": "Distribution Center",
+        "tier": "tier2",
+        "new": {
+          "Income Tax": "0.013582343",
+          "UI Tax": "0.056027165",
+          "Sales Tax": "0.055178268",
+          "Property Tax": "0.124787776"
+        },
+        "old": {
+          "Income Tax": "0.051463493",
+          "UI Tax": "0.042457382",
+          "Sales Tax": "0.028304921",
+          "Property Tax": "0.094564169"
+        }
+      },
+      {
+        "name": "Capital-Intensive Manufacturing",
+        "tier": "tier2",
+        "new": {
+          "Income Tax": "0.088347974",
+          "UI Tax": "0",
+          "Sales Tax": "0",
+          "Property Tax": "0"
+        },
+        "old": {
+          "Income Tax": "0.070016958",
+          "UI Tax": "0.011870597",
+          "Sales Tax": "0.040210018",
+          "Property Tax": "0.006065745"
+        }
+      },
+      {
+        "name": "Labor-Intensive Manufacturing",
+        "tier": "tier2",
+        "new": {
+          "Income Tax": "0.03345021",
+          "UI Tax": "0.036816269",
+          "Sales Tax": "0.081767181",
+          "Property Tax": "0.01654979"
+        },
+        "old": {
+          "Income Tax": "0.057099622",
+          "UI Tax": "0.027540984",
+          "Sales Tax": "0.053770492",
+          "Property Tax": "0.009382093"
+        }
+      }
     ]
   },
   {
