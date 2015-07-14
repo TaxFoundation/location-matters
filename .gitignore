@@ -1,7 +1,4 @@
 node_modules
-convert-data.html
-js/convert-data.js
-data/data.tsv
 
 # Windows image file caches
 Thumbs.db

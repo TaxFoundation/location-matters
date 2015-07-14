@@ -19,7 +19,7 @@
       views.stateBars(app.filter());
 
       $('#state-select').change(function(e) { // Watch for changes to the state selection dropdown and call app.filter
-        app.filter($(e.target).attr('value'));
+        views.stateBars(app.filter($(e.target).attr('value')));
       });
     },
 
@@ -29,7 +29,7 @@
         return stateData.name === state;
       });
 
-      return stateData;
+      return stateData[0];
     }
   }
 
@@ -38,13 +38,29 @@
       var _this = this;
 
       this.data = data;
-      this.element = d3.select('#state-charts');
-      this.svg = this.element.append('svg');
-      this.x = d3.scale.ordinal().rangeRoundBands([0, 600]);
-      this.y = d3.scale.linear().rangeRound([0, 500]);
-      this.xAxis = d3.svg.axis().scale(this.x).orient('bottom');
-      this.yAxis = d3.svg.axis().scale(this.y).orient('left');
+      var svg = d3.select('#state-charts').append('svg'),
+        x = d3.scale.ordinal().rangeRoundBands([0, 600], 0.1),
+        y = d3.scale.linear().rangeRound([0, 500]),
+        xAxis = d3.svg.axis().scale(x).orient('bottom'),
+        yAxis = d3.svg.axis().scale(y).orient('left');
 
+      svg.append('g')
+        .attr('class', 'x axis')
+        .attr('transform', 'translate(0,' + 500 + ')')
+        .call(xAxis);
+
+      svg.append('g')
+          .attr('class', 'y axis')
+          .call(yAxis)
+        .append('text')
+          .attr('y', 6)
+          .attr('dy', '.71em')
+          .style('text-anchor', 'end');
+
+      svg.selectAll('.state')
+          .data(views.data.firms)
+        .enter().append('g')
+          .attr('transform', function(d) { return 'translate(' + x(d.name) + ',0)'; });
     }
   };
 }());
