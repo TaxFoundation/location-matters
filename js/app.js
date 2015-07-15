@@ -51,15 +51,23 @@
         .attr('height', views.dimensions.height + views.dimensions.margin.top + views.dimensions.margin.bottom)
         .attr('width', views.dimensions.width + views.dimensions.margin.right + views.dimensions.margin.left);
       this.x = d3.scale.ordinal().rangeRoundBands([0, views.dimensions.width], 0.1);
-      this.y = d3.scale.linear().rangeRound([0, views.dimensions.height]).domain([-0.3, 0.3]);
+      this.y = d3.scale.linear().rangeRound([views.dimensions.margin.top, views.dimensions.height]).domain([-0.3, 0.3]);
       this.xAxis = d3.svg.axis().scale(views.x).orient('bottom');
       this.yAxis = d3.svg.axis().scale(views.y).orient('left');
+
+      views.svg.append('line')
+        .attr('x1', 0)
+        .attr('y1', views.y(0))
+        .attr('x2', views.dimensions.width)
+        .attr('y2', views.y(0))
+        .attr('style', 'stroke:rgb(0,0,0);stroke-width:1');
 
       views.draw(data);
     },
 
     draw: function(data) {
       d3.selectAll('g').remove();
+
       var bars = views.svg.selectAll('.firm').data(data.firms);
       views.x.domain(data.firms.map(function(d) { return d.name; }));
 
@@ -78,16 +86,25 @@
 
       bars
         .append('rect')
-        .attr('y', function(d) { return views.y(+d.old['Income Tax']); })
-        .attr('height', function(d) { return views.dimensions.height - views.y(+d.old['Income Tax']); })
+        .attr('y', function(d) {
+          var yCoord = +d.old['Income Tax'] > 0 ? views.y(Math.min(0, +d.old['Income Tax'])) : views.y(0);
+          var height = Math.abs(views.y(+d.old['Income Tax']) - views.y(0));
+          return yCoord - height;
+        })
+        .attr('height', function(d) { return Math.abs(views.y(+d.old['Income Tax']) - views.y(0)); })
         .attr('width', views.x.rangeBand() / 2)
         .attr('x', function(d) { return views.x(d.name); })
         .attr('fill', '#0094ff');
 
       bars
         .append('rect')
-        .attr('y', function(d) { return views.y(+d.new['Income Tax']); })
-        .attr('height', function(d) { return views.dimensions.height - views.y(+d.new['Income Tax']); })
+        .attr('y', function(d) {
+          var yCoord = +d.new['Income Tax'] > 0 ? views.y(Math.min(0, +d.new['Income Tax'])) : views.y(0);
+          var height = Math.abs(views.y(+d.new['Income Tax']) - views.y(0));
+          console.log(yCoord);
+          return yCoord - height;
+        })
+        .attr('height', function(d) { return Math.abs(views.y(+d.new['Income Tax']) - views.y(0)); })
         .attr('width', views.x.rangeBand() / 2)
         .attr('x', function(d) { return views.x(d.name) + views.x.rangeBand() / 2; })
         .attr('fill', '#0094ff');
