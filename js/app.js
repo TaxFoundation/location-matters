@@ -41,8 +41,8 @@
         height: 500,
         margin: {
           top: 20,
-          right: 20,
-          bottom: 20,
+          right: 30,
+          bottom: 100,
           left: 40
         }
       };
@@ -91,9 +91,29 @@
           .attr('transform', 'translate(' + views.dimensions.margin.left + ', 0)')
           .call(views.yAxis);
 
+      d3.select('.x').selectAll('.tick').selectAll('text')
+        .attr('transform', 'rotate(45)')
+        .attr('style', 'text-anchor:start');
+
       bars.enter()
         .append('g')
         .attr('class', 'firm');
+
+// TODO move data assignment and rect appending inside these for loops to cover multiple tax types
+      for (var firm in data.firms) {
+        var name = data.firms[firm].name;
+        var sumOldTaxes = 0;
+        var sumNewTaxes = 0;
+        for (var tax in data.firms[firm].old) {
+          var thisTax = parseFloat(data.firms[firm].old[tax]);
+          sumOldTaxes += thisTax;
+        }
+        for (var tax in data.firms[firm].new) {
+          var thisTax = parseFloat(data.firms[firm].old[tax]);
+          sumNewTaxes += thisTax;
+        }
+
+      }
 
       bars
         .append('rect')
@@ -119,7 +139,7 @@
     allValues: function(data) {
       var newFirms = data.map(function(d) {return d.new;});
       var oldFirms = data.map(function(d) {return d.old;});
-      var values = [0, 0.3]; // default domain
+      var values = [0, 0.15]; // default domain
       for (var i = 0, j = newFirms.length; i < j; i++) {
         for (var m = 0, n = d3.values(newFirms[i]).length; m < n; m++) {
           values.push(parseFloat(d3.values(newFirms[i])[m]))
