@@ -1280,31 +1280,31 @@
     {
       "name": "Call Center",
       "tier": "tier2",
-      "new": {"Combined Tax": "0.028874876"},
+      "new": {"Income Tax": "-0.113176236", "Unemployment Insurance Tax": "0.071425325", "Sales Tax": "0.046373158", "Property Tax": "0.024252629"},
       "old": {"Income Tax": "0.001756147", "Unemployment Insurance Tax": "0.022829905", "Sales Tax": "0.02609132", "Property Tax": "0.074761666"}
     },
     {
       "name": "Capital-Intensive Manufacturing",
       "tier": "tier2",
-      "new": {"Combined Tax": "0.019733787"},
+      "new": {"Income Tax": "-0.012536759", "Unemployment Insurance Tax": "0.016827305", "Sales Tax": "0.014350559", "Property Tax": "0.001092682"},
       "old": {"Income Tax": "0.000815262", "Unemployment Insurance Tax": "0.000978314", "Sales Tax": "0.012000652", "Property Tax": "0.061633784"}
     },
     {
       "name": "Corporate Headquarters",
       "tier": "tier1",
-      "new": {"Combined Tax": "-0.007924528"},
+      "new": {"Income Tax": "-0.087735849", "Unemployment Insurance Tax": "0.025394511", "Sales Tax": "0.049882075", "Property Tax": "0.004534734"},
       "old": {"Income Tax": "0.067399618", "Unemployment Insurance Tax": "0.004780115", "Sales Tax": "0.041427661", "Property Tax": "0.031230083"}
     },
     {
       "name": "Distribution Center",
       "tier": "tier2",
-      "new": {"Combined Tax": "0.290144435"},
+      "new": {"Income Tax": "-0.031435854", "Unemployment Insurance Tax": "0.239209141", "Sales Tax": "0.076546925", "Property Tax": "0.005824223"},
       "old": {"Income Tax": "0.000965562", "Unemployment Insurance Tax": "0.004505954", "Sales Tax": "0.035403927", "Property Tax": "0.198583843"}
     },
     {
       "name": "Labor-Intensive Manufacturing",
       "tier": "tier2",
-      "new": {"Combined Tax": "0.01591977"},
+      "new": {"Income Tax": "-0.051616523", "Unemployment Insurance Tax": "0.030088493", "Sales Tax": "0.034582229", "Property Tax": "0.002865571"},
       "old": {"Income Tax": "0.000907945", "Unemployment Insurance Tax": "0.002269861", "Sales Tax": "0.025825977", "Property Tax": "0.026330391"}
     },
     {

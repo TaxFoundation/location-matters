@@ -104,15 +104,19 @@
         var name = data.firms[firm].name;
         var sumOldTaxes = 0;
         var sumNewTaxes = 0;
+
         for (var tax in data.firms[firm].old) {
           var thisTax = parseFloat(data.firms[firm].old[tax]);
           sumOldTaxes += thisTax;
         }
+
         for (var tax in data.firms[firm].new) {
-          var thisTax = parseFloat(data.firms[firm].old[tax]);
+          var thisTax = parseFloat(data.firms[firm].new[tax]);
           sumNewTaxes += thisTax;
         }
 
+        sumOldTaxes = views.round(sumOldTaxes, 9);
+        sumNewTaxes = views.round(sumNewTaxes, 9);
       }
 
       bars
@@ -139,7 +143,8 @@
     allValues: function(data) {
       var newFirms = data.map(function(d) {return d.new;});
       var oldFirms = data.map(function(d) {return d.old;});
-      var values = [0, 0.15]; // default domain
+      var values = [0, 0.15]; // default domain to prevent hilariously bad y-axis scales
+
       for (var i = 0, j = newFirms.length; i < j; i++) {
         for (var m = 0, n = d3.values(newFirms[i]).length; m < n; m++) {
           values.push(parseFloat(d3.values(newFirms[i])[m]))
@@ -153,6 +158,10 @@
       }
 
       return d3.extent(values);
+    },
+
+    round: function(value, decimals) {
+      return Number(Math.round(value + 'e' + decimals) + 'e-' + decimals);
     }
   };
 }());
