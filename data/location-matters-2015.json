@@ -4,6 +4,18 @@
   "tier2": "Montgomery",
   "firms": [
     {
+      "name": "Corporate Headquarters",
+      "tier": "tier1",
+      "new": {"Income Tax": "0.027735849", "Unemployment Insurance Tax": "0.008113208", "Sales Tax": "0.073584906", "Property Tax": "0.023396226"},
+      "old": {"Income Tax": "0.056564691", "Unemployment Insurance Tax": "0.006851498", "Sales Tax": "0.047004461", "Property Tax": "0.019120459"}
+    },
+    {
+      "name": "R&D Headquarters",
+      "tier": "tier1",
+      "new": {"Income Tax": "0.038910506", "Unemployment Insurance Tax": "0.008560311", "Sales Tax": "0.0692607", "Property Tax": "0.042023346"},
+      "old": {"Income Tax": "0.074254413", "Unemployment Insurance Tax": "0.00669507", "Sales Tax": "0.031040779", "Property Tax": "0.034083993"}
+    },
+    {
       "name": "Call Center",
       "tier": "tier2",
       "new": {"Income Tax": "0.004976775", "Unemployment Insurance Tax": "0.04313205", "Sales Tax": "0.078633046", "Property Tax": "0.044790975"},
@@ -16,12 +28,6 @@
       "old": {"Income Tax": "0.050776154", "Unemployment Insurance Tax": "0.001402296", "Sales Tax": "0.020056092", "Property Tax": "0.020545265"}
     },
     {
-      "name": "Corporate Headquarters",
-      "tier": "tier1",
-      "new": {"Income Tax": "0.027735849", "Unemployment Insurance Tax": "0.008113208", "Sales Tax": "0.073584906", "Property Tax": "0.023396226"},
-      "old": {"Income Tax": "0.056564691", "Unemployment Insurance Tax": "0.006851498", "Sales Tax": "0.047004461", "Property Tax": "0.019120459"}
-    },
-    {
       "name": "Distribution Center",
       "tier": "tier2",
       "new": {"Income Tax": "0.005944798", "Unemployment Insurance Tax": "0.008917197", "Sales Tax": "0.103609342", "Property Tax": "0.104458599"},
@@ -32,12 +38,6 @@
       "tier": "tier2",
       "new": {"Income Tax": "0.001051967", "Unemployment Insurance Tax": "0.004348131", "Sales Tax": "0.055052949", "Property Tax": "0.006802721"},
       "old": {"Income Tax": "0.041509053", "Unemployment Insurance Tax": "0.003278358", "Sales Tax": "0.031825289", "Property Tax": "0.008775912"}
-    },
-    {
-      "name": "R&D Headquarters",
-      "tier": "tier1",
-      "new": {"Income Tax": "0.038910506", "Unemployment Insurance Tax": "0.008560311", "Sales Tax": "0.0692607", "Property Tax": "0.042023346"},
-      "old": {"Income Tax": "0.074254413", "Unemployment Insurance Tax": "0.00669507", "Sales Tax": "0.031040779", "Property Tax": "0.034083993"}
     },
     {
       "name": "Retail Store",
@@ -53,6 +53,18 @@
   "tier2": "Fairbanks",
   "firms": [
     {
+      "name": "Corporate Headquarters",
+      "tier": "tier1",
+      "new": {"Income Tax": "0.056792453", "Unemployment Insurance Tax": "0.040188679", "Sales Tax": "0", "Property Tax": "0.026792453"},
+      "old": {"Income Tax": "0.057830174", "Unemployment Insurance Tax": "0.033933408", "Sales Tax": "0", "Property Tax": "0.020073283"}
+    },
+    {
+      "name": "R&D Headquarters",
+      "tier": "tier1",
+      "new": {"Income Tax": "0.07165109", "Unemployment Insurance Tax": "0.040498442", "Sales Tax": "0", "Property Tax": "0.045950156"},
+      "old": {"Income Tax": "0.078562728", "Unemployment Insurance Tax": "0.031668697", "Sales Tax": "0", "Property Tax": "0.03410475"}
+    },
+    {
       "name": "Call Center",
       "tier": "tier2",
       "new": {"Income Tax": "0.065715234", "Unemployment Insurance Tax": "0.138732161", "Sales Tax": "0", "Property Tax": "0.078991039"},
@@ -65,12 +77,6 @@
       "old": {"Income Tax": "0.105857031", "Unemployment Insurance Tax": "0.00681581", "Sales Tax": "0", "Property Tax": "0.010566136"}
     },
     {
-      "name": "Corporate Headquarters",
-      "tier": "tier1",
-      "new": {"Income Tax": "0.056792453", "Unemployment Insurance Tax": "0.040188679", "Sales Tax": "0", "Property Tax": "0.026792453"},
-      "old": {"Income Tax": "0.057830174", "Unemployment Insurance Tax": "0.033933408", "Sales Tax": "0", "Property Tax": "0.020073283"}
-    },
-    {
       "name": "Distribution Center",
       "tier": "tier2",
       "new": {"Income Tax": "0.059023355", "Unemployment Insurance Tax": "0.030997877", "Sales Tax": "0", "Property Tax": "0.108704883"},
@@ -81,12 +87,6 @@
       "tier": "tier2",
       "new": {"Income Tax": "0.07173913", "Unemployment Insurance Tax": "0.021178121", "Sales Tax": "0", "Property Tax": "0.014446003"},
       "old": {"Income Tax": "0.084535458", "Unemployment Insurance Tax": "0.015837789", "Sales Tax": "0", "Property Tax": "0.016342177"}
-    },
-    {
-      "name": "R&D Headquarters",
-      "tier": "tier1",
-      "new": {"Income Tax": "0.07165109", "Unemployment Insurance Tax": "0.040498442", "Sales Tax": "0", "Property Tax": "0.045950156"},
-      "old": {"Income Tax": "0.078562728", "Unemployment Insurance Tax": "0.031668697", "Sales Tax": "0", "Property Tax": "0.03410475"}
     },
     {
       "name": "Retail Store",
@@ -102,6 +102,18 @@
   "tier2": "Prescott",
   "firms": [
     {
+      "name": "Corporate Headquarters",
+      "tier": "tier1",
+      "new": {"Income Tax": "0.03754717", "Unemployment Insurance Tax": "0.005283019", "Sales Tax": "0.064339623", "Property Tax": "0.062641509"},
+      "old": {"Income Tax": "0.043658381", "Unemployment Insurance Tax": "0.00446144", "Sales Tax": "0.041108987", "Property Tax": "0.0347355"}
+    },
+    {
+      "name": "R&D Headquarters",
+      "tier": "tier1",
+      "new": {"Income Tax": "0", "Unemployment Insurance Tax": "0.005447471", "Sales Tax": "0.020233463", "Property Tax": "0.106614786"},
+      "old": {"Income Tax": "0", "Unemployment Insurance Tax": "0.004260499", "Sales Tax": "0.01339014", "Property Tax": "0.061472915"}
+    },
+    {
       "name": "Call Center",
       "tier": "tier2",
       "new": {"Income Tax": "0.014603385", "Unemployment Insurance Tax": "0.02787919", "Sales Tax": "0.065715234", "Property Tax": "0.099236641"},
@@ -114,12 +126,6 @@
       "old": {"Income Tax": "0.011902821", "Unemployment Insurance Tax": "0.000913093", "Sales Tax": "0.016403065", "Property Tax": "0.04532855"}
     },
     {
-      "name": "Corporate Headquarters",
-      "tier": "tier1",
-      "new": {"Income Tax": "0.03754717", "Unemployment Insurance Tax": "0.005283019", "Sales Tax": "0.064339623", "Property Tax": "0.062641509"},
-      "old": {"Income Tax": "0.043658381", "Unemployment Insurance Tax": "0.00446144", "Sales Tax": "0.041108987", "Property Tax": "0.0347355"}
-    },
-    {
       "name": "Distribution Center",
       "tier": "tier2",
       "new": {"Income Tax": "0.003398471", "Unemployment Insurance Tax": "0.005522515", "Sales Tax": "0.086236194", "Property Tax": "0.231096007"},
@@ -130,12 +136,6 @@
       "tier": "tier2",
       "new": {"Income Tax": "0.007785103", "Unemployment Insurance Tax": "0.002805443", "Sales Tax": "0.041660822", "Property Tax": "0.055968579"},
       "old": {"Income Tax": "0.009734692", "Unemployment Insurance Tax": "0.00211843", "Sales Tax": "0.02859881", "Property Tax": "0.019368506"}
-    },
-    {
-      "name": "R&D Headquarters",
-      "tier": "tier1",
-      "new": {"Income Tax": "0", "Unemployment Insurance Tax": "0.005447471", "Sales Tax": "0.020233463", "Property Tax": "0.106614786"},
-      "old": {"Income Tax": "0", "Unemployment Insurance Tax": "0.004260499", "Sales Tax": "0.01339014", "Property Tax": "0.061472915"}
     },
     {
       "name": "Retail Store",
@@ -151,6 +151,18 @@
   "tier2": "Fort Smith",
   "firms": [
     {
+      "name": "Corporate Headquarters",
+      "tier": "tier1",
+      "new": {"Income Tax": "-0.046981132", "Unemployment Insurance Tax": "0.018113208", "Sales Tax": "0.08", "Property Tax": "0.03754717"},
+      "old": {"Income Tax": "0.046685787", "Unemployment Insurance Tax": "0.015296367", "Sales Tax": "0.053218611", "Property Tax": "0.020873168"}
+    },
+    {
+      "name": "R&D Headquarters",
+      "tier": "tier1",
+      "new": {"Income Tax": "-0.070038911", "Unemployment Insurance Tax": "0.018677043", "Sales Tax": "0.06848249", "Property Tax": "0.06459144"},
+      "old": {"Income Tax": "0.057821059", "Unemployment Insurance Tax": "0.014607425", "Sales Tax": "0.031649422", "Property Tax": "0.037127206"}
+    },
+    {
       "name": "Call Center",
       "tier": "tier2",
       "new": {"Income Tax": "-0.13806837", "Unemployment Insurance Tax": "0.095585795", "Sales Tax": "0.080318619", "Property Tax": "0.070693661"},
@@ -163,12 +175,6 @@
       "old": {"Income Tax": "0.085537257", "Unemployment Insurance Tax": "0.003130605", "Sales Tax": "0.020446763", "Property Tax": "0.052600685"}
     },
     {
-      "name": "Corporate Headquarters",
-      "tier": "tier1",
-      "new": {"Income Tax": "-0.046981132", "Unemployment Insurance Tax": "0.018113208", "Sales Tax": "0.08", "Property Tax": "0.03754717"},
-      "old": {"Income Tax": "0.046685787", "Unemployment Insurance Tax": "0.015296367", "Sales Tax": "0.053218611", "Property Tax": "0.020873168"}
-    },
-    {
       "name": "Distribution Center",
       "tier": "tier2",
       "new": {"Income Tax": "-0.015711253", "Unemployment Insurance Tax": "0.019532909", "Sales Tax": "0.108704883", "Property Tax": "0.166878981"},
@@ -179,12 +185,6 @@
       "tier": "tier2",
       "new": {"Income Tax": "-0.007013606", "Unemployment Insurance Tax": "0.009678777", "Sales Tax": "0.055688035", "Property Tax": "0.014518165"},
       "old": {"Income Tax": "0.064262295", "Unemployment Insurance Tax": "0.007263556", "Sales Tax": "0.038789407", "Property Tax": "0.014880202"}
-    },
-    {
-      "name": "R&D Headquarters",
-      "tier": "tier1",
-      "new": {"Income Tax": "-0.070038911", "Unemployment Insurance Tax": "0.018677043", "Sales Tax": "0.06848249", "Property Tax": "0.06459144"},
-      "old": {"Income Tax": "0.057821059", "Unemployment Insurance Tax": "0.014607425", "Sales Tax": "0.031649422", "Property Tax": "0.037127206"}
     },
     {
       "name": "Retail Store",
@@ -200,6 +200,18 @@
   "tier2": "Merced",
   "firms": [
     {
+      "name": "Corporate Headquarters",
+      "tier": "tier1",
+      "new": {"Income Tax": "0.096603774", "Unemployment Insurance Tax": "0.009245283", "Sales Tax": "0.069622642", "Property Tax": "0.033396226"},
+      "old": {"Income Tax": "0.097355003", "Unemployment Insurance Tax": "0.007807521", "Sales Tax": "0.044455067", "Property Tax": "0.01848311"}
+    },
+    {
+      "name": "R&D Headquarters",
+      "tier": "tier1",
+      "new": {"Income Tax": "0.021806854", "Unemployment Insurance Tax": "0.009345794", "Sales Tax": "0.04517134", "Property Tax": "0.057632399"},
+      "old": {"Income Tax": "0.017052375", "Unemployment Insurance Tax": "0.007308161", "Sales Tax": "0.022533496", "Property Tax": "0.032886724"}
+    },
+    {
       "name": "Call Center",
       "tier": "tier2",
       "new": {"Income Tax": "0.008629273", "Unemployment Insurance Tax": "0.048788583", "Sales Tax": "0.059077332", "Property Tax": "0.075340192"},
@@ -212,12 +224,6 @@
       "old": {"Income Tax": "0.110129142", "Unemployment Insurance Tax": "0.001597965", "Sales Tax": "0.016142708", "Property Tax": "0.034470389"}
     },
     {
-      "name": "Corporate Headquarters",
-      "tier": "tier1",
-      "new": {"Income Tax": "0.096603774", "Unemployment Insurance Tax": "0.009245283", "Sales Tax": "0.069622642", "Property Tax": "0.033396226"},
-      "old": {"Income Tax": "0.097355003", "Unemployment Insurance Tax": "0.007807521", "Sales Tax": "0.044455067", "Property Tax": "0.01848311"}
-    },
-    {
       "name": "Distribution Center",
       "tier": "tier2",
       "new": {"Income Tax": "0", "Unemployment Insurance Tax": "0.009766454", "Sales Tax": "0.077707006", "Property Tax": "0.175796178"},
@@ -228,12 +234,6 @@
       "tier": "tier2",
       "new": {"Income Tax": "0.072094817", "Unemployment Insurance Tax": "0.004979311", "Sales Tax": "0.043270917", "Property Tax": "0.042569605"},
       "old": {"Income Tax": "0.088923636", "Unemployment Insurance Tax": "0.003732473", "Sales Tax": "0.024210633", "Property Tax": "0.014728135"}
-    },
-    {
-      "name": "R&D Headquarters",
-      "tier": "tier1",
-      "new": {"Income Tax": "0.021806854", "Unemployment Insurance Tax": "0.009345794", "Sales Tax": "0.04517134", "Property Tax": "0.057632399"},
-      "old": {"Income Tax": "0.017052375", "Unemployment Insurance Tax": "0.007308161", "Sales Tax": "0.022533496", "Property Tax": "0.032886724"}
     },
     {
       "name": "Retail Store",
@@ -249,6 +249,18 @@
   "tier2": "Fort Collins",
   "firms": [
     {
+      "name": "Corporate Headquarters",
+      "tier": "tier1",
+      "new": {"Income Tax": "0.029056604", "Unemployment Insurance Tax": "0.008679245", "Sales Tax": "0.058867925", "Property Tax": "0.075283019"},
+      "old": {"Income Tax": "0.041108987", "Unemployment Insurance Tax": "0.007329509", "Sales Tax": "0.037603569", "Property Tax": "0.045251753"}
+    },
+    {
+      "name": "R&D Headquarters",
+      "tier": "tier1",
+      "new": {"Income Tax": "0.024143302", "Unemployment Insurance Tax": "0.008566978", "Sales Tax": "0.018691589", "Property Tax": "0.130841121"},
+      "old": {"Income Tax": "0.040194884", "Unemployment Insurance Tax": "0.006699147", "Sales Tax": "0.012180268", "Property Tax": "0.080998782"}
+    },
+    {
       "name": "Call Center",
       "tier": "tier2",
       "new": {"Income Tax": "0.010285335", "Unemployment Insurance Tax": "0.04578633", "Sales Tax": "0.057730591", "Property Tax": "0.177504977"},
@@ -261,12 +273,6 @@
       "old": {"Income Tax": "0.048884686", "Unemployment Insurance Tax": "0.00150013", "Sales Tax": "0.010207409", "Property Tax": "0.086420558"}
     },
     {
-      "name": "Corporate Headquarters",
-      "tier": "tier1",
-      "new": {"Income Tax": "0.029056604", "Unemployment Insurance Tax": "0.008679245", "Sales Tax": "0.058867925", "Property Tax": "0.075283019"},
-      "old": {"Income Tax": "0.041108987", "Unemployment Insurance Tax": "0.007329509", "Sales Tax": "0.037603569", "Property Tax": "0.045251753"}
-    },
-    {
       "name": "Distribution Center",
       "tier": "tier2",
       "new": {"Income Tax": "0.011889597", "Unemployment Insurance Tax": "0.009341826", "Sales Tax": "0.076008493", "Property Tax": "0.363057325"},
@@ -277,12 +283,6 @@
       "tier": "tier2",
       "new": {"Income Tax": "0.027281015", "Unemployment Insurance Tax": "0.004628656", "Sales Tax": "0.032400589", "Property Tax": "0.087944456"},
       "old": {"Income Tax": "0.040603248", "Unemployment Insurance Tax": "0.003480278", "Sales Tax": "0.021940886", "Property Tax": "0.036921215"}
-    },
-    {
-      "name": "R&D Headquarters",
-      "tier": "tier1",
-      "new": {"Income Tax": "0.024143302", "Unemployment Insurance Tax": "0.008566978", "Sales Tax": "0.018691589", "Property Tax": "0.130841121"},
-      "old": {"Income Tax": "0.040194884", "Unemployment Insurance Tax": "0.006699147", "Sales Tax": "0.012180268", "Property Tax": "0.080998782"}
     },
     {
       "name": "Retail Store",
@@ -298,6 +298,18 @@
   "tier2": "Norwich",
   "firms": [
     {
+      "name": "Corporate Headquarters",
+      "tier": "tier1",
+      "new": {"Income Tax": "0.049811321", "Unemployment Insurance Tax": "0.025471698", "Sales Tax": "0.067735849", "Property Tax": "0.078490566"},
+      "old": {"Income Tax": "0.07791587", "Unemployment Insurance Tax": "0.021510516", "Sales Tax": "0.047004461", "Property Tax": "0.043658381"}
+    },
+    {
+      "name": "R&D Headquarters",
+      "tier": "tier1",
+      "new": {"Income Tax": "0.021011673", "Unemployment Insurance Tax": "0.026459144", "Sales Tax": "0.035797665", "Property Tax": "0.13463035"},
+      "old": {"Income Tax": "0.027997565", "Unemployment Insurance Tax": "0.020693853", "Sales Tax": "0.019476567", "Property Tax": "0.077297626"}
+    },
+    {
       "name": "Call Center",
       "tier": "tier2",
       "new": {"Income Tax": "0.031861932", "Unemployment Insurance Tax": "0.134417524", "Sales Tax": "0.056090275", "Property Tax": "0.131430468"},
@@ -310,12 +322,6 @@
       "old": {"Income Tax": "0.001239238", "Unemployment Insurance Tax": "0.004402557", "Sales Tax": "0.013990347", "Property Tax": "0.060070441"}
     },
     {
-      "name": "Corporate Headquarters",
-      "tier": "tier1",
-      "new": {"Income Tax": "0.049811321", "Unemployment Insurance Tax": "0.025471698", "Sales Tax": "0.067735849", "Property Tax": "0.078490566"},
-      "old": {"Income Tax": "0.07791587", "Unemployment Insurance Tax": "0.021510516", "Sales Tax": "0.047004461", "Property Tax": "0.043658381"}
-    },
-    {
       "name": "Distribution Center",
       "tier": "tier2",
       "new": {"Income Tax": "0.011464968", "Unemployment Insurance Tax": "0.027176221", "Sales Tax": "0.078131635", "Property Tax": "0.305732484"},
@@ -326,12 +332,6 @@
       "tier": "tier2",
       "new": {"Income Tax": "0.000210393", "Unemployment Insurance Tax": "0.013605442", "Sales Tax": "0.042499474", "Property Tax": "0.041166982"},
       "old": {"Income Tax": "0.001008827", "Unemployment Insurance Tax": "0.010239596", "Sales Tax": "0.030063052", "Property Tax": "0.025674653"}
-    },
-    {
-      "name": "R&D Headquarters",
-      "tier": "tier1",
-      "new": {"Income Tax": "0.021011673", "Unemployment Insurance Tax": "0.026459144", "Sales Tax": "0.035797665", "Property Tax": "0.13463035"},
-      "old": {"Income Tax": "0.027997565", "Unemployment Insurance Tax": "0.020693853", "Sales Tax": "0.019476567", "Property Tax": "0.077297626"}
     },
     {
       "name": "Retail Store",
@@ -347,6 +347,18 @@
   "tier2": "Dover",
   "firms": [
     {
+      "name": "Corporate Headquarters",
+      "tier": "tier1",
+      "new": {"Income Tax": "0.049433962", "Unemployment Insurance Tax": "0.011132075", "Sales Tax": "0", "Property Tax": "0.061320755"},
+      "old": {"Income Tax": "0.071690298", "Unemployment Insurance Tax": "0.009399395", "Sales Tax": "0", "Property Tax": "0.051776326"}
+    },
+    {
+      "name": "R&D Headquarters",
+      "tier": "tier1",
+      "new": {"Income Tax": "0.056031128", "Unemployment Insurance Tax": "0.011673152", "Sales Tax": "0", "Property Tax": "0.113618677"},
+      "old": {"Income Tax": "0.055995131", "Unemployment Insurance Tax": "0.009129641", "Sales Tax": "0", "Property Tax": "0.088861838"}
+    },
+    {
       "name": "Call Center",
       "tier": "tier2",
       "new": {"Income Tax": "0.072685032", "Unemployment Insurance Tax": "0.058413541", "Sales Tax": "0", "Property Tax": "0.090939263"},
@@ -359,12 +371,6 @@
       "old": {"Income Tax": "0.077515082", "Unemployment Insurance Tax": "0.001924018", "Sales Tax": "0.001597913", "Property Tax": "0.012131094"}
     },
     {
-      "name": "Corporate Headquarters",
-      "tier": "tier1",
-      "new": {"Income Tax": "0.049433962", "Unemployment Insurance Tax": "0.011132075", "Sales Tax": "0", "Property Tax": "0.061320755"},
-      "old": {"Income Tax": "0.071690298", "Unemployment Insurance Tax": "0.009399395", "Sales Tax": "0", "Property Tax": "0.051776326"}
-    },
-    {
       "name": "Distribution Center",
       "tier": "tier2",
       "new": {"Income Tax": "0.045435244", "Unemployment Insurance Tax": "0.011889597", "Sales Tax": "0", "Property Tax": "0.193205945"},
@@ -375,12 +381,6 @@
       "tier": "tier2",
       "new": {"Income Tax": "0.042008556", "Unemployment Insurance Tax": "0.005961147", "Sales Tax": "0.001753279", "Property Tax": "0.026088786"},
       "old": {"Income Tax": "0.067490542", "Unemployment Insurance Tax": "0.00443884", "Sales Tax": "0.001311475", "Property Tax": "0.018764187"}
-    },
-    {
-      "name": "R&D Headquarters",
-      "tier": "tier1",
-      "new": {"Income Tax": "0.056031128", "Unemployment Insurance Tax": "0.011673152", "Sales Tax": "0", "Property Tax": "0.113618677"},
-      "old": {"Income Tax": "0.055995131", "Unemployment Insurance Tax": "0.009129641", "Sales Tax": "0", "Property Tax": "0.088861838"}
     },
     {
       "name": "Retail Store",
@@ -396,6 +396,18 @@
   "tier2": "Gainesville",
   "firms": [
     {
+      "name": "Corporate Headquarters",
+      "tier": "tier1",
+      "new": {"Income Tax": "0.032254311", "Unemployment Insurance Tax": "0.007377316", "Sales Tax": "0.049239293", "Property Tax": "0.062449835"},
+      "old": {"Income Tax": "0.037125558", "Unemployment Insurance Tax": "0.006851498", "Sales Tax": "0.034576163", "Property Tax": "0.038240918"}
+    },
+    {
+      "name": "R&D Headquarters",
+      "tier": "tier1",
+      "new": {"Income Tax": "0.019014642", "Unemployment Insurance Tax": "0.007746706", "Sales Tax": "0.015493412", "Property Tax": "0.107045395"},
+      "old": {"Income Tax": "0.024345709", "Unemployment Insurance Tax": "0.00669507", "Sales Tax": "0.011564212", "Property Tax": "0.067559343"}
+    },
+    {
       "name": "Call Center",
       "tier": "tier2",
       "new": {"Income Tax": "0.019575315", "Unemployment Insurance Tax": "0.04313205", "Sales Tax": "0.04711347", "Property Tax": "0.155275382"},
@@ -408,12 +420,6 @@
       "old": {"Income Tax": "0.031111401", "Unemployment Insurance Tax": "0.001402296", "Sales Tax": "0.009750848", "Property Tax": "0.07112575"}
     },
     {
-      "name": "Corporate Headquarters",
-      "tier": "tier1",
-      "new": {"Income Tax": "0.032254311", "Unemployment Insurance Tax": "0.007377316", "Sales Tax": "0.049239293", "Property Tax": "0.062449835"},
-      "old": {"Income Tax": "0.037125558", "Unemployment Insurance Tax": "0.006851498", "Sales Tax": "0.034576163", "Property Tax": "0.038240918"}
-    },
-    {
       "name": "Distribution Center",
       "tier": "tier2",
       "new": {"Income Tax": "0.009766454", "Unemployment Insurance Tax": "0.008917197", "Sales Tax": "0.061995754", "Property Tax": "0.361783439"},
@@ -424,12 +430,6 @@
       "tier": "tier2",
       "new": {"Income Tax": "0", "Unemployment Insurance Tax": "0.004043355", "Sales Tax": "0.025955733", "Property Tax": "0.081649694"},
       "old": {"Income Tax": "0.0257225", "Unemployment Insurance Tax": "0.003278358", "Sales Tax": "0.019014475", "Property Tax": "0.030362637"}
-    },
-    {
-      "name": "R&D Headquarters",
-      "tier": "tier1",
-      "new": {"Income Tax": "0.019014642", "Unemployment Insurance Tax": "0.007746706", "Sales Tax": "0.015493412", "Property Tax": "0.107045395"},
-      "old": {"Income Tax": "0.024345709", "Unemployment Insurance Tax": "0.00669507", "Sales Tax": "0.011564212", "Property Tax": "0.067559343"}
     },
     {
       "name": "Retail Store",
@@ -445,6 +445,18 @@
   "tier2": "Macon",
   "firms": [
     {
+      "name": "Corporate Headquarters",
+      "tier": "tier1",
+      "new": {"Income Tax": "0.028113208", "Unemployment Insurance Tax": "0.009622642", "Sales Tax": "0.056037736", "Property Tax": "0.040754717"},
+      "old": {"Income Tax": "0.05210325", "Unemployment Insurance Tax": "0.008126195", "Sales Tax": "0.03585086", "Property Tax": "0.028999363"}
+    },
+    {
+      "name": "R&D Headquarters",
+      "tier": "tier1",
+      "new": {"Income Tax": "-0.058365759", "Unemployment Insurance Tax": "0.010116732", "Sales Tax": "0.052918288", "Property Tax": "0.072373541"},
+      "old": {"Income Tax": "0.001217285", "Unemployment Insurance Tax": "0.007912355", "Sales Tax": "0.023737066", "Property Tax": "0.051125989"}
+    },
+    {
       "name": "Call Center",
       "tier": "tier2",
       "new": {"Income Tax": "-0.346830402", "Unemployment Insurance Tax": "0.051111849", "Sales Tax": "0.05509459", "Property Tax": "0.08297378"},
@@ -457,12 +469,6 @@
       "old": {"Income Tax": "0.002478396", "Unemployment Insurance Tax": "0.001663134", "Sales Tax": "0.009717919", "Property Tax": "0.045719876"}
     },
     {
-      "name": "Corporate Headquarters",
-      "tier": "tier1",
-      "new": {"Income Tax": "0.028113208", "Unemployment Insurance Tax": "0.009622642", "Sales Tax": "0.056037736", "Property Tax": "0.040754717"},
-      "old": {"Income Tax": "0.05210325", "Unemployment Insurance Tax": "0.008126195", "Sales Tax": "0.03585086", "Property Tax": "0.028999363"}
-    },
-    {
       "name": "Distribution Center",
       "tier": "tier2",
       "new": {"Income Tax": "-0.06924384", "Unemployment Insurance Tax": "0.010195412", "Sales Tax": "0.072642311", "Property Tax": "0.116397621"},
@@ -473,12 +479,6 @@
       "tier": "tier2",
       "new": {"Income Tax": "-0.036398064", "Unemployment Insurance Tax": "0.005189705", "Sales Tax": "0.030787573", "Property Tax": "0.02819272"},
       "old": {"Income Tax": "0.00211843", "Unemployment Insurance Tax": "0.003883789", "Sales Tax": "0.020881671", "Property Tax": "0.019519822"}
-    },
-    {
-      "name": "R&D Headquarters",
-      "tier": "tier1",
-      "new": {"Income Tax": "-0.058365759", "Unemployment Insurance Tax": "0.010116732", "Sales Tax": "0.052918288", "Property Tax": "0.072373541"},
-      "old": {"Income Tax": "0.001217285", "Unemployment Insurance Tax": "0.007912355", "Sales Tax": "0.023737066", "Property Tax": "0.051125989"}
     },
     {
       "name": "Retail Store",
@@ -494,6 +494,18 @@
   "tier2": "Hilo",
   "firms": [
     {
+      "name": "Corporate Headquarters",
+      "tier": "tier1",
+      "new": {"Income Tax": "0.024528302", "Unemployment Insurance Tax": "0.066981132", "Sales Tax": "0.053207547", "Property Tax": "0.021320755"},
+      "old": {"Income Tax": "0.033779477", "Unemployment Insurance Tax": "0.056564691", "Sales Tax": "0.037762906", "Property Tax": "0.018005099"}
+    },
+    {
+      "name": "R&D Headquarters",
+      "tier": "tier1",
+      "new": {"Income Tax": "-0.154205607", "Unemployment Insurance Tax": "0.070872274", "Sales Tax": "0.037383178", "Property Tax": "0.039719626"},
+      "old": {"Income Tax": "-0.095615104", "Unemployment Insurance Tax": "0.055420219", "Sales Tax": "0.018270402", "Property Tax": "0.031059683"}
+    },
+    {
       "name": "Call Center",
       "tier": "tier2",
       "new": {"Income Tax": "0.02256138", "Unemployment Insurance Tax": "0.222295952", "Sales Tax": "0.036828135", "Property Tax": "0.045454545"},
@@ -506,12 +518,6 @@
       "old": {"Income Tax": "0.070016958", "Unemployment Insurance Tax": "0.011870597", "Sales Tax": "0.040210018", "Property Tax": "0.006065745"}
     },
     {
-      "name": "Corporate Headquarters",
-      "tier": "tier1",
-      "new": {"Income Tax": "0.024528302", "Unemployment Insurance Tax": "0.066981132", "Sales Tax": "0.053207547", "Property Tax": "0.021320755"},
-      "old": {"Income Tax": "0.033779477", "Unemployment Insurance Tax": "0.056564691", "Sales Tax": "0.037762906", "Property Tax": "0.018005099"}
-    },
-    {
       "name": "Distribution Center",
       "tier": "tier2",
       "new": {"Income Tax": "0.013582343", "Unemployment Insurance Tax": "0.056027165", "Sales Tax": "0.055178268", "Property Tax": "0.124787776"},
@@ -522,12 +528,6 @@
       "tier": "tier2",
       "new": {"Income Tax": "0.03345021", "Unemployment Insurance Tax": "0.036816269", "Sales Tax": "0.081767181", "Property Tax": "0.01654979"},
       "old": {"Income Tax": "0.057099622", "Unemployment Insurance Tax": "0.027540984", "Sales Tax": "0.053770492", "Property Tax": "0.009382093"}
-    },
-    {
-      "name": "R&D Headquarters",
-      "tier": "tier1",
-      "new": {"Income Tax": "-0.154205607", "Unemployment Insurance Tax": "0.070872274", "Sales Tax": "0.037383178", "Property Tax": "0.039719626"},
-      "old": {"Income Tax": "-0.095615104", "Unemployment Insurance Tax": "0.055420219", "Sales Tax": "0.018270402", "Property Tax": "0.031059683"}
     },
     {
       "name": "Retail Store",
@@ -543,6 +543,18 @@
   "tier2": "Coeur d'Alene",
   "firms": [
     {
+      "name": "Corporate Headquarters",
+      "tier": "tier1",
+      "new": {"Income Tax": "0.036421966", "Unemployment Insurance Tax": "0.036044537", "Sales Tax": "0.046423854", "Property Tax": "0.050009436"},
+      "old": {"Income Tax": "0.04940239", "Unemployment Insurance Tax": "0.030438247", "Sales Tax": "0.029641434", "Property Tax": "0.027729084"}
+    },
+    {
+      "name": "R&D Headquarters",
+      "tier": "tier1",
+      "new": {"Income Tax": "0.01399689", "Unemployment Insurance Tax": "0.037325039", "Sales Tax": "0.014774495", "Property Tax": "0.084758942"},
+      "old": {"Income Tax": "0.034692635", "Unemployment Insurance Tax": "0.029214851", "Sales Tax": "0.009738284", "Property Tax": "0.048691418"}
+    },
+    {
       "name": "Call Center",
       "tier": "tier2",
       "new": {"Income Tax": "0.033853302", "Unemployment Insurance Tax": "0.130766678", "Sales Tax": "0.047129107", "Property Tax": "0.095585795"},
@@ -555,12 +567,6 @@
       "old": {"Income Tax": "0.08080874", "Unemployment Insurance Tax": "0.00626121", "Sales Tax": "0.008315669", "Property Tax": "0.043828469"}
     },
     {
-      "name": "Corporate Headquarters",
-      "tier": "tier1",
-      "new": {"Income Tax": "0.036421966", "Unemployment Insurance Tax": "0.036044537", "Sales Tax": "0.046423854", "Property Tax": "0.050009436"},
-      "old": {"Income Tax": "0.04940239", "Unemployment Insurance Tax": "0.030438247", "Sales Tax": "0.029641434", "Property Tax": "0.027729084"}
-    },
-    {
       "name": "Distribution Center",
       "tier": "tier2",
       "new": {"Income Tax": "0.018251273", "Unemployment Insurance Tax": "0.033106961", "Sales Tax": "0.06196944", "Property Tax": "0.222835314"},
@@ -571,12 +577,6 @@
       "tier": "tier2",
       "new": {"Income Tax": "0.042569605", "Unemployment Insurance Tax": "0.019356196", "Sales Tax": "0.026439442", "Property Tax": "0.026509573"},
       "old": {"Income Tax": "0.065674653", "Unemployment Insurance Tax": "0.014476671", "Sales Tax": "0.017906683", "Property Tax": "0.018663304"}
-    },
-    {
-      "name": "R&D Headquarters",
-      "tier": "tier1",
-      "new": {"Income Tax": "0.01399689", "Unemployment Insurance Tax": "0.037325039", "Sales Tax": "0.014774495", "Property Tax": "0.084758942"},
-      "old": {"Income Tax": "0.034692635", "Unemployment Insurance Tax": "0.029214851", "Sales Tax": "0.009738284", "Property Tax": "0.048691418"}
     },
     {
       "name": "Retail Store",
@@ -592,6 +592,18 @@
   "tier2": "Springfield",
   "firms": [
     {
+      "name": "Corporate Headquarters",
+      "tier": "tier1",
+      "new": {"Income Tax": "0.008490566", "Unemployment Insurance Tax": "0.020188679", "Sales Tax": "0.071509434", "Property Tax": "0.04245283"},
+      "old": {"Income Tax": "0.084926705", "Unemployment Insurance Tax": "0.017049076", "Sales Tax": "0.045729764", "Property Tax": "0.03585086"}
+    },
+    {
+      "name": "R&D Headquarters",
+      "tier": "tier1",
+      "new": {"Income Tax": "0.00311284", "Unemployment Insurance Tax": "0.021011673", "Sales Tax": "0.06692607", "Property Tax": "0.078599222"},
+      "old": {"Income Tax": "0.037127206", "Unemployment Insurance Tax": "0.016433354", "Sales Tax": "0.029823494", "Property Tax": "0.061472915"}
+    },
+    {
       "name": "Call Center",
       "tier": "tier2",
       "new": {"Income Tax": "0.004646532", "Unemployment Insurance Tax": "0.106538334", "Sales Tax": "0.070693661", "Property Tax": "0.111184866"},
@@ -604,12 +616,6 @@
       "old": {"Income Tax": "0.108755911", "Unemployment Insurance Tax": "0.00348932", "Sales Tax": "0.015392141", "Property Tax": "0.014805152"}
     },
     {
-      "name": "Corporate Headquarters",
-      "tier": "tier1",
-      "new": {"Income Tax": "0.008490566", "Unemployment Insurance Tax": "0.020188679", "Sales Tax": "0.071509434", "Property Tax": "0.04245283"},
-      "old": {"Income Tax": "0.084926705", "Unemployment Insurance Tax": "0.017049076", "Sales Tax": "0.045729764", "Property Tax": "0.03585086"}
-    },
-    {
       "name": "Distribution Center",
       "tier": "tier2",
       "new": {"Income Tax": "0.018683652", "Unemployment Insurance Tax": "0.021656051", "Sales Tax": "0.092993631", "Property Tax": "0.121868365"},
@@ -620,12 +626,6 @@
       "tier": "tier2",
       "new": {"Income Tax": "0.030857704", "Unemployment Insurance Tax": "0.010800196", "Sales Tax": "0.042639736", "Property Tax": "0.016130163"},
       "old": {"Income Tax": "0.084081509", "Unemployment Insurance Tax": "0.00812065", "Sales Tax": "0.029103198", "Property Tax": "0.022899223"}
-    },
-    {
-      "name": "R&D Headquarters",
-      "tier": "tier1",
-      "new": {"Income Tax": "0.00311284", "Unemployment Insurance Tax": "0.021011673", "Sales Tax": "0.06692607", "Property Tax": "0.078599222"},
-      "old": {"Income Tax": "0.037127206", "Unemployment Insurance Tax": "0.016433354", "Sales Tax": "0.029823494", "Property Tax": "0.061472915"}
     },
     {
       "name": "Retail Store",
@@ -641,6 +641,18 @@
   "tier2": "Elkhart",
   "firms": [
     {
+      "name": "Corporate Headquarters",
+      "tier": "tier1",
+      "new": {"Income Tax": "-0.005849057", "Unemployment Insurance Tax": "0.009056604", "Sales Tax": "0.054150943", "Property Tax": "0.028867925"},
+      "old": {"Income Tax": "0.063884021", "Unemployment Insurance Tax": "0.007646965", "Sales Tax": "0.034570655", "Property Tax": "0.022144336"}
+    },
+    {
+      "name": "R&D Headquarters",
+      "tier": "tier1",
+      "new": {"Income Tax": "-0.062208398", "Unemployment Insurance Tax": "0.00933126", "Sales Tax": "0.017107309", "Property Tax": "0.051321928"},
+      "old": {"Income Tax": "0", "Unemployment Insurance Tax": "0.007303713", "Sales Tax": "0.011564212", "Property Tax": "0.038953135"}
+    },
+    {
       "name": "Call Center",
       "tier": "tier2",
       "new": {"Income Tax": "-0.09459011", "Unemployment Insurance Tax": "0.047461002", "Sales Tax": "0.05509459", "Property Tax": "0.171257883"},
@@ -653,12 +665,6 @@
       "old": {"Income Tax": "0.080286972", "Unemployment Insurance Tax": "0.001565302", "Sales Tax": "0.010533181", "Property Tax": "0.099690201"}
     },
     {
-      "name": "Corporate Headquarters",
-      "tier": "tier1",
-      "new": {"Income Tax": "-0.005849057", "Unemployment Insurance Tax": "0.009056604", "Sales Tax": "0.054150943", "Property Tax": "0.028867925"},
-      "old": {"Income Tax": "0.063884021", "Unemployment Insurance Tax": "0.007646965", "Sales Tax": "0.034570655", "Property Tax": "0.022144336"}
-    },
-    {
       "name": "Distribution Center",
       "tier": "tier2",
       "new": {"Income Tax": "-0.026326964", "Unemployment Insurance Tax": "0.009766454", "Sales Tax": "0.072611465", "Property Tax": "0.222929936"},
@@ -669,12 +675,6 @@
       "tier": "tier2",
       "new": {"Income Tax": "-0.011852164", "Unemployment Insurance Tax": "0.004768918", "Sales Tax": "0.031629147", "Property Tax": "0.051897047"},
       "old": {"Income Tax": "0.067134066", "Unemployment Insurance Tax": "0.003581156", "Sales Tax": "0.021486936", "Property Tax": "0.042570362"}
-    },
-    {
-      "name": "R&D Headquarters",
-      "tier": "tier1",
-      "new": {"Income Tax": "-0.062208398", "Unemployment Insurance Tax": "0.00933126", "Sales Tax": "0.017107309", "Property Tax": "0.051321928"},
-      "old": {"Income Tax": "0", "Unemployment Insurance Tax": "0.007303713", "Sales Tax": "0.011564212", "Property Tax": "0.038953135"}
     },
     {
       "name": "Retail Store",
@@ -690,6 +690,18 @@
   "tier2": "Cedar Rapids",
   "firms": [
     {
+      "name": "Corporate Headquarters",
+      "tier": "tier1",
+      "new": {"Income Tax": "0.060566038", "Unemployment Insurance Tax": "0.010754717", "Sales Tax": "0.063962264", "Property Tax": "0.072830189"},
+      "old": {"Income Tax": "0.088910134", "Unemployment Insurance Tax": "0.009082218", "Sales Tax": "0.044455067", "Property Tax": "0.061504143"}
+    },
+    {
+      "name": "R&D Headquarters",
+      "tier": "tier1",
+      "new": {"Income Tax": "-0.059190031", "Unemployment Insurance Tax": "0.010903427", "Sales Tax": "0.019470405", "Property Tax": "0.135514019"},
+      "old": {"Income Tax": "-0.046285018", "Unemployment Insurance Tax": "0.008526188", "Sales Tax": "0.013398295", "Property Tax": "0.105968331"}
+    },
+    {
       "name": "Call Center",
       "tier": "tier2",
       "new": {"Income Tax": "0", "Unemployment Insurance Tax": "0.050779954", "Sales Tax": "0.061732493", "Property Tax": "0.158977763"},
@@ -702,12 +714,6 @@
       "old": {"Income Tax": "0.0008479", "Unemployment Insurance Tax": "0.001858857", "Sales Tax": "0.015425254", "Property Tax": "0.021197495"}
     },
     {
-      "name": "Corporate Headquarters",
-      "tier": "tier1",
-      "new": {"Income Tax": "0.060566038", "Unemployment Insurance Tax": "0.010754717", "Sales Tax": "0.063962264", "Property Tax": "0.072830189"},
-      "old": {"Income Tax": "0.088910134", "Unemployment Insurance Tax": "0.009082218", "Sales Tax": "0.044455067", "Property Tax": "0.061504143"}
-    },
-    {
       "name": "Distribution Center",
       "tier": "tier2",
       "new": {"Income Tax": "0", "Unemployment Insurance Tax": "0.011464968", "Sales Tax": "0.086199575", "Property Tax": "0.318471338"},
@@ -718,12 +724,6 @@
       "tier": "tier2",
       "new": {"Income Tax": "0", "Unemployment Insurance Tax": "0.005750754", "Sales Tax": "0.046917736", "Property Tax": "0.043200785"},
       "old": {"Income Tax": "0.000605266", "Unemployment Insurance Tax": "0.004337738", "Sales Tax": "0.033188742", "Property Tax": "0.032785232"}
-    },
-    {
-      "name": "R&D Headquarters",
-      "tier": "tier1",
-      "new": {"Income Tax": "-0.059190031", "Unemployment Insurance Tax": "0.010903427", "Sales Tax": "0.019470405", "Property Tax": "0.135514019"},
-      "old": {"Income Tax": "-0.046285018", "Unemployment Insurance Tax": "0.008526188", "Sales Tax": "0.013398295", "Property Tax": "0.105968331"}
     },
     {
       "name": "Retail Store",
@@ -739,6 +739,18 @@
   "tier2": "Topeka",
   "firms": [
     {
+      "name": "Corporate Headquarters",
+      "tier": "tier1",
+      "new": {"Income Tax": "-0.077169811", "Unemployment Insurance Tax": "0.012075472", "Sales Tax": "0.063584906", "Property Tax": "0.051698113"},
+      "old": {"Income Tax": "0.041108987", "Unemployment Insurance Tax": "0.010197578", "Sales Tax": "0.042383684", "Property Tax": "0.043658381"}
+    },
+    {
+      "name": "R&D Headquarters",
+      "tier": "tier1",
+      "new": {"Income Tax": "-0.073151751", "Unemployment Insurance Tax": "0.012451362", "Sales Tax": "0.054474708", "Property Tax": "0.095719844"},
+      "old": {"Income Tax": "0.059038344", "Unemployment Insurance Tax": "0.009738284", "Sales Tax": "0.024954352", "Property Tax": "0.074863055"}
+    },
+    {
       "name": "Call Center",
       "tier": "tier2",
       "new": {"Income Tax": "0.04711347", "Unemployment Insurance Tax": "0.063702721", "Sales Tax": "0.072660916", "Property Tax": "0.135700066"},
@@ -751,12 +763,6 @@
       "old": {"Income Tax": "0.077871258", "Unemployment Insurance Tax": "0.002087002", "Sales Tax": "0.015065545", "Property Tax": "0.018130829"}
     },
     {
-      "name": "Corporate Headquarters",
-      "tier": "tier1",
-      "new": {"Income Tax": "-0.077169811", "Unemployment Insurance Tax": "0.012075472", "Sales Tax": "0.063584906", "Property Tax": "0.051698113"},
-      "old": {"Income Tax": "0.041108987", "Unemployment Insurance Tax": "0.010197578", "Sales Tax": "0.042383684", "Property Tax": "0.043658381"}
-    },
-    {
       "name": "Distribution Center",
       "tier": "tier2",
       "new": {"Income Tax": "0.022505308", "Unemployment Insurance Tax": "0.012738854", "Sales Tax": "0.097664544", "Property Tax": "0.372399151"},
@@ -767,12 +773,6 @@
       "tier": "tier2",
       "new": {"Income Tax": "-0.038361736", "Unemployment Insurance Tax": "0.006452065", "Sales Tax": "0.046847605", "Property Tax": "0.019776983"},
       "old": {"Income Tax": "0.061131847", "Unemployment Insurance Tax": "0.004842127", "Sales Tax": "0.03243216", "Property Tax": "0.028043983"}
-    },
-    {
-      "name": "R&D Headquarters",
-      "tier": "tier1",
-      "new": {"Income Tax": "-0.073151751", "Unemployment Insurance Tax": "0.012451362", "Sales Tax": "0.054474708", "Property Tax": "0.095719844"},
-      "old": {"Income Tax": "0.059038344", "Unemployment Insurance Tax": "0.009738284", "Sales Tax": "0.024954352", "Property Tax": "0.074863055"}
     },
     {
       "name": "Retail Store",
@@ -788,6 +788,18 @@
   "tier2": "Lexington",
   "firms": [
     {
+      "name": "Corporate Headquarters",
+      "tier": "tier1",
+      "new": {"Income Tax": "-0.016415094", "Unemployment Insurance Tax": "0.009433962", "Sales Tax": "0.046415094", "Property Tax": "0.031886792"},
+      "old": {"Income Tax": "0.056564691", "Unemployment Insurance Tax": "0.007966858", "Sales Tax": "0.029636711", "Property Tax": "0.018164436"}
+    },
+    {
+      "name": "R&D Headquarters",
+      "tier": "tier1",
+      "new": {"Income Tax": "-0.032684825", "Unemployment Insurance Tax": "0.010116732", "Sales Tax": "0.043579767", "Property Tax": "0.055252918"},
+      "old": {"Income Tax": "0.07364577", "Unemployment Insurance Tax": "0.007912355", "Sales Tax": "0.019476567", "Property Tax": "0.032258065"}
+    },
+    {
       "name": "Call Center",
       "tier": "tier2",
       "new": {"Income Tax": "-0.135036496", "Unemployment Insurance Tax": "0.050099536", "Sales Tax": "0.04711347", "Property Tax": "0.070006636"},
@@ -800,12 +812,6 @@
       "old": {"Income Tax": "0.05025437", "Unemployment Insurance Tax": "0.001630577", "Sales Tax": "0.018686408", "Property Tax": "0.032839812"}
     },
     {
-      "name": "Corporate Headquarters",
-      "tier": "tier1",
-      "new": {"Income Tax": "-0.016415094", "Unemployment Insurance Tax": "0.009433962", "Sales Tax": "0.046415094", "Property Tax": "0.031886792"},
-      "old": {"Income Tax": "0.056564691", "Unemployment Insurance Tax": "0.007966858", "Sales Tax": "0.029636711", "Property Tax": "0.018164436"}
-    },
-    {
       "name": "Distribution Center",
       "tier": "tier2",
       "new": {"Income Tax": "0.003397028", "Unemployment Insurance Tax": "0.010191083", "Sales Tax": "0.061995754", "Property Tax": "0.171549894"},
@@ -816,12 +822,6 @@
       "tier": "tier2",
       "new": {"Income Tax": "-0.00610141", "Unemployment Insurance Tax": "0.005049442", "Sales Tax": "0.030156392", "Property Tax": "0.036187671"},
       "old": {"Income Tax": "0.041057198", "Unemployment Insurance Tax": "0.003782911", "Sales Tax": "0.021234742", "Property Tax": "0.014223747"}
-    },
-    {
-      "name": "R&D Headquarters",
-      "tier": "tier1",
-      "new": {"Income Tax": "-0.032684825", "Unemployment Insurance Tax": "0.010116732", "Sales Tax": "0.043579767", "Property Tax": "0.055252918"},
-      "old": {"Income Tax": "0.07364577", "Unemployment Insurance Tax": "0.007912355", "Sales Tax": "0.019476567", "Property Tax": "0.032258065"}
     },
     {
       "name": "Retail Store",
@@ -837,6 +837,18 @@
   "tier2": "Shreveport",
   "firms": [
     {
+      "name": "Corporate Headquarters",
+      "tier": "tier1",
+      "new": {"Income Tax": "-0.092264151", "Unemployment Insurance Tax": "0.005660377", "Sales Tax": "0.08", "Property Tax": "0.058301887"},
+      "old": {"Income Tax": "0.047004461", "Unemployment Insurance Tax": "0.004780115", "Sales Tax": "0.053218611", "Property Tax": "0.032345443"}
+    },
+    {
+      "name": "R&D Headquarters",
+      "tier": "tier1",
+      "new": {"Income Tax": "-0.277258567", "Unemployment Insurance Tax": "0.005451713", "Sales Tax": "0.068535826", "Property Tax": "0.10046729"},
+      "old": {"Income Tax": "-0.075517661", "Unemployment Insurance Tax": "0.004263094", "Sales Tax": "0.031668697", "Property Tax": "0.057856273"}
+    },
+    {
       "name": "Call Center",
       "tier": "tier2",
       "new": {"Income Tax": "0.059057731", "Unemployment Insurance Tax": "0.02986065", "Sales Tax": "0.071001991", "Property Tax": "0.151957532"},
@@ -849,12 +861,6 @@
       "old": {"Income Tax": "-0.042458829", "Unemployment Insurance Tax": "0.000978314", "Sales Tax": "0.014902984", "Property Tax": "0.111951737"}
     },
     {
-      "name": "Corporate Headquarters",
-      "tier": "tier1",
-      "new": {"Income Tax": "-0.092264151", "Unemployment Insurance Tax": "0.005660377", "Sales Tax": "0.08", "Property Tax": "0.058301887"},
-      "old": {"Income Tax": "0.047004461", "Unemployment Insurance Tax": "0.004780115", "Sales Tax": "0.053218611", "Property Tax": "0.032345443"}
-    },
-    {
       "name": "Distribution Center",
       "tier": "tier2",
       "new": {"Income Tax": "-0.022080679", "Unemployment Insurance Tax": "0.005944798", "Sales Tax": "0.095541401", "Property Tax": "0.343949045"},
@@ -865,12 +871,6 @@
       "tier": "tier2",
       "new": {"Income Tax": "-0.074339014", "Unemployment Insurance Tax": "0.003015639", "Sales Tax": "0.0459359", "Property Tax": "0.006872852"},
       "old": {"Income Tax": "-0.001513165", "Unemployment Insurance Tax": "0.002269747", "Sales Tax": "0.031826894", "Property Tax": "0.030565924"}
-    },
-    {
-      "name": "R&D Headquarters",
-      "tier": "tier1",
-      "new": {"Income Tax": "-0.277258567", "Unemployment Insurance Tax": "0.005451713", "Sales Tax": "0.068535826", "Property Tax": "0.10046729"},
-      "old": {"Income Tax": "-0.075517661", "Unemployment Insurance Tax": "0.004263094", "Sales Tax": "0.031668697", "Property Tax": "0.057856273"}
     },
     {
       "name": "Retail Store",
@@ -886,6 +886,18 @@
   "tier2": "Bangor",
   "firms": [
     {
+      "name": "Corporate Headquarters",
+      "tier": "tier1",
+      "new": {"Income Tax": "0.071886792", "Unemployment Insurance Tax": "0.014339623", "Sales Tax": "0.04", "Property Tax": "0.035660377"},
+      "old": {"Income Tax": "0.081102613", "Unemployment Insurance Tax": "0.012109624", "Sales Tax": "0.025015934", "Property Tax": "0.032664117"}
+    },
+    {
+      "name": "R&D Headquarters",
+      "tier": "tier1",
+      "new": {"Income Tax": "-0.009345794", "Unemployment Insurance Tax": "0.014797508", "Sales Tax": "0.012461059", "Property Tax": "0.065420561"},
+      "old": {"Income Tax": "0", "Unemployment Insurance Tax": "0.011571255", "Sales Tax": "0.008526188", "Property Tax": "0.057856273"}
+    },
+    {
       "name": "Call Center",
       "tier": "tier2",
       "new": {"Income Tax": "-0.016594756", "Unemployment Insurance Tax": "0.076003983", "Sales Tax": "0.041154995", "Property Tax": "0.091603053"},
@@ -898,12 +910,6 @@
       "old": {"Income Tax": "0.106049242", "Unemployment Insurance Tax": "0.002478396", "Sales Tax": "0.007206913", "Property Tax": "0.060459808"}
     },
     {
-      "name": "Corporate Headquarters",
-      "tier": "tier1",
-      "new": {"Income Tax": "0.071886792", "Unemployment Insurance Tax": "0.014339623", "Sales Tax": "0.04", "Property Tax": "0.035660377"},
-      "old": {"Income Tax": "0.081102613", "Unemployment Insurance Tax": "0.012109624", "Sales Tax": "0.025015934", "Property Tax": "0.032664117"}
-    },
-    {
       "name": "Distribution Center",
       "tier": "tier2",
       "new": {"Income Tax": "-0.00382328", "Unemployment Insurance Tax": "0.015293118", "Sales Tax": "0.05480034", "Property Tax": "0.246389125"},
@@ -914,12 +920,6 @@
       "tier": "tier2",
       "new": {"Income Tax": "0.048180097", "Unemployment Insurance Tax": "0.007714426", "Sales Tax": "0.022582229", "Property Tax": "0.036047409"},
       "old": {"Income Tax": "0.087364439", "Unemployment Insurance Tax": "0.005750315", "Sales Tax": "0.015233291", "Property Tax": "0.025825977"}
-    },
-    {
-      "name": "R&D Headquarters",
-      "tier": "tier1",
-      "new": {"Income Tax": "-0.009345794", "Unemployment Insurance Tax": "0.014797508", "Sales Tax": "0.012461059", "Property Tax": "0.065420561"},
-      "old": {"Income Tax": "0", "Unemployment Insurance Tax": "0.011571255", "Sales Tax": "0.008526188", "Property Tax": "0.057856273"}
     },
     {
       "name": "Retail Store",
@@ -935,6 +935,18 @@
   "tier2": "Salisbury",
   "firms": [
     {
+      "name": "Corporate Headquarters",
+      "tier": "tier1",
+      "new": {"Income Tax": "0.048490566", "Unemployment Insurance Tax": "0.008301887", "Sales Tax": "0.046415094", "Property Tax": "0.074716981"},
+      "old": {"Income Tax": "0.056086679", "Unemployment Insurance Tax": "0.007010835", "Sales Tax": "0.029636711", "Property Tax": "0.033460803"}
+    },
+    {
+      "name": "R&D Headquarters",
+      "tier": "tier1",
+      "new": {"Income Tax": "0.008560311", "Unemployment Insurance Tax": "0.008560311", "Sales Tax": "0.014785992", "Property Tax": "0.073151751"},
+      "old": {"Income Tax": "0.017041996", "Unemployment Insurance Tax": "0.00669507", "Sales Tax": "0.009738284", "Property Tax": "0.045648205"}
+    },
+    {
       "name": "Call Center",
       "tier": "tier2",
       "new": {"Income Tax": "0.01658925", "Unemployment Insurance Tax": "0.044127405", "Sales Tax": "0.04711347", "Property Tax": "0.136363636"},
@@ -947,12 +959,6 @@
       "old": {"Income Tax": "0.001793576", "Unemployment Insurance Tax": "0.001434861", "Sales Tax": "0.009457036", "Property Tax": "0.090200554"}
     },
     {
-      "name": "Corporate Headquarters",
-      "tier": "tier1",
-      "new": {"Income Tax": "0.048490566", "Unemployment Insurance Tax": "0.008301887", "Sales Tax": "0.046415094", "Property Tax": "0.074716981"},
-      "old": {"Income Tax": "0.056086679", "Unemployment Insurance Tax": "0.007010835", "Sales Tax": "0.029636711", "Property Tax": "0.033460803"}
-    },
-    {
       "name": "Distribution Center",
       "tier": "tier2",
       "new": {"Income Tax": "0.015717927", "Unemployment Insurance Tax": "0.008920986", "Sales Tax": "0.06202209", "Property Tax": "0.285471538"},
@@ -963,12 +969,6 @@
       "tier": "tier2",
       "new": {"Income Tax": "0", "Unemployment Insurance Tax": "0.004488393", "Sales Tax": "0.027631671", "Property Tax": "0.094256259"},
       "old": {"Income Tax": "0.001513241", "Unemployment Insurance Tax": "0.00332913", "Sales Tax": "0.018814628", "Property Tax": "0.025725095"}
-    },
-    {
-      "name": "R&D Headquarters",
-      "tier": "tier1",
-      "new": {"Income Tax": "0.008560311", "Unemployment Insurance Tax": "0.008560311", "Sales Tax": "0.014785992", "Property Tax": "0.073151751"},
-      "old": {"Income Tax": "0.017041996", "Unemployment Insurance Tax": "0.00669507", "Sales Tax": "0.009738284", "Property Tax": "0.045648205"}
     },
     {
       "name": "Retail Store",
@@ -984,6 +984,18 @@
   "tier2": "Worcester",
   "firms": [
     {
+      "name": "Corporate Headquarters",
+      "tier": "tier1",
+      "new": {"Income Tax": "0.029816947", "Unemployment Insurance Tax": "0.020569919", "Sales Tax": "0.048311002", "Property Tax": "0.092092848"},
+      "old": {"Income Tax": "0.052589641", "Unemployment Insurance Tax": "0.017370518", "Sales Tax": "0.030916335", "Property Tax": "0.052589641"}
+    },
+    {
+      "name": "R&D Headquarters",
+      "tier": "tier1",
+      "new": {"Income Tax": "0", "Unemployment Insurance Tax": "0.021028037", "Sales Tax": "0.015576324", "Property Tax": "0.158099688"},
+      "old": {"Income Tax": "0.017661389", "Unemployment Insurance Tax": "0.016443362", "Sales Tax": "0.010353228", "Property Tax": "0.09317905"}
+    },
+    {
       "name": "Call Center",
       "tier": "tier2",
       "new": {"Income Tax": "0.013939595", "Unemployment Insurance Tax": "0.1088616", "Sales Tax": "0.049120478", "Property Tax": "0.20677066"},
@@ -996,12 +1008,6 @@
       "old": {"Income Tax": "0.108563788", "Unemployment Insurance Tax": "0.003554657", "Sales Tax": "0.008674667", "Property Tax": "0.018621184"}
     },
     {
-      "name": "Corporate Headquarters",
-      "tier": "tier1",
-      "new": {"Income Tax": "0.029816947", "Unemployment Insurance Tax": "0.020569919", "Sales Tax": "0.048311002", "Property Tax": "0.092092848"},
-      "old": {"Income Tax": "0.052589641", "Unemployment Insurance Tax": "0.017370518", "Sales Tax": "0.030916335", "Property Tax": "0.052589641"}
-    },
-    {
       "name": "Distribution Center",
       "tier": "tier2",
       "new": {"Income Tax": "0.000424448", "Unemployment Insurance Tax": "0.022071307", "Sales Tax": "0.064516129", "Property Tax": "0.468166384"},
@@ -1012,12 +1018,6 @@
       "tier": "tier2",
       "new": {"Income Tax": "0.02693036", "Unemployment Insurance Tax": "0.011080721", "Sales Tax": "0.027491409", "Property Tax": "0.048671015"},
       "old": {"Income Tax": "0.07889029", "Unemployment Insurance Tax": "0.008272383", "Sales Tax": "0.018663304", "Property Tax": "0.028802018"}
-    },
-    {
-      "name": "R&D Headquarters",
-      "tier": "tier1",
-      "new": {"Income Tax": "0", "Unemployment Insurance Tax": "0.021028037", "Sales Tax": "0.015576324", "Property Tax": "0.158099688"},
-      "old": {"Income Tax": "0.017661389", "Unemployment Insurance Tax": "0.016443362", "Sales Tax": "0.010353228", "Property Tax": "0.09317905"}
     },
     {
       "name": "Retail Store",
@@ -1033,6 +1033,18 @@
   "tier2": "Saginaw",
   "firms": [
     {
+      "name": "Corporate Headquarters",
+      "tier": "tier1",
+      "new": {"Income Tax": "0.065283019", "Unemployment Insurance Tax": "0.009622642", "Sales Tax": "0.046415094", "Property Tax": "0.089811321"},
+      "old": {"Income Tax": "0.069949012", "Unemployment Insurance Tax": "0.008126195", "Sales Tax": "0.029636711", "Property Tax": "0.052899936"}
+    },
+    {
+      "name": "R&D Headquarters",
+      "tier": "tier1",
+      "new": {"Income Tax": "0.016342412", "Unemployment Insurance Tax": "0.010116732", "Sales Tax": "0.014785992", "Property Tax": "0.155642023"},
+      "old": {"Income Tax": "0.018867925", "Unemployment Insurance Tax": "0.007912355", "Sales Tax": "0.009738284", "Property Tax": "0.093122337"}
+    },
+    {
       "name": "Call Center",
       "tier": "tier2",
       "new": {"Income Tax": "0.011948224", "Unemployment Insurance Tax": "0.051111849", "Sales Tax": "0.047129107", "Property Tax": "0.154663126"},
@@ -1045,12 +1057,6 @@
       "old": {"Income Tax": "0.01327246", "Unemployment Insurance Tax": "0.001663134", "Sales Tax": "0.008315669", "Property Tax": "0.06202511"}
     },
     {
-      "name": "Corporate Headquarters",
-      "tier": "tier1",
-      "new": {"Income Tax": "0.065283019", "Unemployment Insurance Tax": "0.009622642", "Sales Tax": "0.046415094", "Property Tax": "0.089811321"},
-      "old": {"Income Tax": "0.069949012", "Unemployment Insurance Tax": "0.008126195", "Sales Tax": "0.029636711", "Property Tax": "0.052899936"}
-    },
-    {
       "name": "Distribution Center",
       "tier": "tier2",
       "new": {"Income Tax": "0.005947324", "Unemployment Insurance Tax": "0.010195412", "Sales Tax": "0.06202209", "Property Tax": "0.371707732"},
@@ -1061,12 +1067,6 @@
       "tier": "tier2",
       "new": {"Income Tax": "0.009117049", "Unemployment Insurance Tax": "0.005189705", "Sales Tax": "0.026439442", "Property Tax": "0.040956589"},
       "old": {"Income Tax": "0.010894235", "Unemployment Insurance Tax": "0.003883593", "Sales Tax": "0.017904877", "Property Tax": "0.030564382"}
-    },
-    {
-      "name": "R&D Headquarters",
-      "tier": "tier1",
-      "new": {"Income Tax": "0.016342412", "Unemployment Insurance Tax": "0.010116732", "Sales Tax": "0.014785992", "Property Tax": "0.155642023"},
-      "old": {"Income Tax": "0.018867925", "Unemployment Insurance Tax": "0.007912355", "Sales Tax": "0.009738284", "Property Tax": "0.093122337"}
     },
     {
       "name": "Retail Store",
@@ -1082,6 +1082,18 @@
   "tier2": "Rochester",
   "firms": [
     {
+      "name": "Corporate Headquarters",
+      "tier": "tier1",
+      "new": {"Income Tax": "0.08", "Unemployment Insurance Tax": "0.038490566", "Sales Tax": "0.060188679", "Property Tax": "0.071698113"},
+      "old": {"Income Tax": "0.083811345", "Unemployment Insurance Tax": "0.03250478", "Sales Tax": "0.038400255", "Property Tax": "0.06054812"}
+    },
+    {
+      "name": "R&D Headquarters",
+      "tier": "tier1",
+      "new": {"Income Tax": "-0.085603113", "Unemployment Insurance Tax": "0.039688716", "Sales Tax": "0.019455253", "Property Tax": "0.13307393"},
+      "old": {"Income Tax": "-0.066342057", "Unemployment Insurance Tax": "0.031040779", "Sales Tax": "0.012781497", "Property Tax": "0.104077906"}
+    },
+    {
       "name": "Call Center",
       "tier": "tier2",
       "new": {"Income Tax": "0.002655161", "Unemployment Insurance Tax": "0.16395619", "Sales Tax": "0.059741122", "Property Tax": "0.153003651"},
@@ -1094,12 +1106,6 @@
       "old": {"Income Tax": "0.00234803", "Unemployment Insurance Tax": "0.006652752", "Sales Tax": "0.010566136", "Property Tax": "0.020382207"}
     },
     {
-      "name": "Corporate Headquarters",
-      "tier": "tier1",
-      "new": {"Income Tax": "0.08", "Unemployment Insurance Tax": "0.038490566", "Sales Tax": "0.060188679", "Property Tax": "0.071698113"},
-      "old": {"Income Tax": "0.083811345", "Unemployment Insurance Tax": "0.03250478", "Sales Tax": "0.038400255", "Property Tax": "0.06054812"}
-    },
-    {
       "name": "Distribution Center",
       "tier": "tier2",
       "new": {"Income Tax": "0.001699235", "Unemployment Insurance Tax": "0.041206457", "Sales Tax": "0.079014444", "Property Tax": "0.334324554"},
@@ -1110,12 +1116,6 @@
       "tier": "tier2",
       "new": {"Income Tax": "0.001963672", "Unemployment Insurance Tax": "0.020618557", "Sales Tax": "0.033592819", "Property Tax": "0.041587769"},
       "old": {"Income Tax": "0.002068096", "Unemployment Insurance Tax": "0.015435057", "Sales Tax": "0.022749054", "Property Tax": "0.031525851"}
-    },
-    {
-      "name": "R&D Headquarters",
-      "tier": "tier1",
-      "new": {"Income Tax": "-0.085603113", "Unemployment Insurance Tax": "0.039688716", "Sales Tax": "0.019455253", "Property Tax": "0.13307393"},
-      "old": {"Income Tax": "-0.066342057", "Unemployment Insurance Tax": "0.031040779", "Sales Tax": "0.012781497", "Property Tax": "0.104077906"}
     },
     {
       "name": "Retail Store",
@@ -1131,6 +1131,18 @@
   "tier2": "Gulfport",
   "firms": [
     {
+      "name": "Corporate Headquarters",
+      "tier": "tier1",
+      "new": {"Income Tax": "-0.009622642", "Unemployment Insurance Tax": "0.006037736", "Sales Tax": "0.071132075", "Property Tax": "0.045283019"},
+      "old": {"Income Tax": "0.054493308", "Unemployment Insurance Tax": "0.005098789", "Sales Tax": "0.047323136", "Property Tax": "0.034098152"}
+    },
+    {
+      "name": "R&D Headquarters",
+      "tier": "tier1",
+      "new": {"Income Tax": "-0.020233463", "Unemployment Insurance Tax": "0.006225681", "Sales Tax": "0.021789883", "Property Tax": "0.080933852"},
+      "old": {"Income Tax": "0.043822276", "Unemployment Insurance Tax": "0.004869142", "Sales Tax": "0.014607425", "Property Tax": "0.060864273"}
+    },
+    {
       "name": "Call Center",
       "tier": "tier2",
       "new": {"Income Tax": "-0.069343066", "Unemployment Insurance Tax": "0.032183145", "Sales Tax": "0.057730591", "Property Tax": "0.089581951"},
@@ -1143,12 +1155,6 @@
       "old": {"Income Tax": "0.077452387", "Unemployment Insurance Tax": "0.001043569", "Sales Tax": "0.015457866", "Property Tax": "0.083615967"}
     },
     {
-      "name": "Corporate Headquarters",
-      "tier": "tier1",
-      "new": {"Income Tax": "-0.009622642", "Unemployment Insurance Tax": "0.006037736", "Sales Tax": "0.071132075", "Property Tax": "0.045283019"},
-      "old": {"Income Tax": "0.054493308", "Unemployment Insurance Tax": "0.005098789", "Sales Tax": "0.047323136", "Property Tax": "0.034098152"}
-    },
-    {
       "name": "Distribution Center",
       "tier": "tier2",
       "new": {"Income Tax": "0.007218684", "Unemployment Insurance Tax": "0.006369427", "Sales Tax": "0.078131635", "Property Tax": "0.108280255"},
@@ -1159,12 +1165,6 @@
       "tier": "tier2",
       "new": {"Income Tax": "0.015639245", "Unemployment Insurance Tax": "0.003226033", "Sales Tax": "0.042779999", "Property Tax": "0.026299179"},
       "old": {"Income Tax": "0.058713745", "Unemployment Insurance Tax": "0.002421185", "Sales Tax": "0.027288777", "Property Tax": "0.023656999"}
-    },
-    {
-      "name": "R&D Headquarters",
-      "tier": "tier1",
-      "new": {"Income Tax": "-0.020233463", "Unemployment Insurance Tax": "0.006225681", "Sales Tax": "0.021789883", "Property Tax": "0.080933852"},
-      "old": {"Income Tax": "0.043822276", "Unemployment Insurance Tax": "0.004869142", "Sales Tax": "0.014607425", "Property Tax": "0.060864273"}
     },
     {
       "name": "Retail Store",
@@ -1180,6 +1180,18 @@
   "tier2": "Joplin",
   "firms": [
     {
+      "name": "Corporate Headquarters",
+      "tier": "tier1",
+      "new": {"Income Tax": "-0.047735849", "Unemployment Insurance Tax": "0.017169811", "Sales Tax": "0.066981132", "Property Tax": "0.065283019"},
+      "old": {"Income Tax": "0.041746335", "Unemployment Insurance Tax": "0.014499681", "Sales Tax": "0.042861695", "Property Tax": "0.049235182"}
+    },
+    {
+      "name": "R&D Headquarters",
+      "tier": "tier1",
+      "new": {"Income Tax": "0.007003891", "Unemployment Insurance Tax": "0.017898833", "Sales Tax": "0.042801556", "Property Tax": "0.116731518"},
+      "old": {"Income Tax": "0.056603774", "Unemployment Insurance Tax": "0.013998783", "Sales Tax": "0.021302495", "Property Tax": "0.087644553"}
+    },
+    {
       "name": "Call Center",
       "tier": "tier2",
       "new": {"Income Tax": "0.036508463", "Unemployment Insurance Tax": "0.090939263", "Sales Tax": "0.062064388", "Property Tax": "0.133421839"},
@@ -1192,12 +1204,6 @@
       "old": {"Income Tax": "0.002413175", "Unemployment Insurance Tax": "0.002967553", "Sales Tax": "0.010957117", "Property Tax": "0.062155552"}
     },
     {
-      "name": "Corporate Headquarters",
-      "tier": "tier1",
-      "new": {"Income Tax": "-0.047735849", "Unemployment Insurance Tax": "0.017169811", "Sales Tax": "0.066981132", "Property Tax": "0.065283019"},
-      "old": {"Income Tax": "0.041746335", "Unemployment Insurance Tax": "0.014499681", "Sales Tax": "0.042861695", "Property Tax": "0.049235182"}
-    },
-    {
       "name": "Distribution Center",
       "tier": "tier2",
       "new": {"Income Tax": "0.032285472", "Unemployment Insurance Tax": "0.01826678", "Sales Tax": "0.081563297", "Property Tax": "0.123619371"},
@@ -1208,12 +1214,6 @@
       "tier": "tier2",
       "new": {"Income Tax": "-0.041868294", "Unemployment Insurance Tax": "0.00918718", "Sales Tax": "0.034785048", "Property Tax": "0.030366786"},
       "old": {"Income Tax": "0.001614042", "Unemployment Insurance Tax": "0.006910118", "Sales Tax": "0.023554928", "Property Tax": "0.02602643"}
-    },
-    {
-      "name": "R&D Headquarters",
-      "tier": "tier1",
-      "new": {"Income Tax": "0.007003891", "Unemployment Insurance Tax": "0.017898833", "Sales Tax": "0.042801556", "Property Tax": "0.116731518"},
-      "old": {"Income Tax": "0.056603774", "Unemployment Insurance Tax": "0.013998783", "Sales Tax": "0.021302495", "Property Tax": "0.087644553"}
     },
     {
       "name": "Retail Store",
@@ -1229,6 +1229,18 @@
   "tier2": "Missoula",
   "firms": [
     {
+      "name": "Corporate Headquarters",
+      "tier": "tier1",
+      "new": {"Income Tax": "0.040754717", "Unemployment Insurance Tax": "0.023018868", "Sales Tax": "0", "Property Tax": "0.044150943"},
+      "old": {"Income Tax": "0.041739685", "Unemployment Insurance Tax": "0.019436036", "Sales Tax": "0", "Property Tax": "0.028676119"}
+    },
+    {
+      "name": "R&D Headquarters",
+      "tier": "tier1",
+      "new": {"Income Tax": "0.036604361", "Unemployment Insurance Tax": "0.023364486", "Sales Tax": "0", "Property Tax": "0.076323988"},
+      "old": {"Income Tax": "0.060292326", "Unemployment Insurance Tax": "0.018270402", "Sales Tax": "0", "Property Tax": "0.051157125"}
+    },
+    {
       "name": "Call Center",
       "tier": "tier2",
       "new": {"Income Tax": "0.049784268", "Unemployment Insurance Tax": "0.101228012", "Sales Tax": "0", "Property Tax": "0.114503817"},
@@ -1241,12 +1253,6 @@
       "old": {"Income Tax": "0.072851785", "Unemployment Insurance Tax": "0.00489157", "Sales Tax": "0", "Property Tax": "0.067666721"}
     },
     {
-      "name": "Corporate Headquarters",
-      "tier": "tier1",
-      "new": {"Income Tax": "0.040754717", "Unemployment Insurance Tax": "0.023018868", "Sales Tax": "0", "Property Tax": "0.044150943"},
-      "old": {"Income Tax": "0.041739685", "Unemployment Insurance Tax": "0.019436036", "Sales Tax": "0", "Property Tax": "0.028676119"}
-    },
-    {
       "name": "Distribution Center",
       "tier": "tier2",
       "new": {"Income Tax": "0.039932031", "Unemployment Insurance Tax": "0.023364486", "Sales Tax": "0", "Property Tax": "0.197960918"},
@@ -1257,12 +1263,6 @@
       "tier": "tier2",
       "new": {"Income Tax": "0.047899572", "Unemployment Insurance Tax": "0.015078196", "Sales Tax": "0", "Property Tax": "0.050494425"},
       "old": {"Income Tax": "0.0607314", "Unemployment Insurance Tax": "0.011298865", "Sales Tax": "0", "Property Tax": "0.026229508"}
-    },
-    {
-      "name": "R&D Headquarters",
-      "tier": "tier1",
-      "new": {"Income Tax": "0.036604361", "Unemployment Insurance Tax": "0.023364486", "Sales Tax": "0", "Property Tax": "0.076323988"},
-      "old": {"Income Tax": "0.060292326", "Unemployment Insurance Tax": "0.018270402", "Sales Tax": "0", "Property Tax": "0.051157125"}
     },
     {
       "name": "Retail Store",
@@ -1278,6 +1278,18 @@
   "tier2": "Lincoln",
   "firms": [
     {
+      "name": "Corporate Headquarters",
+      "tier": "tier1",
+      "new": {"Income Tax": "-0.087735849", "Unemployment Insurance Tax": "0.025394511", "Sales Tax": "0.049882075", "Property Tax": "0.004534734"},
+      "old": {"Income Tax": "0.067399618", "Unemployment Insurance Tax": "0.004780115", "Sales Tax": "0.041427661", "Property Tax": "0.031230083"}
+    },
+    {
+      "name": "R&D Headquarters",
+      "tier": "tier1",
+      "new": {"Income Tax": "-0.229571984", "Unemployment Insurance Tax": "0.006225681", "Sales Tax": "0.052918288", "Property Tax": "0.096498054"},
+      "old": {"Income Tax": "-0.10712112", "Unemployment Insurance Tax": "0.004869142", "Sales Tax": "0.024345709", "Property Tax": "0.055386488"}
+    },
+    {
       "name": "Call Center",
       "tier": "tier2",
       "new": {"Income Tax": "-0.113176236", "Unemployment Insurance Tax": "0.071425325", "Sales Tax": "0.046373158", "Property Tax": "0.024252629"},
@@ -1290,12 +1302,6 @@
       "old": {"Income Tax": "0.000815262", "Unemployment Insurance Tax": "0.000978314", "Sales Tax": "0.012000652", "Property Tax": "0.061633784"}
     },
     {
-      "name": "Corporate Headquarters",
-      "tier": "tier1",
-      "new": {"Income Tax": "-0.087735849", "Unemployment Insurance Tax": "0.025394511", "Sales Tax": "0.049882075", "Property Tax": "0.004534734"},
-      "old": {"Income Tax": "0.067399618", "Unemployment Insurance Tax": "0.004780115", "Sales Tax": "0.041427661", "Property Tax": "0.031230083"}
-    },
-    {
       "name": "Distribution Center",
       "tier": "tier2",
       "new": {"Income Tax": "-0.031435854", "Unemployment Insurance Tax": "0.239209141", "Sales Tax": "0.076546925", "Property Tax": "0.005824223"},
@@ -1306,12 +1312,6 @@
       "tier": "tier2",
       "new": {"Income Tax": "-0.051616523", "Unemployment Insurance Tax": "0.030088493", "Sales Tax": "0.034582229", "Property Tax": "0.002865571"},
       "old": {"Income Tax": "0.000907945", "Unemployment Insurance Tax": "0.002269861", "Sales Tax": "0.025825977", "Property Tax": "0.026330391"}
-    },
-    {
-      "name": "R&D Headquarters",
-      "tier": "tier1",
-      "new": {"Income Tax": "-0.229571984", "Unemployment Insurance Tax": "0.006225681", "Sales Tax": "0.052918288", "Property Tax": "0.096498054"},
-      "old": {"Income Tax": "-0.10712112", "Unemployment Insurance Tax": "0.004869142", "Sales Tax": "0.024345709", "Property Tax": "0.055386488"}
     },
     {
       "name": "Retail Store",
@@ -1327,6 +1327,18 @@
   "tier2": "Reno",
   "firms": [
     {
+      "name": "Corporate Headquarters",
+      "tier": "tier1",
+      "new": {"Income Tax": "0.026231364", "Unemployment Insurance Tax": "0.030383091", "Sales Tax": "0.062653331", "Property Tax": "0.033213814"},
+      "old": {"Income Tax": "0.022151394", "Unemployment Insurance Tax": "0.025657371", "Sales Tax": "0.04", "Property Tax": "0.018486056"}
+    },
+    {
+      "name": "R&D Headquarters",
+      "tier": "tier1",
+      "new": {"Income Tax": "0.031152648", "Unemployment Insurance Tax": "0.031152648", "Sales Tax": "0.059190031", "Property Tax": "0.056853583"},
+      "old": {"Income Tax": "0.024360536", "Unemployment Insurance Tax": "0.024360536", "Sales Tax": "0.02679659", "Property Tax": "0.032886724"}
+    },
+    {
       "name": "Call Center",
       "tier": "tier2",
       "new": {"Income Tax": "0.058745436", "Unemployment Insurance Tax": "0.138732161", "Sales Tax": "0.060736807", "Property Tax": "0.090607368"},
@@ -1339,12 +1351,6 @@
       "old": {"Income Tax": "0.003293765", "Unemployment Insurance Tax": "0.005250457", "Sales Tax": "0.02853509", "Property Tax": "0.041481868"}
     },
     {
-      "name": "Corporate Headquarters",
-      "tier": "tier1",
-      "new": {"Income Tax": "0.026231364", "Unemployment Insurance Tax": "0.030383091", "Sales Tax": "0.062653331", "Property Tax": "0.033213814"},
-      "old": {"Income Tax": "0.022151394", "Unemployment Insurance Tax": "0.025657371", "Sales Tax": "0.04", "Property Tax": "0.018486056"}
-    },
-    {
       "name": "Distribution Center",
       "tier": "tier2",
       "new": {"Income Tax": "0.013163482", "Unemployment Insurance Tax": "0.032696391", "Sales Tax": "0.079830149", "Property Tax": "0.21104034"},
@@ -1355,12 +1361,6 @@
       "tier": "tier2",
       "new": {"Income Tax": "0.012694628", "Unemployment Insurance Tax": "0.016271567", "Sales Tax": "0.062491233", "Property Tax": "0.051199327"},
       "old": {"Income Tax": "0.009482976", "Unemployment Insurance Tax": "0.01220681", "Sales Tax": "0.030769231", "Property Tax": "0.017704918"}
-    },
-    {
-      "name": "R&D Headquarters",
-      "tier": "tier1",
-      "new": {"Income Tax": "0.031152648", "Unemployment Insurance Tax": "0.031152648", "Sales Tax": "0.059190031", "Property Tax": "0.056853583"},
-      "old": {"Income Tax": "0.024360536", "Unemployment Insurance Tax": "0.024360536", "Sales Tax": "0.02679659", "Property Tax": "0.032886724"}
     },
     {
       "name": "Retail Store",
@@ -1376,6 +1376,18 @@
   "tier2": "Concord",
   "firms": [
     {
+      "name": "Corporate Headquarters",
+      "tier": "tier1",
+      "new": {"Income Tax": "0.076037736", "Unemployment Insurance Tax": "0.014339623", "Sales Tax": "0", "Property Tax": "0.040188679"},
+      "old": {"Income Tax": "0.074091778", "Unemployment Insurance Tax": "0.012109624", "Sales Tax": "0", "Property Tax": "0.033938815"}
+    },
+    {
+      "name": "R&D Headquarters",
+      "tier": "tier1",
+      "new": {"Income Tax": "0.056809339", "Unemployment Insurance Tax": "0.014785992", "Sales Tax": "0", "Property Tax": "0.074708171"},
+      "old": {"Income Tax": "0.064516129", "Unemployment Insurance Tax": "0.011564212", "Sales Tax": "0", "Property Tax": "0.058429702"}
+    },
+    {
       "name": "Call Center",
       "tier": "tier2",
       "new": {"Income Tax": "0.103219383", "Unemployment Insurance Tax": "0.075340192", "Sales Tax": "0", "Property Tax": "0.114503817"},
@@ -1388,12 +1400,6 @@
       "old": {"Income Tax": "0.108071091", "Unemployment Insurance Tax": "0.002478396", "Sales Tax": "0", "Property Tax": "0.015294309"}
     },
     {
-      "name": "Corporate Headquarters",
-      "tier": "tier1",
-      "new": {"Income Tax": "0.076037736", "Unemployment Insurance Tax": "0.014339623", "Sales Tax": "0", "Property Tax": "0.040188679"},
-      "old": {"Income Tax": "0.074091778", "Unemployment Insurance Tax": "0.012109624", "Sales Tax": "0", "Property Tax": "0.033938815"}
-    },
-    {
       "name": "Distribution Center",
       "tier": "tier2",
       "new": {"Income Tax": "0.050552251", "Unemployment Insurance Tax": "0.015293118", "Sales Tax": "0", "Property Tax": "0.31393373"},
@@ -1404,12 +1410,6 @@
       "tier": "tier2",
       "new": {"Income Tax": "0.080078536", "Unemployment Insurance Tax": "0.007643223", "Sales Tax": "0", "Property Tax": "0.041652058"},
       "old": {"Income Tax": "0.09129426", "Unemployment Insurance Tax": "0.005699586", "Sales Tax": "0", "Property Tax": "0.023655806"}
-    },
-    {
-      "name": "R&D Headquarters",
-      "tier": "tier1",
-      "new": {"Income Tax": "0.056809339", "Unemployment Insurance Tax": "0.014785992", "Sales Tax": "0", "Property Tax": "0.074708171"},
-      "old": {"Income Tax": "0.064516129", "Unemployment Insurance Tax": "0.011564212", "Sales Tax": "0", "Property Tax": "0.058429702"}
     },
     {
       "name": "Retail Store",
@@ -1425,6 +1425,18 @@
   "tier2": "Trenton",
   "firms": [
     {
+      "name": "Corporate Headquarters",
+      "tier": "tier1",
+      "new": {"Income Tax": "-0.114716981", "Unemployment Insurance Tax": "0.045471698", "Sales Tax": "0.062264151", "Property Tax": "0.04245283"},
+      "old": {"Income Tax": "0.077597196", "Unemployment Insurance Tax": "0.038400255", "Sales Tax": "0.041427661", "Property Tax": "0.03585086"}
+    },
+    {
+      "name": "R&D Headquarters",
+      "tier": "tier1",
+      "new": {"Income Tax": "-0.156542056", "Unemployment Insurance Tax": "0.046728972", "Sales Tax": "0.019470405", "Property Tax": "0.079439252"},
+      "old": {"Income Tax": "0.042021924", "Unemployment Insurance Tax": "0.036540804", "Sales Tax": "0.013398295", "Property Tax": "0.062119367"}
+    },
+    {
       "name": "Call Center",
       "tier": "tier2",
       "new": {"Income Tax": "-0.946896781", "Unemployment Insurance Tax": "0.182874212", "Sales Tax": "0.057749751", "Property Tax": "0.170925987"},
@@ -1437,12 +1449,6 @@
       "old": {"Income Tax": "0.002804409", "Unemployment Insurance Tax": "0.007858866", "Sales Tax": "0.016043827", "Property Tax": "0.022826583"}
     },
     {
-      "name": "Corporate Headquarters",
-      "tier": "tier1",
-      "new": {"Income Tax": "-0.114716981", "Unemployment Insurance Tax": "0.045471698", "Sales Tax": "0.062264151", "Property Tax": "0.04245283"},
-      "old": {"Income Tax": "0.077597196", "Unemployment Insurance Tax": "0.038400255", "Sales Tax": "0.041427661", "Property Tax": "0.03585086"}
-    },
-    {
       "name": "Distribution Center",
       "tier": "tier2",
       "new": {"Income Tax": "-0.17884452", "Unemployment Insurance Tax": "0.046728972", "Sales Tax": "0.078164826", "Property Tax": "0.468988955"},
@@ -1453,12 +1459,6 @@
       "tier": "tier2",
       "new": {"Income Tax": "-0.099235571", "Unemployment Insurance Tax": "0.024335507", "Sales Tax": "0.041377376", "Property Tax": "0.051826916"},
       "old": {"Income Tax": "0.002168869", "Unemployment Insurance Tax": "0.018258852", "Sales Tax": "0.028901443", "Property Tax": "0.035307172"}
-    },
-    {
-      "name": "R&D Headquarters",
-      "tier": "tier1",
-      "new": {"Income Tax": "-0.156542056", "Unemployment Insurance Tax": "0.046728972", "Sales Tax": "0.019470405", "Property Tax": "0.079439252"},
-      "old": {"Income Tax": "0.042021924", "Unemployment Insurance Tax": "0.036540804", "Sales Tax": "0.013398295", "Property Tax": "0.062119367"}
     },
     {
       "name": "Retail Store",
@@ -1474,6 +1474,18 @@
   "tier2": "Santa Fe",
   "firms": [
     {
+      "name": "Corporate Headquarters",
+      "tier": "tier1",
+      "new": {"Income Tax": "-0.036233252", "Unemployment Insurance Tax": "0.017550481", "Sales Tax": "0.08284582", "Property Tax": "0.023400642"},
+      "old": {"Income Tax": "0.041115538", "Unemployment Insurance Tax": "0.014820717", "Sales Tax": "0.058804781", "Property Tax": "0.022948207"}
+    },
+    {
+      "name": "R&D Headquarters",
+      "tier": "tier1",
+      "new": {"Income Tax": "-0.120716511", "Unemployment Insurance Tax": "0.017912773", "Sales Tax": "0.058411215", "Property Tax": "0.043613707"},
+      "old": {"Income Tax": "0.031668697", "Unemployment Insurance Tax": "0.014007308", "Sales Tax": "0.02862363", "Property Tax": "0.040803898"}
+    },
+    {
       "name": "Call Center",
       "tier": "tier2",
       "new": {"Income Tax": "0.02853351", "Unemployment Insurance Tax": "0.089581951", "Sales Tax": "0.075646981", "Property Tax": "0.042136695"},
@@ -1486,12 +1498,6 @@
       "old": {"Income Tax": "0.037860753", "Unemployment Insurance Tax": "0.003032774", "Sales Tax": "0.039882602", "Property Tax": "0.0292842"}
     },
     {
-      "name": "Corporate Headquarters",
-      "tier": "tier1",
-      "new": {"Income Tax": "-0.036233252", "Unemployment Insurance Tax": "0.017550481", "Sales Tax": "0.08284582", "Property Tax": "0.023400642"},
-      "old": {"Income Tax": "0.041115538", "Unemployment Insurance Tax": "0.014820717", "Sales Tax": "0.058804781", "Property Tax": "0.022948207"}
-    },
-    {
       "name": "Distribution Center",
       "tier": "tier2",
       "new": {"Income Tax": "0.031860663", "Unemployment Insurance Tax": "0.018691589", "Sales Tax": "0.107476636", "Property Tax": "0.115972812"},
@@ -1502,12 +1508,6 @@
       "tier": "tier2",
       "new": {"Income Tax": "-0.032961638", "Unemployment Insurance Tax": "0.009467705", "Sales Tax": "0.092713374", "Property Tax": "0.015358721"},
       "old": {"Income Tax": "0.030063052", "Unemployment Insurance Tax": "0.007061791", "Sales Tax": "0.052912989", "Property Tax": "0.012509458"}
-    },
-    {
-      "name": "R&D Headquarters",
-      "tier": "tier1",
-      "new": {"Income Tax": "-0.120716511", "Unemployment Insurance Tax": "0.017912773", "Sales Tax": "0.058411215", "Property Tax": "0.043613707"},
-      "old": {"Income Tax": "0.031668697", "Unemployment Insurance Tax": "0.014007308", "Sales Tax": "0.02862363", "Property Tax": "0.040803898"}
     },
     {
       "name": "Retail Store",
@@ -1523,6 +1523,18 @@
   "tier2": "Utica",
   "firms": [
     {
+      "name": "Corporate Headquarters",
+      "tier": "tier1",
+      "new": {"Income Tax": "0.139433962", "Unemployment Insurance Tax": "0.013207547", "Sales Tax": "0.078867925", "Property Tax": "0.051886792"},
+      "old": {"Income Tax": "0.145952836", "Unemployment Insurance Tax": "0.011153601", "Sales Tax": "0.052581262", "Property Tax": "0.043817718"}
+    },
+    {
+      "name": "R&D Headquarters",
+      "tier": "tier1",
+      "new": {"Income Tax": "-0.115264798", "Unemployment Insurance Tax": "0.013239875", "Sales Tax": "0.024143302", "Property Tax": "0.096573209"},
+      "old": {"Income Tax": "0.144945189", "Unemployment Insurance Tax": "0.010353228", "Sales Tax": "0.016443362", "Property Tax": "0.075517661"}
+    },
+    {
       "name": "Call Center",
       "tier": "tier2",
       "new": {"Income Tax": "0.047129107", "Unemployment Insurance Tax": "0.06936608", "Sales Tax": "0.072353136", "Property Tax": "0.144706273"},
@@ -1535,12 +1547,6 @@
       "old": {"Income Tax": "0.00834828", "Unemployment Insurance Tax": "0.002282733", "Sales Tax": "0.015000815", "Property Tax": "0.019305397"}
     },
     {
-      "name": "Corporate Headquarters",
-      "tier": "tier1",
-      "new": {"Income Tax": "0.139433962", "Unemployment Insurance Tax": "0.013207547", "Sales Tax": "0.078867925", "Property Tax": "0.051886792"},
-      "old": {"Income Tax": "0.145952836", "Unemployment Insurance Tax": "0.011153601", "Sales Tax": "0.052581262", "Property Tax": "0.043817718"}
-    },
-    {
       "name": "Distribution Center",
       "tier": "tier2",
       "new": {"Income Tax": "0.025902335", "Unemployment Insurance Tax": "0.014012739", "Sales Tax": "0.097239915", "Property Tax": "0.352016985"},
@@ -1551,12 +1557,6 @@
       "tier": "tier2",
       "new": {"Income Tax": "-0.062276457", "Unemployment Insurance Tax": "0.007013115", "Sales Tax": "0.04656708", "Property Tax": "0.046777474"},
       "old": {"Income Tax": "0.004841882", "Unemployment Insurance Tax": "0.005295809", "Sales Tax": "0.032228779", "Property Tax": "0.029858274"}
-    },
-    {
-      "name": "R&D Headquarters",
-      "tier": "tier1",
-      "new": {"Income Tax": "-0.115264798", "Unemployment Insurance Tax": "0.013239875", "Sales Tax": "0.024143302", "Property Tax": "0.096573209"},
-      "old": {"Income Tax": "0.144945189", "Unemployment Insurance Tax": "0.010353228", "Sales Tax": "0.016443362", "Property Tax": "0.075517661"}
     },
     {
       "name": "Retail Store",
@@ -1572,6 +1572,18 @@
   "tier2": "Wilmington",
   "firms": [
     {
+      "name": "Corporate Headquarters",
+      "tier": "tier1",
+      "new": {"Income Tax": "-0.016981132", "Unemployment Insurance Tax": "0.009433962", "Sales Tax": "0.052264151", "Property Tax": "0.024150943"},
+      "old": {"Income Tax": "0.047482473", "Unemployment Insurance Tax": "0.007966858", "Sales Tax": "0.033301466", "Property Tax": "0.015615041"}
+    },
+    {
+      "name": "R&D Headquarters",
+      "tier": "tier1",
+      "new": {"Income Tax": "0.038132296", "Unemployment Insurance Tax": "0.010116732", "Sales Tax": "0.016342412", "Property Tax": "0.042023346"},
+      "old": {"Income Tax": "0.042604991", "Unemployment Insurance Tax": "0.007912355", "Sales Tax": "0.010955569", "Property Tax": "0.027997565"}
+    },
+    {
       "name": "Call Center",
       "tier": "tier2",
       "new": {"Income Tax": "0.057417856", "Unemployment Insurance Tax": "0.049784268", "Sales Tax": "0.05509459", "Property Tax": "0.061400597"},
@@ -1584,12 +1596,6 @@
       "old": {"Income Tax": "0.045753979", "Unemployment Insurance Tax": "0.001630577", "Sales Tax": "0.009718236", "Property Tax": "0.031470128"}
     },
     {
-      "name": "Corporate Headquarters",
-      "tier": "tier1",
-      "new": {"Income Tax": "-0.016981132", "Unemployment Insurance Tax": "0.009433962", "Sales Tax": "0.052264151", "Property Tax": "0.024150943"},
-      "old": {"Income Tax": "0.047482473", "Unemployment Insurance Tax": "0.007966858", "Sales Tax": "0.033301466", "Property Tax": "0.015615041"}
-    },
-    {
       "name": "Distribution Center",
       "tier": "tier2",
       "new": {"Income Tax": "0.044161359", "Unemployment Insurance Tax": "0.010191083", "Sales Tax": "0.072611465", "Property Tax": "0.122292994"},
@@ -1600,12 +1606,6 @@
       "tier": "tier2",
       "new": {"Income Tax": "0.00063118", "Unemployment Insurance Tax": "0.005049442", "Sales Tax": "0.030787573", "Property Tax": "0.028964163"},
       "old": {"Income Tax": "0.03540805", "Unemployment Insurance Tax": "0.003782911", "Sales Tax": "0.020881671", "Property Tax": "0.013416726"}
-    },
-    {
-      "name": "R&D Headquarters",
-      "tier": "tier1",
-      "new": {"Income Tax": "0.038132296", "Unemployment Insurance Tax": "0.010116732", "Sales Tax": "0.016342412", "Property Tax": "0.042023346"},
-      "old": {"Income Tax": "0.042604991", "Unemployment Insurance Tax": "0.007912355", "Sales Tax": "0.010955569", "Property Tax": "0.027997565"}
     },
     {
       "name": "Retail Store",
@@ -1621,6 +1621,18 @@
   "tier2": "Grand Forks",
   "firms": [
     {
+      "name": "Corporate Headquarters",
+      "tier": "tier1",
+      "new": {"Income Tax": "0.026603774", "Unemployment Insurance Tax": "0.01509434", "Sales Tax": "0.058113208", "Property Tax": "0.022264151"},
+      "old": {"Income Tax": "0.027405991", "Unemployment Insurance Tax": "0.012746973", "Sales Tax": "0.037125558", "Property Tax": "0.018801785"}
+    },
+    {
+      "name": "R&D Headquarters",
+      "tier": "tier1",
+      "new": {"Income Tax": "0", "Unemployment Insurance Tax": "0.015564202", "Sales Tax": "0.054474708", "Property Tax": "0.041245136"},
+      "old": {"Income Tax": "0", "Unemployment Insurance Tax": "0.012172855", "Sales Tax": "0.024345709", "Property Tax": "0.032258065"}
+    },
+    {
       "name": "Call Center",
       "tier": "tier2",
       "new": {"Income Tax": "0.034185197", "Unemployment Insurance Tax": "0.058745436", "Sales Tax": "0.053103219", "Property Tax": "0.083305675"},
@@ -1633,12 +1645,6 @@
       "old": {"Income Tax": "0.055403378", "Unemployment Insurance Tax": "0.002608752", "Sales Tax": "0.021033066", "Property Tax": "0.011119807"}
     },
     {
-      "name": "Corporate Headquarters",
-      "tier": "tier1",
-      "new": {"Income Tax": "0.026603774", "Unemployment Insurance Tax": "0.01509434", "Sales Tax": "0.058113208", "Property Tax": "0.022264151"},
-      "old": {"Income Tax": "0.027405991", "Unemployment Insurance Tax": "0.012746973", "Sales Tax": "0.037125558", "Property Tax": "0.018801785"}
-    },
-    {
       "name": "Distribution Center",
       "tier": "tier2",
       "new": {"Income Tax": "0.026762957", "Unemployment Insurance Tax": "0.014868309", "Sales Tax": "0.069668649", "Property Tax": "0.126168224"},
@@ -1649,12 +1655,6 @@
       "tier": "tier2",
       "new": {"Income Tax": "0.034223999", "Unemployment Insurance Tax": "0.007994951", "Sales Tax": "0.033873343", "Property Tax": "0.017532786"},
       "old": {"Income Tax": "0.044335721", "Unemployment Insurance Tax": "0.006002219", "Sales Tax": "0.023857561", "Property Tax": "0.017199637"}
-    },
-    {
-      "name": "R&D Headquarters",
-      "tier": "tier1",
-      "new": {"Income Tax": "0", "Unemployment Insurance Tax": "0.015564202", "Sales Tax": "0.054474708", "Property Tax": "0.041245136"},
-      "old": {"Income Tax": "0", "Unemployment Insurance Tax": "0.012172855", "Sales Tax": "0.024345709", "Property Tax": "0.032258065"}
     },
     {
       "name": "Retail Store",
@@ -1670,6 +1670,18 @@
   "tier2": "Canton",
   "firms": [
     {
+      "name": "Corporate Headquarters",
+      "tier": "tier1",
+      "new": {"Income Tax": "-0.004716981", "Unemployment Insurance Tax": "0.009245283", "Sales Tax": "0.060188679", "Property Tax": "0.043018868"},
+      "old": {"Income Tax": "0.031230083", "Unemployment Insurance Tax": "0.007807521", "Sales Tax": "0.039993627", "Property Tax": "0.036328872"}
+    },
+    {
+      "name": "R&D Headquarters",
+      "tier": "tier1",
+      "new": {"Income Tax": "-0.027258567", "Unemployment Insurance Tax": "0.009345794", "Sales Tax": "0.018691589", "Property Tax": "0.080218069"},
+      "old": {"Income Tax": "0.018879415", "Unemployment Insurance Tax": "0.007308161", "Sales Tax": "0.012789281", "Property Tax": "0.06272838"}
+    },
+    {
       "name": "Call Center",
       "tier": "tier2",
       "new": {"Income Tax": "-0.068370395", "Unemployment Insurance Tax": "0.048456688", "Sales Tax": "0.05376701", "Property Tax": "0.106206439"},
@@ -1682,12 +1694,6 @@
       "old": {"Income Tax": "0.02302224", "Unemployment Insurance Tax": "0.001597861", "Sales Tax": "0.011935042", "Property Tax": "0.014152482"}
     },
     {
-      "name": "Corporate Headquarters",
-      "tier": "tier1",
-      "new": {"Income Tax": "-0.004716981", "Unemployment Insurance Tax": "0.009245283", "Sales Tax": "0.060188679", "Property Tax": "0.043018868"},
-      "old": {"Income Tax": "0.031230083", "Unemployment Insurance Tax": "0.007807521", "Sales Tax": "0.039993627", "Property Tax": "0.036328872"}
-    },
-    {
       "name": "Distribution Center",
       "tier": "tier2",
       "new": {"Income Tax": "-0.005944798", "Unemployment Insurance Tax": "0.009766454", "Sales Tax": "0.072186837", "Property Tax": "0.072611465"},
@@ -1698,12 +1704,6 @@
       "tier": "tier2",
       "new": {"Income Tax": "-0.001683147", "Unemployment Insurance Tax": "0.00490918", "Sales Tax": "0.035556491", "Property Tax": "0.009678098"},
       "old": {"Income Tax": "0.018611924", "Unemployment Insurance Tax": "0.003682034", "Sales Tax": "0.024715021", "Property Tax": "0.021890447"}
-    },
-    {
-      "name": "R&D Headquarters",
-      "tier": "tier1",
-      "new": {"Income Tax": "-0.027258567", "Unemployment Insurance Tax": "0.009345794", "Sales Tax": "0.018691589", "Property Tax": "0.080218069"},
-      "old": {"Income Tax": "0.018879415", "Unemployment Insurance Tax": "0.007308161", "Sales Tax": "0.012789281", "Property Tax": "0.06272838"}
     },
     {
       "name": "Retail Store",
@@ -1719,6 +1719,18 @@
   "tier2": "Lawton",
   "firms": [
     {
+      "name": "Corporate Headquarters",
+      "tier": "tier1",
+      "new": {"Income Tax": "-0.057735849", "Unemployment Insurance Tax": "0.01509434", "Sales Tax": "0.064716981", "Property Tax": "0.041886792"},
+      "old": {"Income Tax": "0.039037604", "Unemployment Insurance Tax": "0.012746973", "Sales Tax": "0.041268324", "Property Tax": "0.021669853"}
+    },
+    {
+      "name": "R&D Headquarters",
+      "tier": "tier1",
+      "new": {"Income Tax": "-0.073987539", "Unemployment Insurance Tax": "0.015576324", "Sales Tax": "0.060747664", "Property Tax": "0.070872274"},
+      "old": {"Income Tax": "0.040194884", "Unemployment Insurance Tax": "0.012180268", "Sales Tax": "0.027405603", "Property Tax": "0.038976857"}
+    },
+    {
       "name": "Call Center",
       "tier": "tier2",
       "new": {"Income Tax": "-0.177895785", "Unemployment Insurance Tax": "0.079986724", "Sales Tax": "0.069697975", "Property Tax": "0.0680385"},
@@ -1731,12 +1743,6 @@
       "old": {"Income Tax": "0.066821028", "Unemployment Insurance Tax": "0.002608923", "Sales Tax": "0.012294547", "Property Tax": "0.031372293"}
     },
     {
-      "name": "Corporate Headquarters",
-      "tier": "tier1",
-      "new": {"Income Tax": "-0.057735849", "Unemployment Insurance Tax": "0.01509434", "Sales Tax": "0.064716981", "Property Tax": "0.041886792"},
-      "old": {"Income Tax": "0.039037604", "Unemployment Insurance Tax": "0.012746973", "Sales Tax": "0.041268324", "Property Tax": "0.021669853"}
-    },
-    {
       "name": "Distribution Center",
       "tier": "tier2",
       "new": {"Income Tax": "-0.020806794", "Unemployment Insurance Tax": "0.016135881", "Sales Tax": "0.091719745", "Property Tax": "0.158386412"},
@@ -1747,12 +1753,6 @@
       "tier": "tier2",
       "new": {"Income Tax": "-0.040325409", "Unemployment Insurance Tax": "0.008135213", "Sales Tax": "0.039063048", "Property Tax": "0.027912196"},
       "old": {"Income Tax": "0.054423484", "Unemployment Insurance Tax": "0.006103097", "Sales Tax": "0.026480379", "Property Tax": "0.013315848"}
-    },
-    {
-      "name": "R&D Headquarters",
-      "tier": "tier1",
-      "new": {"Income Tax": "-0.073987539", "Unemployment Insurance Tax": "0.015576324", "Sales Tax": "0.060747664", "Property Tax": "0.070872274"},
-      "old": {"Income Tax": "0.040194884", "Unemployment Insurance Tax": "0.012180268", "Sales Tax": "0.027405603", "Property Tax": "0.038976857"}
     },
     {
       "name": "Retail Store",
@@ -1768,6 +1768,18 @@
   "tier2": "Salem",
   "firms": [
     {
+      "name": "Corporate Headquarters",
+      "tier": "tier1",
+      "new": {"Income Tax": "0.102264151", "Unemployment Insurance Tax": "0.04245283", "Sales Tax": "0", "Property Tax": "0.022830189"},
+      "old": {"Income Tax": "0.104525175", "Unemployment Insurance Tax": "0.03585086", "Sales Tax": "0", "Property Tax": "0.012587635"}
+    },
+    {
+      "name": "R&D Headquarters",
+      "tier": "tier1",
+      "new": {"Income Tax": "0.031152648", "Unemployment Insurance Tax": "0.043613707", "Sales Tax": "0", "Property Tax": "0.03894081"},
+      "old": {"Income Tax": "0.044457978", "Unemployment Insurance Tax": "0.03410475", "Sales Tax": "0", "Property Tax": "0.022533496"}
+    },
+    {
       "name": "Call Center",
       "tier": "tier2",
       "new": {"Income Tax": "0.046797212", "Unemployment Insurance Tax": "0.156654497", "Sales Tax": "0", "Property Tax": "0.088947892"},
@@ -1780,12 +1792,6 @@
       "old": {"Income Tax": "0.088735977", "Unemployment Insurance Tax": "0.007337595", "Sales Tax": "0", "Property Tax": "0.040731803"}
     },
     {
-      "name": "Corporate Headquarters",
-      "tier": "tier1",
-      "new": {"Income Tax": "0.102264151", "Unemployment Insurance Tax": "0.04245283", "Sales Tax": "0", "Property Tax": "0.022830189"},
-      "old": {"Income Tax": "0.104525175", "Unemployment Insurance Tax": "0.03585086", "Sales Tax": "0", "Property Tax": "0.012587635"}
-    },
-    {
       "name": "Distribution Center",
       "tier": "tier2",
       "new": {"Income Tax": "0.037791932", "Unemployment Insurance Tax": "0.039915074", "Sales Tax": "0", "Property Tax": "0.207218684"},
@@ -1796,12 +1802,6 @@
       "tier": "tier2",
       "new": {"Income Tax": "0.056942496", "Unemployment Insurance Tax": "0.022720898", "Sales Tax": "0", "Property Tax": "0.050280505"},
       "old": {"Income Tax": "0.070358602", "Unemployment Insurance Tax": "0.017047461", "Sales Tax": "0", "Property Tax": "0.017400514"}
-    },
-    {
-      "name": "R&D Headquarters",
-      "tier": "tier1",
-      "new": {"Income Tax": "0.031152648", "Unemployment Insurance Tax": "0.043613707", "Sales Tax": "0", "Property Tax": "0.03894081"},
-      "old": {"Income Tax": "0.044457978", "Unemployment Insurance Tax": "0.03410475", "Sales Tax": "0", "Property Tax": "0.022533496"}
     },
     {
       "name": "Retail Store",
@@ -1817,6 +1817,18 @@
   "tier2": "Reading",
   "firms": [
     {
+      "name": "Corporate Headquarters",
+      "tier": "tier1",
+      "new": {"Income Tax": "0.149622642", "Unemployment Insurance Tax": "0.011886792", "Sales Tax": "0.067735849", "Property Tax": "0.023018868"},
+      "old": {"Income Tax": "0.157425112", "Unemployment Insurance Tax": "0.010038241", "Sales Tax": "0.044455067", "Property Tax": "0.019439133"}
+    },
+    {
+      "name": "R&D Headquarters",
+      "tier": "tier1",
+      "new": {"Income Tax": "0.06459144", "Unemployment Insurance Tax": "0.012451362", "Sales Tax": "0.021011673", "Property Tax": "0.042801556"},
+      "old": {"Income Tax": "0.068776628", "Unemployment Insurance Tax": "0.009738284", "Sales Tax": "0.013998783", "Property Tax": "0.03347535"}
+    },
+    {
       "name": "Call Center",
       "tier": "tier2",
       "new": {"Income Tax": "0.025547445", "Unemployment Insurance Tax": "0.062375581", "Sales Tax": "0.048108825", "Property Tax": "0.174850697"},
@@ -1829,12 +1841,6 @@
       "old": {"Income Tax": "0.004565317", "Unemployment Insurance Tax": "0.002054392", "Sales Tax": "0.011706776", "Property Tax": "0.023348334"}
     },
     {
-      "name": "Corporate Headquarters",
-      "tier": "tier1",
-      "new": {"Income Tax": "0.149622642", "Unemployment Insurance Tax": "0.011886792", "Sales Tax": "0.067735849", "Property Tax": "0.023018868"},
-      "old": {"Income Tax": "0.157425112", "Unemployment Insurance Tax": "0.010038241", "Sales Tax": "0.044455067", "Property Tax": "0.019439133"}
-    },
-    {
       "name": "Distribution Center",
       "tier": "tier2",
       "new": {"Income Tax": "0.01188455", "Unemployment Insurance Tax": "0.012733447", "Sales Tax": "0.064516129", "Property Tax": "0.479202037"},
@@ -1845,12 +1851,6 @@
       "tier": "tier2",
       "new": {"Income Tax": "0.000911705", "Unemployment Insurance Tax": "0.006311803", "Sales Tax": "0.031348622", "Property Tax": "0.063608949"},
       "old": {"Income Tax": "0.003631595", "Unemployment Insurance Tax": "0.004741249", "Sales Tax": "0.021638253", "Property Tax": "0.036114193"}
-    },
-    {
-      "name": "R&D Headquarters",
-      "tier": "tier1",
-      "new": {"Income Tax": "0.06459144", "Unemployment Insurance Tax": "0.012451362", "Sales Tax": "0.021011673", "Property Tax": "0.042801556"},
-      "old": {"Income Tax": "0.068776628", "Unemployment Insurance Tax": "0.009738284", "Sales Tax": "0.013998783", "Property Tax": "0.03347535"}
     },
     {
       "name": "Retail Store",
@@ -1866,6 +1866,18 @@
   "tier2": "Providence",
   "firms": [
     {
+      "name": "Corporate Headquarters",
+      "tier": "tier1",
+      "new": {"Income Tax": "0.004528302", "Unemployment Insurance Tax": "0.025471698", "Sales Tax": "0.054150943", "Property Tax": "0.106981132"},
+      "old": {"Income Tax": "0.05210325", "Unemployment Insurance Tax": "0.021510516", "Sales Tax": "0.034576163", "Property Tax": "0.052581262"}
+    },
+    {
+      "name": "R&D Headquarters",
+      "tier": "tier1",
+      "new": {"Income Tax": "0", "Unemployment Insurance Tax": "0.026459144", "Sales Tax": "0.017120623", "Property Tax": "0.180544747"},
+      "old": {"Income Tax": "0", "Unemployment Insurance Tax": "0.020693853", "Sales Tax": "0.011564212", "Property Tax": "0.094339623"}
+    },
+    {
       "name": "Call Center",
       "tier": "tier2",
       "new": {"Income Tax": "0", "Unemployment Insurance Tax": "0.134417524", "Sales Tax": "0.05509459", "Property Tax": "0.232326585"},
@@ -1878,12 +1890,6 @@
       "old": {"Income Tax": "0.11012555", "Unemployment Insurance Tax": "0.004402413", "Sales Tax": "0.01187021", "Property Tax": "0.018718409"}
     },
     {
-      "name": "Corporate Headquarters",
-      "tier": "tier1",
-      "new": {"Income Tax": "0.004528302", "Unemployment Insurance Tax": "0.025471698", "Sales Tax": "0.054150943", "Property Tax": "0.106981132"},
-      "old": {"Income Tax": "0.05210325", "Unemployment Insurance Tax": "0.021510516", "Sales Tax": "0.034576163", "Property Tax": "0.052581262"}
-    },
-    {
       "name": "Distribution Center",
       "tier": "tier2",
       "new": {"Income Tax": "0.025902335", "Unemployment Insurance Tax": "0.027176221", "Sales Tax": "0.072611465", "Property Tax": "0.425902335"},
@@ -1894,12 +1900,6 @@
       "tier": "tier2",
       "new": {"Income Tax": "0.021600393", "Unemployment Insurance Tax": "0.013605442", "Sales Tax": "0.032961638", "Property Tax": "0.051756785"},
       "old": {"Income Tax": "0.086809584", "Unemployment Insurance Tax": "0.010189155", "Sales Tax": "0.022496847", "Property Tax": "0.029609079"}
-    },
-    {
-      "name": "R&D Headquarters",
-      "tier": "tier1",
-      "new": {"Income Tax": "0", "Unemployment Insurance Tax": "0.026459144", "Sales Tax": "0.017120623", "Property Tax": "0.180544747"},
-      "old": {"Income Tax": "0", "Unemployment Insurance Tax": "0.020693853", "Sales Tax": "0.011564212", "Property Tax": "0.094339623"}
     },
     {
       "name": "Retail Store",
@@ -1915,6 +1915,18 @@
   "tier2": "Spartanburg",
   "firms": [
     {
+      "name": "Corporate Headquarters",
+      "tier": "tier1",
+      "new": {"Income Tax": "-0.038867925", "Unemployment Insurance Tax": "0.009056604", "Sales Tax": "0.056037736", "Property Tax": "0.108867925"},
+      "old": {"Income Tax": "0.048119822", "Unemployment Insurance Tax": "0.007648184", "Sales Tax": "0.03585086", "Property Tax": "0.050509879"}
+    },
+    {
+      "name": "R&D Headquarters",
+      "tier": "tier1",
+      "new": {"Income Tax": "-0.06459144", "Unemployment Insurance Tax": "0.009338521", "Sales Tax": "0.017898833", "Property Tax": "0.182101167"},
+      "old": {"Income Tax": "0.026171637", "Unemployment Insurance Tax": "0.007303713", "Sales Tax": "0.011564212", "Property Tax": "0.091296409"}
+    },
+    {
       "name": "Call Center",
       "tier": "tier2",
       "new": {"Income Tax": "-0.100232327", "Unemployment Insurance Tax": "0.048124793", "Sales Tax": "0.047129107", "Property Tax": "0.283438433"},
@@ -1927,12 +1939,6 @@
       "old": {"Income Tax": "0.000880483", "Unemployment Insurance Tax": "0.001565302", "Sales Tax": "0.008315669", "Property Tax": "0.144757867"}
     },
     {
-      "name": "Corporate Headquarters",
-      "tier": "tier1",
-      "new": {"Income Tax": "-0.038867925", "Unemployment Insurance Tax": "0.009056604", "Sales Tax": "0.056037736", "Property Tax": "0.108867925"},
-      "old": {"Income Tax": "0.048119822", "Unemployment Insurance Tax": "0.007648184", "Sales Tax": "0.03585086", "Property Tax": "0.050509879"}
-    },
-    {
       "name": "Distribution Center",
       "tier": "tier2",
       "new": {"Income Tax": "-0.030560272", "Unemployment Insurance Tax": "0.009762309", "Sales Tax": "0.06196944", "Property Tax": "0.64049236"},
@@ -1943,12 +1949,6 @@
       "tier": "tier2",
       "new": {"Income Tax": "-0.044603408", "Unemployment Insurance Tax": "0.00490918", "Sales Tax": "0.026439442", "Property Tax": "0.093134161"},
       "old": {"Income Tax": "0.00075662", "Unemployment Insurance Tax": "0.003631778", "Sales Tax": "0.017906683", "Property Tax": "0.05482976"}
-    },
-    {
-      "name": "R&D Headquarters",
-      "tier": "tier1",
-      "new": {"Income Tax": "-0.06459144", "Unemployment Insurance Tax": "0.009338521", "Sales Tax": "0.017898833", "Property Tax": "0.182101167"},
-      "old": {"Income Tax": "0.026171637", "Unemployment Insurance Tax": "0.007303713", "Sales Tax": "0.011564212", "Property Tax": "0.091296409"}
     },
     {
       "name": "Retail Store",
@@ -1964,6 +1964,18 @@
   "tier2": "Rapid City",
   "firms": [
     {
+      "name": "Corporate Headquarters",
+      "tier": "tier1",
+      "new": {"Income Tax": "0", "Unemployment Insurance Tax": "0.008679245", "Sales Tax": "0.070943396", "Property Tax": "0.029056604"},
+      "old": {"Income Tax": "0", "Unemployment Insurance Tax": "0.007329509", "Sales Tax": "0.050350542", "Property Tax": "0.024537922"}
+    },
+    {
+      "name": "R&D Headquarters",
+      "tier": "tier1",
+      "new": {"Income Tax": "0", "Unemployment Insurance Tax": "0.008566978", "Sales Tax": "0.050623053", "Property Tax": "0.054517134"},
+      "old": {"Income Tax": "0", "Unemployment Insurance Tax": "0.006699147", "Sales Tax": "0.024969549", "Property Tax": "0.042630938"}
+    },
+    {
       "name": "Call Center",
       "tier": "tier2",
       "new": {"Income Tax": "0", "Unemployment Insurance Tax": "0.045469632", "Sales Tax": "0.055426485", "Property Tax": "0.088615997"},
@@ -1976,12 +1988,6 @@
       "old": {"Income Tax": "0", "Unemployment Insurance Tax": "0.001500082", "Sales Tax": "0.028990706", "Property Tax": "0.0118376"}
     },
     {
-      "name": "Corporate Headquarters",
-      "tier": "tier1",
-      "new": {"Income Tax": "0", "Unemployment Insurance Tax": "0.008679245", "Sales Tax": "0.070943396", "Property Tax": "0.029056604"},
-      "old": {"Income Tax": "0", "Unemployment Insurance Tax": "0.007329509", "Sales Tax": "0.050350542", "Property Tax": "0.024537922"}
-    },
-    {
       "name": "Distribution Center",
       "tier": "tier2",
       "new": {"Income Tax": "0", "Unemployment Insurance Tax": "0.009341826", "Sales Tax": "0.078980892", "Property Tax": "0.243312102"},
@@ -1992,12 +1998,6 @@
       "tier": "tier2",
       "new": {"Income Tax": "0", "Unemployment Insurance Tax": "0.004628331", "Sales Tax": "0.067741935", "Property Tax": "0.026788219"},
       "old": {"Income Tax": "0", "Unemployment Insurance Tax": "0.003430013", "Sales Tax": "0.038638083", "Property Tax": "0.018310214"}
-    },
-    {
-      "name": "R&D Headquarters",
-      "tier": "tier1",
-      "new": {"Income Tax": "0", "Unemployment Insurance Tax": "0.008566978", "Sales Tax": "0.050623053", "Property Tax": "0.054517134"},
-      "old": {"Income Tax": "0", "Unemployment Insurance Tax": "0.006699147", "Sales Tax": "0.024969549", "Property Tax": "0.042630938"}
     },
     {
       "name": "Retail Store",
@@ -2013,6 +2013,18 @@
   "tier2": "Clarksville",
   "firms": [
     {
+      "name": "Corporate Headquarters",
+      "tier": "tier1",
+      "new": {"Income Tax": "0.039056604", "Unemployment Insurance Tax": "0.009245283", "Sales Tax": "0.084528302", "Property Tax": "0.045660377"},
+      "old": {"Income Tax": "0.053059273", "Unemployment Insurance Tax": "0.007807521", "Sales Tax": "0.056246017", "Property Tax": "0.027405991"}
+    },
+    {
+      "name": "R&D Headquarters",
+      "tier": "tier1",
+      "new": {"Income Tax": "0.052959502", "Unemployment Insurance Tax": "0.009345794", "Sales Tax": "0.026479751", "Property Tax": "0.079439252"},
+      "old": {"Income Tax": "0.067600487", "Unemployment Insurance Tax": "0.007308161", "Sales Tax": "0.017661389", "Property Tax": "0.048721072"}
+    },
+    {
       "name": "Call Center",
       "tier": "tier2",
       "new": {"Income Tax": "0.033853302", "Unemployment Insurance Tax": "0.048456688", "Sales Tax": "0.078327249", "Property Tax": "0.094258214"},
@@ -2025,12 +2037,6 @@
       "old": {"Income Tax": "0.053220284", "Unemployment Insurance Tax": "0.003815425", "Sales Tax": "0.016272624", "Property Tax": "0.03763248"}
     },
     {
-      "name": "Corporate Headquarters",
-      "tier": "tier1",
-      "new": {"Income Tax": "0.039056604", "Unemployment Insurance Tax": "0.009245283", "Sales Tax": "0.084528302", "Property Tax": "0.045660377"},
-      "old": {"Income Tax": "0.053059273", "Unemployment Insurance Tax": "0.007807521", "Sales Tax": "0.056246017", "Property Tax": "0.027405991"}
-    },
-    {
       "name": "Distribution Center",
       "tier": "tier2",
       "new": {"Income Tax": "0.04118896", "Unemployment Insurance Tax": "0.009766454", "Sales Tax": "0.105732484", "Property Tax": "0.113375796"},
@@ -2041,12 +2047,6 @@
       "tier": "tier2",
       "new": {"Income Tax": "0.026229048", "Unemployment Insurance Tax": "0.011782032", "Sales Tax": "0.050564556", "Property Tax": "0.024896557"},
       "old": {"Income Tax": "0.039844656", "Unemployment Insurance Tax": "0.008876784", "Sales Tax": "0.035002774", "Property Tax": "0.018610985"}
-    },
-    {
-      "name": "R&D Headquarters",
-      "tier": "tier1",
-      "new": {"Income Tax": "0.052959502", "Unemployment Insurance Tax": "0.009345794", "Sales Tax": "0.026479751", "Property Tax": "0.079439252"},
-      "old": {"Income Tax": "0.067600487", "Unemployment Insurance Tax": "0.007308161", "Sales Tax": "0.017661389", "Property Tax": "0.048721072"}
     },
     {
       "name": "Retail Store",
@@ -2062,6 +2062,18 @@
   "tier2": "Lubbock",
   "firms": [
     {
+      "name": "Corporate Headquarters",
+      "tier": "tier1",
+      "new": {"Income Tax": "0.02509434", "Unemployment Insurance Tax": "0.009245283", "Sales Tax": "0.073396226", "Property Tax": "0.076981132"},
+      "old": {"Income Tax": "0.021191842", "Unemployment Insurance Tax": "0.007807521", "Sales Tax": "0.048916507", "Property Tax": "0.042702358"}
+    },
+    {
+      "name": "R&D Headquarters",
+      "tier": "tier1",
+      "new": {"Income Tax": "0.010894942", "Unemployment Insurance Tax": "0.009338521", "Sales Tax": "0.062256809", "Property Tax": "0.13229572"},
+      "old": {"Income Tax": "0.008526188", "Unemployment Insurance Tax": "0.007308161", "Sales Tax": "0.02862363", "Property Tax": "0.076126675"}
+    },
+    {
       "name": "Call Center",
       "tier": "tier2",
       "new": {"Income Tax": "0.023564554", "Unemployment Insurance Tax": "0.048456688", "Sales Tax": "0.0680385", "Property Tax": "0.169266512"},
@@ -2074,12 +2086,6 @@
       "old": {"Income Tax": "0.001206548", "Unemployment Insurance Tax": "0.001597861", "Sales Tax": "0.015261201", "Property Tax": "0.081327855"}
     },
     {
-      "name": "Corporate Headquarters",
-      "tier": "tier1",
-      "new": {"Income Tax": "0.02509434", "Unemployment Insurance Tax": "0.009245283", "Sales Tax": "0.073396226", "Property Tax": "0.076981132"},
-      "old": {"Income Tax": "0.021191842", "Unemployment Insurance Tax": "0.007807521", "Sales Tax": "0.048916507", "Property Tax": "0.042702358"}
-    },
-    {
       "name": "Distribution Center",
       "tier": "tier2",
       "new": {"Income Tax": "0.030997877", "Unemployment Insurance Tax": "0.009766454", "Sales Tax": "0.091719745", "Property Tax": "0.394055202"},
@@ -2090,12 +2096,6 @@
       "tier": "tier2",
       "new": {"Income Tax": "0.001753279", "Unemployment Insurance Tax": "0.00490918", "Sales Tax": "0.045094326", "Property Tax": "0.095799144"},
       "old": {"Income Tax": "0.001412287", "Unemployment Insurance Tax": "0.003682034", "Sales Tax": "0.031322506", "Property Tax": "0.033239181"}
-    },
-    {
-      "name": "R&D Headquarters",
-      "tier": "tier1",
-      "new": {"Income Tax": "0.010894942", "Unemployment Insurance Tax": "0.009338521", "Sales Tax": "0.062256809", "Property Tax": "0.13229572"},
-      "old": {"Income Tax": "0.008526188", "Unemployment Insurance Tax": "0.007308161", "Sales Tax": "0.02862363", "Property Tax": "0.076126675"}
     },
     {
       "name": "Retail Store",
@@ -2111,6 +2111,18 @@
   "tier2": "St. George",
   "firms": [
     {
+      "name": "Corporate Headquarters",
+      "tier": "tier1",
+      "new": {"Income Tax": "0.036090829", "Unemployment Insurance Tax": "0.015886134", "Sales Tax": "0.049817683", "Property Tax": "0.030846863"},
+      "old": {"Income Tax": "0.044614404", "Unemployment Insurance Tax": "0.016411727", "Sales Tax": "0.040630975", "Property Tax": "0.026768642"}
+    },
+    {
+      "name": "R&D Headquarters",
+      "tier": "tier1",
+      "new": {"Income Tax": "0", "Unemployment Insurance Tax": "0.01606775", "Sales Tax": "0.014831769", "Property Tax": "0.053147173"},
+      "old": {"Income Tax": "0", "Unemployment Insurance Tax": "0.015824711", "Sales Tax": "0.012781497", "Property Tax": "0.047474133"}
+    },
+    {
       "name": "Call Center",
       "tier": "tier2",
       "new": {"Income Tax": "0.000260502", "Unemployment Insurance Tax": "0.062520539", "Sales Tax": "0.040377848", "Property Tax": "0.055486978"},
@@ -2123,12 +2135,6 @@
       "old": {"Income Tax": "0.054850807", "Unemployment Insurance Tax": "0.003358878", "Sales Tax": "0.010696233", "Property Tax": "0.03900212"}
     },
     {
-      "name": "Corporate Headquarters",
-      "tier": "tier1",
-      "new": {"Income Tax": "0.036090829", "Unemployment Insurance Tax": "0.015886134", "Sales Tax": "0.049817683", "Property Tax": "0.030846863"},
-      "old": {"Income Tax": "0.044614404", "Unemployment Insurance Tax": "0.016411727", "Sales Tax": "0.040630975", "Property Tax": "0.026768642"}
-    },
-    {
       "name": "Distribution Center",
       "tier": "tier2",
       "new": {"Income Tax": "0.01446281", "Unemployment Insurance Tax": "0.018268813", "Sales Tax": "0.062418443", "Property Tax": "0.089060461"},
@@ -2139,12 +2145,6 @@
       "tier": "tier2",
       "new": {"Income Tax": "0.032422132", "Unemployment Insurance Tax": "0.008902552", "Sales Tax": "0.028512227", "Property Tax": "0.020632266"},
       "old": {"Income Tax": "0.044537476", "Unemployment Insurance Tax": "0.007818017", "Sales Tax": "0.02305054", "Property Tax": "0.01664481"}
-    },
-    {
-      "name": "R&D Headquarters",
-      "tier": "tier1",
-      "new": {"Income Tax": "0", "Unemployment Insurance Tax": "0.01606775", "Sales Tax": "0.014831769", "Property Tax": "0.053147173"},
-      "old": {"Income Tax": "0", "Unemployment Insurance Tax": "0.015824711", "Sales Tax": "0.012781497", "Property Tax": "0.047474133"}
     },
     {
       "name": "Retail Store",
@@ -2160,6 +2160,18 @@
   "tier2": "Rutland",
   "firms": [
     {
+      "name": "Corporate Headquarters",
+      "tier": "tier1",
+      "new": {"Income Tax": "0.008679245", "Unemployment Insurance Tax": "0.006037736", "Sales Tax": "0.054150943", "Property Tax": "0.043773585"},
+      "old": {"Income Tax": "0.057680051", "Unemployment Insurance Tax": "0.005098789", "Sales Tax": "0.034576163", "Property Tax": "0.033460803"}
+    },
+    {
+      "name": "R&D Headquarters",
+      "tier": "tier1",
+      "new": {"Income Tax": "-0.037354086", "Unemployment Insurance Tax": "0.006225681", "Sales Tax": "0.017120623", "Property Tax": "0.077042802"},
+      "old": {"Income Tax": "0.03347535", "Unemployment Insurance Tax": "0.004869142", "Sales Tax": "0.011564212", "Property Tax": "0.059646987"}
+    },
+    {
       "name": "Call Center",
       "tier": "tier2",
       "new": {"Income Tax": "-0.038831729", "Unemployment Insurance Tax": "0.031861932", "Sales Tax": "0.05509459", "Property Tax": "0.120146034"},
@@ -2172,12 +2184,6 @@
       "old": {"Income Tax": "0.091116619", "Unemployment Insurance Tax": "0.001043569", "Sales Tax": "0.009718236", "Property Tax": "0.069723454"}
     },
     {
-      "name": "Corporate Headquarters",
-      "tier": "tier1",
-      "new": {"Income Tax": "0.008679245", "Unemployment Insurance Tax": "0.006037736", "Sales Tax": "0.054150943", "Property Tax": "0.043773585"},
-      "old": {"Income Tax": "0.057680051", "Unemployment Insurance Tax": "0.005098789", "Sales Tax": "0.034576163", "Property Tax": "0.033460803"}
-    },
-    {
       "name": "Distribution Center",
       "tier": "tier2",
       "new": {"Income Tax": "0.022929936", "Unemployment Insurance Tax": "0.006369427", "Sales Tax": "0.072611465", "Property Tax": "0.185987261"},
@@ -2188,12 +2194,6 @@
       "tier": "tier2",
       "new": {"Income Tax": "0.039343572", "Unemployment Insurance Tax": "0.003226033", "Sales Tax": "0.030787573", "Property Tax": "0.042148818"},
       "old": {"Income Tax": "0.075254716", "Unemployment Insurance Tax": "0.002421063", "Sales Tax": "0.020881671", "Property Tax": "0.029758902"}
-    },
-    {
-      "name": "R&D Headquarters",
-      "tier": "tier1",
-      "new": {"Income Tax": "-0.037354086", "Unemployment Insurance Tax": "0.006225681", "Sales Tax": "0.017120623", "Property Tax": "0.077042802"},
-      "old": {"Income Tax": "0.03347535", "Unemployment Insurance Tax": "0.004869142", "Sales Tax": "0.011564212", "Property Tax": "0.059646987"}
     },
     {
       "name": "Retail Store",
@@ -2209,6 +2209,18 @@
   "tier2": "Roanoke",
   "firms": [
     {
+      "name": "Corporate Headquarters",
+      "tier": "tier1",
+      "new": {"Income Tax": "0.056226415", "Unemployment Insurance Tax": "0.009245283", "Sales Tax": "0.041132075", "Property Tax": "0.057169811"},
+      "old": {"Income Tax": "0.0583174", "Unemployment Insurance Tax": "0.007807521", "Sales Tax": "0.026290631", "Property Tax": "0.027246654"}
+    },
+    {
+      "name": "R&D Headquarters",
+      "tier": "tier1",
+      "new": {"Income Tax": "0.069314642", "Unemployment Insurance Tax": "0.009345794", "Sales Tax": "0.013239875", "Property Tax": "0.095794393"},
+      "old": {"Income Tax": "0.070036541", "Unemployment Insurance Tax": "0.007308161", "Sales Tax": "0.008526188", "Property Tax": "0.049330085"}
+    },
+    {
       "name": "Call Center",
       "tier": "tier2",
       "new": {"Income Tax": "0.059409227", "Unemployment Insurance Tax": "0.049120478", "Sales Tax": "0.041818785", "Property Tax": "0.119150348"},
@@ -2221,12 +2233,6 @@
       "old": {"Income Tax": "0.001630577", "Unemployment Insurance Tax": "0.001597965", "Sales Tax": "0.007337595", "Property Tax": "0.082507175"}
     },
     {
-      "name": "Corporate Headquarters",
-      "tier": "tier1",
-      "new": {"Income Tax": "0.056226415", "Unemployment Insurance Tax": "0.009245283", "Sales Tax": "0.041132075", "Property Tax": "0.057169811"},
-      "old": {"Income Tax": "0.0583174", "Unemployment Insurance Tax": "0.007807521", "Sales Tax": "0.026290631", "Property Tax": "0.027246654"}
-    },
-    {
       "name": "Distribution Center",
       "tier": "tier2",
       "new": {"Income Tax": "0.046284501", "Unemployment Insurance Tax": "0.009766454", "Sales Tax": "0.05477707", "Property Tax": "0.241613588"},
@@ -2237,12 +2243,6 @@
       "tier": "tier2",
       "new": {"Income Tax": "0.001051967", "Unemployment Insurance Tax": "0.004979311", "Sales Tax": "0.023353671", "Property Tax": "0.084578161"},
       "old": {"Income Tax": "0.001361848", "Unemployment Insurance Tax": "0.003732473", "Sales Tax": "0.015837789", "Property Tax": "0.022293957"}
-    },
-    {
-      "name": "R&D Headquarters",
-      "tier": "tier1",
-      "new": {"Income Tax": "0.069314642", "Unemployment Insurance Tax": "0.009345794", "Sales Tax": "0.013239875", "Property Tax": "0.095794393"},
-      "old": {"Income Tax": "0.070036541", "Unemployment Insurance Tax": "0.007308161", "Sales Tax": "0.008526188", "Property Tax": "0.049330085"}
     },
     {
       "name": "Retail Store",
@@ -2258,6 +2258,18 @@
   "tier2": "Spokane",
   "firms": [
     {
+      "name": "Corporate Headquarters",
+      "tier": "tier1",
+      "new": {"Income Tax": "0.112096622", "Unemployment Insurance Tax": "0.027174939", "Sales Tax": "0.084544254", "Property Tax": "0.035855822"},
+      "old": {"Income Tax": "0.094646272", "Unemployment Insurance Tax": "0.022944551", "Sales Tax": "0.056246017", "Property Tax": "0.019917145"}
+    },
+    {
+      "name": "R&D Headquarters",
+      "tier": "tier1",
+      "new": {"Income Tax": "0.024922118", "Unemployment Insurance Tax": "0.028816199", "Sales Tax": "0.026479751", "Property Tax": "0.06152648"},
+      "old": {"Income Tax": "0.019476567", "Unemployment Insurance Tax": "0.022519781", "Sales Tax": "0.017650639", "Property Tax": "0.035301278"}
+    },
+    {
       "name": "Call Center",
       "tier": "tier2",
       "new": {"Income Tax": "0.00331785", "Unemployment Insurance Tax": "0.090245521", "Sales Tax": "0.071997346", "Property Tax": "0.090245521"},
@@ -2270,12 +2282,6 @@
       "old": {"Income Tax": "0.031565904", "Unemployment Insurance Tax": "0.004826192", "Sales Tax": "0.017119937", "Property Tax": "0.041348725"}
     },
     {
-      "name": "Corporate Headquarters",
-      "tier": "tier1",
-      "new": {"Income Tax": "0.112096622", "Unemployment Insurance Tax": "0.027174939", "Sales Tax": "0.084544254", "Property Tax": "0.035855822"},
-      "old": {"Income Tax": "0.094646272", "Unemployment Insurance Tax": "0.022944551", "Sales Tax": "0.056246017", "Property Tax": "0.019917145"}
-    },
-    {
       "name": "Distribution Center",
       "tier": "tier2",
       "new": {"Income Tax": "0", "Unemployment Insurance Tax": "0.022514868", "Sales Tax": "0.096856415", "Property Tax": "0.210705183"},
@@ -2286,12 +2292,6 @@
       "tier": "tier2",
       "new": {"Income Tax": "0.055473736", "Unemployment Insurance Tax": "0.015008065", "Sales Tax": "0.048600884", "Property Tax": "0.050985343"},
       "old": {"Income Tax": "0.042421185", "Unemployment Insurance Tax": "0.011197982", "Sales Tax": "0.033795712", "Property Tax": "0.017654477"}
-    },
-    {
-      "name": "R&D Headquarters",
-      "tier": "tier1",
-      "new": {"Income Tax": "0.024922118", "Unemployment Insurance Tax": "0.028816199", "Sales Tax": "0.026479751", "Property Tax": "0.06152648"},
-      "old": {"Income Tax": "0.019476567", "Unemployment Insurance Tax": "0.022519781", "Sales Tax": "0.017650639", "Property Tax": "0.035301278"}
     },
     {
       "name": "Retail Store",
@@ -2307,6 +2307,18 @@
   "tier2": "Parkersburg",
   "firms": [
     {
+      "name": "Corporate Headquarters",
+      "tier": "tier1",
+      "new": {"Income Tax": "0.058490566", "Unemployment Insurance Tax": "0.012264151", "Sales Tax": "0.065471698", "Property Tax": "0.047735849"},
+      "old": {"Income Tax": "0.090662843", "Unemployment Insurance Tax": "0.010356915", "Sales Tax": "0.044933078", "Property Tax": "0.026449968"}
+    },
+    {
+      "name": "R&D Headquarters",
+      "tier": "tier1",
+      "new": {"Income Tax": "0.060747664", "Unemployment Insurance Tax": "0.012461059", "Sales Tax": "0.020249221", "Property Tax": "0.081775701"},
+      "old": {"Income Tax": "0.102314251", "Unemployment Insurance Tax": "0.009744214", "Sales Tax": "0.014007308", "Property Tax": "0.046894032"}
+    },
+    {
       "name": "Call Center",
       "tier": "tier2",
       "new": {"Income Tax": "0.129396151", "Unemployment Insurance Tax": "0.064366291", "Sales Tax": "0.051758461", "Property Tax": "0.120437956"},
@@ -2319,12 +2331,6 @@
       "old": {"Income Tax": "0.052698516", "Unemployment Insurance Tax": "0.00211968", "Sales Tax": "0.014576879", "Property Tax": "0.089515735"}
     },
     {
-      "name": "Corporate Headquarters",
-      "tier": "tier1",
-      "new": {"Income Tax": "0.058490566", "Unemployment Insurance Tax": "0.012264151", "Sales Tax": "0.065471698", "Property Tax": "0.047735849"},
-      "old": {"Income Tax": "0.090662843", "Unemployment Insurance Tax": "0.010356915", "Sales Tax": "0.044933078", "Property Tax": "0.026449968"}
-    },
-    {
       "name": "Distribution Center",
       "tier": "tier2",
       "new": {"Income Tax": "0.047558386", "Unemployment Insurance Tax": "0.013163482", "Sales Tax": "0.071762208", "Property Tax": "0.284501062"},
@@ -2335,12 +2341,6 @@
       "tier": "tier2",
       "new": {"Income Tax": "0.022932884", "Unemployment Insurance Tax": "0.006522197", "Sales Tax": "0.03983449", "Property Tax": "0.003506557"},
       "old": {"Income Tax": "0.077574902", "Unemployment Insurance Tax": "0.004892565", "Sales Tax": "0.02814486", "Property Tax": "0.025320286"}
-    },
-    {
-      "name": "R&D Headquarters",
-      "tier": "tier1",
-      "new": {"Income Tax": "0.060747664", "Unemployment Insurance Tax": "0.012461059", "Sales Tax": "0.020249221", "Property Tax": "0.081775701"},
-      "old": {"Income Tax": "0.102314251", "Unemployment Insurance Tax": "0.009744214", "Sales Tax": "0.014007308", "Property Tax": "0.046894032"}
     },
     {
       "name": "Retail Store",
@@ -2356,6 +2356,18 @@
   "tier2": "Eau Claire",
   "firms": [
     {
+      "name": "Corporate Headquarters",
+      "tier": "tier1",
+      "new": {"Income Tax": "-0.071320755", "Unemployment Insurance Tax": "0.021698113", "Sales Tax": "0.04754717", "Property Tax": "0.078867925"},
+      "old": {"Income Tax": "0.071383047", "Unemployment Insurance Tax": "0.018323773", "Sales Tax": "0.031708094", "Property Tax": "0.043817718"}
+    },
+    {
+      "name": "R&D Headquarters",
+      "tier": "tier1",
+      "new": {"Income Tax": "-0.147859922", "Unemployment Insurance Tax": "0.022568093", "Sales Tax": "0.014785992", "Property Tax": "0.13540856"},
+      "old": {"Income Tax": "0", "Unemployment Insurance Tax": "0.017650639", "Sales Tax": "0.010346926", "Property Tax": "0.077906269"}
+    },
+    {
       "name": "Call Center",
       "tier": "tier2",
       "new": {"Income Tax": "-0.278791902", "Unemployment Insurance Tax": "0.114171922", "Sales Tax": "0.045469632", "Property Tax": "0.149352805"},
@@ -2368,12 +2380,6 @@
       "old": {"Income Tax": "0.094179031", "Unemployment Insurance Tax": "0.003750204", "Sales Tax": "0.010891896", "Property Tax": "0.055861732"}
     },
     {
-      "name": "Corporate Headquarters",
-      "tier": "tier1",
-      "new": {"Income Tax": "-0.071320755", "Unemployment Insurance Tax": "0.021698113", "Sales Tax": "0.04754717", "Property Tax": "0.078867925"},
-      "old": {"Income Tax": "0.071383047", "Unemployment Insurance Tax": "0.018323773", "Sales Tax": "0.031708094", "Property Tax": "0.043817718"}
-    },
-    {
       "name": "Distribution Center",
       "tier": "tier2",
       "new": {"Income Tax": "-0.063242784", "Unemployment Insurance Tax": "0.023344652", "Sales Tax": "0.061120543", "Property Tax": "0.352716469"},
@@ -2384,12 +2390,6 @@
       "tier": "tier2",
       "new": {"Income Tax": "-0.004558524", "Unemployment Insurance Tax": "0.011571639", "Sales Tax": "0.03064731", "Property Tax": "0.038992917"},
       "old": {"Income Tax": "0.077423585", "Unemployment Insurance Tax": "0.008675477", "Sales Tax": "0.02133562", "Property Tax": "0.02259659"}
-    },
-    {
-      "name": "R&D Headquarters",
-      "tier": "tier1",
-      "new": {"Income Tax": "-0.147859922", "Unemployment Insurance Tax": "0.022568093", "Sales Tax": "0.014785992", "Property Tax": "0.13540856"},
-      "old": {"Income Tax": "0", "Unemployment Insurance Tax": "0.017650639", "Sales Tax": "0.010346926", "Property Tax": "0.077906269"}
     },
     {
       "name": "Retail Store",
@@ -2405,6 +2405,18 @@
   "tier2": "Casper",
   "firms": [
     {
+      "name": "Corporate Headquarters",
+      "tier": "tier1",
+      "new": {"Income Tax": "0.001320755", "Unemployment Insurance Tax": "0.024716981", "Sales Tax": "0.053396226", "Property Tax": "0.020566038"},
+      "old": {"Income Tax": "0.000956023", "Unemployment Insurance Tax": "0.020873168", "Sales Tax": "0.035532186", "Property Tax": "0.011472275"}
+    },
+    {
+      "name": "R&D Headquarters",
+      "tier": "tier1",
+      "new": {"Income Tax": "0.00155642", "Unemployment Insurance Tax": "0.025680934", "Sales Tax": "0.045914397", "Property Tax": "0.035019455"},
+      "old": {"Income Tax": "0.000608643", "Unemployment Insurance Tax": "0.02008521", "Sales Tax": "0.021302495", "Property Tax": "0.02008521"}
+    },
+    {
       "name": "Call Center",
       "tier": "tier2",
       "new": {"Income Tax": "0.00132758", "Unemployment Insurance Tax": "0.12379688", "Sales Tax": "0.041154995", "Property Tax": "0.056090275"},
@@ -2417,12 +2429,6 @@
       "old": {"Income Tax": "0.001761023", "Unemployment Insurance Tax": "0.005446126", "Sales Tax": "0.008576833", "Property Tax": "0.025697887"}
     },
     {
-      "name": "Corporate Headquarters",
-      "tier": "tier1",
-      "new": {"Income Tax": "0.001320755", "Unemployment Insurance Tax": "0.024716981", "Sales Tax": "0.053396226", "Property Tax": "0.020566038"},
-      "old": {"Income Tax": "0.000956023", "Unemployment Insurance Tax": "0.020873168", "Sales Tax": "0.035532186", "Property Tax": "0.011472275"}
-    },
-    {
       "name": "Distribution Center",
       "tier": "tier2",
       "new": {"Income Tax": "0.001698514", "Unemployment Insurance Tax": "0.027176221", "Sales Tax": "0.055626327", "Property Tax": "0.130785563"},
@@ -2433,12 +2439,6 @@
       "tier": "tier2",
       "new": {"Income Tax": "0.001542777", "Unemployment Insurance Tax": "0.016900421", "Sales Tax": "0.026647966", "Property Tax": "0.031697055"},
       "old": {"Income Tax": "0.000907899", "Unemployment Insurance Tax": "0.012660143", "Sales Tax": "0.018460607", "Property Tax": "0.010995662"}
-    },
-    {
-      "name": "R&D Headquarters",
-      "tier": "tier1",
-      "new": {"Income Tax": "0.00155642", "Unemployment Insurance Tax": "0.025680934", "Sales Tax": "0.045914397", "Property Tax": "0.035019455"},
-      "old": {"Income Tax": "0.000608643", "Unemployment Insurance Tax": "0.02008521", "Sales Tax": "0.021302495", "Property Tax": "0.02008521"}
     },
     {
       "name": "Retail Store",
