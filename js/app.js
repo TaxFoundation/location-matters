@@ -99,65 +99,75 @@
         .append('g')
         .attr('class', 'firm');
 
-// TODO move data assignment and rect appending inside these for loops to cover multiple tax types
       for (var firm in data.firms) {
         var name = data.firms[firm].name;
         var sumOldTaxes = 0;
         var sumNewTaxes = 0;
+        var oldTaxes = data.firms[firm].old;
+        var newTaxes = data.firms[firm].new;
 
-        for (var tax in data.firms[firm].old) {
+        for (var tax in oldTaxes) {
           var thisTax = parseFloat(data.firms[firm].old[tax]);
           sumOldTaxes += thisTax;
         }
 
-        for (var tax in data.firms[firm].new) {
+        for (var tax in newTaxes) {
           var thisTax = parseFloat(data.firms[firm].new[tax]);
           sumNewTaxes += thisTax;
         }
 
         sumOldTaxes = views.round(sumOldTaxes, 9);
         sumNewTaxes = views.round(sumNewTaxes, 9);
+
+        bars
+          .append('rect')
+          .attr('y', function() {
+            return sumOldTaxes > 0 ? views.y(sumOldTaxes) - views.y(max) : baseline;
+          })
+          .attr('height', function() { return Math.abs(views.y(sumOldTaxes) - baseline); })
+          .attr('width', views.x.rangeBand() / 2)
+          .attr('x', function(d) { return views.x(name); })
+          .attr('fill', '#0094ff');
+
+        bars
+          .append('rect')
+          .attr('y', function() {
+            return sumNewTaxes > 0 ? views.y(sumNewTaxes) - views.y(max) : baseline;
+          })
+          .attr('height', function() { return Math.abs(views.y(sumNewTaxes) - baseline); })
+          .attr('width', views.x.rangeBand() / 2)
+          .attr('x', function(d) { return views.x(name) + views.x.rangeBand() / 2; })
+          .attr('fill', '#0094ff');
       }
 
-      bars
-        .append('rect')
-        .attr('y', function(d) {
-          return +d.old['Income Tax'] > 0 ? views.y(+d.old['Income Tax']) - views.y(max) : baseline;
-        })
-        .attr('height', function(d) { return Math.abs(views.y(+d.old['Income Tax']) - baseline); })
-        .attr('width', views.x.rangeBand() / 2)
-        .attr('x', function(d) { return views.x(d.name); })
-        .attr('fill', '#0094ff');
 
-      bars
-        .append('rect')
-        .attr('y', function(d) {
-          return +d.new['Income Tax'] > 0 ? views.y(+d.new['Income Tax']) - views.y(max) : baseline;
-        })
-        .attr('height', function(d) { return Math.abs(views.y(+d.new['Income Tax']) - baseline); })
-        .attr('width', views.x.rangeBand() / 2)
-        .attr('x', function(d) { return views.x(d.name) + views.x.rangeBand() / 2; })
-        .attr('fill', '#0094ff');
     },
 
     allValues: function(data) {
-      var newFirms = data.map(function(d) {return d.new;});
-      var oldFirms = data.map(function(d) {return d.old;});
-      var values = [0, 0.15]; // default domain to prevent hilariously bad y-axis scales
+      var taxSums = [];
+      for (var firm in data) {
+        var sumOldTaxes = 0;
+        var sumNewTaxes = 0;
+        var oldTaxes = data[firm].old;
+        var newTaxes = data[firm].new;
 
-      for (var i = 0, j = newFirms.length; i < j; i++) {
-        for (var m = 0, n = d3.values(newFirms[i]).length; m < n; m++) {
-          values.push(parseFloat(d3.values(newFirms[i])[m]))
+        for (var tax in oldTaxes) {
+          var thisTax = parseFloat(oldTaxes[tax]);
+          sumOldTaxes += thisTax;
         }
+
+        for (var tax in newTaxes) {
+          var thisTax = parseFloat(newTaxes[tax]);
+          sumNewTaxes += thisTax;
+        }
+
+        sumOldTaxes = views.round(sumOldTaxes, 9);
+        sumNewTaxes = views.round(sumNewTaxes, 9);
+        taxSums.push(sumOldTaxes);
+        taxSums.push(sumNewTaxes);
       }
 
-      for (var i = 0, j = oldFirms.length; i < j; i++) {
-        for (var m = 0, n = d3.values(oldFirms[i]).length; m < n; m++) {
-          values.push(parseFloat(d3.values(oldFirms[i])[m]))
-        }
-      }
-
-      return d3.extent(values);
+      return [Math.min(0, d3.min(taxSums)), d3.max(taxSums) + 0.03];
     },
 
     round: function(value, decimals) {
