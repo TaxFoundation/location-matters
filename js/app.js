@@ -105,19 +105,25 @@
         var newData = data.firms[firm].new;
         var oldKeys = d3.keys(oldData);
         var newKeys = d3.keys(newData);
-        var oldCondense = false;
-        var newCondense = false;
 
-        for (var i = 0, j = oldKeys.length; i < j; i++) {
-          views.drawBars(bars, name, oldData, 'old', max, baseline, views.fills[i]);
-          delete oldData[oldKeys[0]];
-          oldKeys.shift();
+        if (views.sumValues(oldData).condense === true) {
+          views.appendRect(bars, name, views.round(views.sumValues(oldData).sum, 9), 'old', max, baseline, '#888888');
+        } else {
+          for (var i = 0, j = oldKeys.length; i < j; i++) {
+            views.appendRect(bars, name, views.round(views.sumValues(oldData).sum, 9), 'old', max, baseline, views.fills[i]);
+            delete oldData[oldKeys[0]];
+            oldKeys.shift();
+          }
         }
 
-        for (var i = 0, j = newKeys.length; i < j; i++) {
-          views.drawBars(bars, name, newData, 'new', max, baseline, views.fills[i]);
-          delete newData[newKeys[0]];
-          newKeys.shift();
+        if (views.sumValues(newData).condense === true) {
+          views.appendRect(bars, name, views.round(views.sumValues(newData).sum, 9), 'new', max, baseline, '#888888');
+        } else {
+          for (var i = 0, j = newKeys.length; i < j; i++) {
+            views.appendRect(bars, name, views.round(views.sumValues(newData).sum, 9), 'new', max, baseline, views.fills[i]);
+            delete newData[newKeys[0]];
+            newKeys.shift();
+          }
         }
       }
 
@@ -158,19 +164,24 @@
       return Number(Math.round(value + 'e' + decimals) + 'e-' + decimals);
     },
 
-    drawBars: function(selection, name, data, status, max, baseline, fill) {
-      var name = name;
+    sumValues: function(data) {
       var sumValues = 0;
       var values = data;
+      var condense = false;
 
       for (var value in values) {
         var thisVal = parseFloat(values[value]);
+        if (thisVal < 0 && !condense) {
+          condense = true;
+        }
+
         sumValues += thisVal;
       }
 
-      sumValues = views.round(sumValues, 9);
-
-      views.appendRect(selection, name, sumValues, status, max, baseline, fill);
+      return {
+        sum: sumValues,
+        condense: condense
+      };
     },
 
     appendRect: function(selection, name, value, status, max, baseline, fill) {
