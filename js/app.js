@@ -55,6 +55,10 @@
       this.xAxis = d3.svg.axis().scale(views.x).orient('bottom');
       this.yAxis = d3.svg.axis().scale(views.y).orient('left');
       this.fills = ['#F44336', '#2196F3', '#4CAF50', '#FF9800'];
+      this.tooltip = d3.select('body').append('div')
+        .attr('class', 'tooltip')
+        .style('position', 'absolute')
+        .style('opacity', 0);
 
       views.svg.append('line')
         .attr('class', 'baseline')
@@ -107,20 +111,60 @@
         var newKeys = d3.keys(newData);
 
         if (views.sumValues(oldData).condense === true) {
-          views.appendRect(bars, name, views.round(views.sumValues(oldData).sum, 9), 'old', max, baseline, '#888888');
+          views.appendRect(
+            bars,
+            name,
+            oldKeys[0],
+            views.round(oldData[oldKeys[0]], 3),
+            views.round(views.sumValues(oldData).sum, 9),
+            'old',
+            max,
+            baseline,
+            '#888888'
+          );
         } else {
           for (var i = 0, j = oldKeys.length; i < j; i++) {
-            views.appendRect(bars, name, views.round(views.sumValues(oldData).sum, 9), 'old', max, baseline, views.fills[i]);
+            views.appendRect(
+              bars,
+              name,
+              oldKeys[0],
+              views.round(oldData[oldKeys[0]], 3),
+              views.round(views.sumValues(oldData).sum, 9),
+              'old',
+              max,
+              baseline,
+              views.fills[i]
+            );
             delete oldData[oldKeys[0]];
             oldKeys.shift();
           }
         }
 
         if (views.sumValues(newData).condense === true) {
-          views.appendRect(bars, name, views.round(views.sumValues(newData).sum, 9), 'new', max, baseline, '#888888');
+          views.appendRect(
+            bars,
+            name,
+            newKeys[0],
+            views.round(newData[newKeys[0]], 3),
+            views.round(views.sumValues(newData).sum, 9),
+            'new',
+            max,
+            baseline,
+            '#888888'
+          );
         } else {
           for (var i = 0, j = newKeys.length; i < j; i++) {
-            views.appendRect(bars, name, views.round(views.sumValues(newData).sum, 9), 'new', max, baseline, views.fills[i]);
+            views.appendRect(
+              bars,
+              name,
+              newKeys[0],
+              views.round(newData[newKeys[0]], 3),
+              views.round(views.sumValues(newData).sum, 9),
+              'new',
+              max,
+              baseline,
+              views.fills[i]
+            );
             delete newData[newKeys[0]];
             newKeys.shift();
           }
@@ -184,7 +228,7 @@
       };
     },
 
-    appendRect: function(selection, name, value, status, max, baseline, fill) {
+    appendRect: function(selection, name, tax, taxVal, value, status, max, baseline, fill) {
       selection.append('rect')
         .attr('y', function() {
           return value > 0 ? views.y(value) - views.y(max) : baseline;
@@ -192,7 +236,21 @@
         .attr('height', function() { return Math.abs(views.y(value) - baseline); })
         .attr('width', views.x.rangeBand() / 2)
         .attr('x', function(d) { return status === 'old' ? views.x(name) : views.x(name) + views.x.rangeBand() / 2; })
-        .attr('fill', fill);
+        .attr('fill', fill)
+        .on('mouseover', function() { return views.addTooltip(tax, taxVal); })
+        .on('mousemove', function() { return views.tooltip.style('left', (d3.event.pageX) + 'px').style('top', (d3.event.pageY + 50) + 'px'); })
+        .on('mouseout', function() { return views.tooltip.transition().duration(200).style('opacity', 0); });
+    },
+
+    addTooltip: function(label, number) {
+      views.tooltip.transition()
+        .duration(200)
+        .style('opacity', 0.9);
+      views.tooltip.html(
+        label + ': ' + (number ? number : 'No Data')
+      )
+        .style('left', (d3.event.pageX) + 'px')
+        .style('top', (d3.event.pageY + 50) + 'px');
     }
   };
 }());
