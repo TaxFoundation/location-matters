@@ -105,41 +105,46 @@
         var sumNewTaxes = 0;
         var oldTaxes = data.firms[firm].old;
         var newTaxes = data.firms[firm].new;
+        var condenseOld = false;
+        var condenseNew = false;
 
         for (var tax in oldTaxes) {
           var thisTax = parseFloat(data.firms[firm].old[tax]);
+          if (thisTax < 0 && !condenseOld) { condenseOld = true; }
           sumOldTaxes += thisTax;
         }
 
         for (var tax in newTaxes) {
           var thisTax = parseFloat(data.firms[firm].new[tax]);
+          if (thisTax < 0 && !condenseNew) { condenseNew = true; }
           sumNewTaxes += thisTax;
         }
 
         sumOldTaxes = views.round(sumOldTaxes, 9);
         sumNewTaxes = views.round(sumNewTaxes, 9);
 
-        bars
-          .append('rect')
-          .attr('y', function() {
-            return sumOldTaxes > 0 ? views.y(sumOldTaxes) - views.y(max) : baseline;
-          })
-          .attr('height', function() { return Math.abs(views.y(sumOldTaxes) - baseline); })
-          .attr('width', views.x.rangeBand() / 2)
-          .attr('x', function(d) { return views.x(name); })
-          .attr('fill', '#0094ff');
-
-        bars
-          .append('rect')
-          .attr('y', function() {
-            return sumNewTaxes > 0 ? views.y(sumNewTaxes) - views.y(max) : baseline;
-          })
-          .attr('height', function() { return Math.abs(views.y(sumNewTaxes) - baseline); })
-          .attr('width', views.x.rangeBand() / 2)
-          .attr('x', function(d) { return views.x(name) + views.x.rangeBand() / 2; })
-          .attr('fill', '#0094ff');
+        views.appendRect(bars, name, sumOldTaxes, 'old', max, baseline, '#0094ff');
+        views.appendRect(bars, name, sumNewTaxes, 'new', max, baseline, '#0094ff');
+        // bars
+        //   .append('rect')
+        //   .attr('y', function() {
+        //     return sumOldTaxes > 0 ? views.y(sumOldTaxes) - views.y(max) : baseline;
+        //   })
+        //   .attr('height', function() { return Math.abs(views.y(sumOldTaxes) - baseline); })
+        //   .attr('width', views.x.rangeBand() / 2)
+        //   .attr('x', function(d) { return views.x(name); })
+        //   .attr('fill', '#0094ff');
+        //
+        // bars
+        //   .append('rect')
+        //   .attr('y', function() {
+        //     return sumNewTaxes > 0 ? views.y(sumNewTaxes) - views.y(max) : baseline;
+        //   })
+        //   .attr('height', function() { return Math.abs(views.y(sumNewTaxes) - baseline); })
+        //   .attr('width', views.x.rangeBand() / 2)
+        //   .attr('x', function(d) { return views.x(name) + views.x.rangeBand() / 2; })
+        //   .attr('fill', '#0094ff');
       }
-
 
     },
 
@@ -172,6 +177,17 @@
 
     round: function(value, decimals) {
       return Number(Math.round(value + 'e' + decimals) + 'e-' + decimals);
+    },
+
+    appendRect: function(selection, name, value, status, max, baseline, fill) {
+      selection.append('rect')
+        .attr('y', function() {
+          return value > 0 ? views.y(value) - views.y(max) : baseline;
+        })
+        .attr('height', function() { return Math.abs(views.y(value) - baseline); })
+        .attr('width', views.x.rangeBand() / 2)
+        .attr('x', function(d) { return status === 'old' ? views.x(name) : views.x(name) + views.x.rangeBand() / 2; })
+        .attr('fill', fill);
     }
   };
 }());
