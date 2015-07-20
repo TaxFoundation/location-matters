@@ -100,8 +100,24 @@
         .attr('class', 'firm');
 
       for (var firm in data.firms) {
-        views.drawBars(bars, data.firms[firm].name, data.firms[firm].old, 'old', max, baseline);
-        views.drawBars(bars, data.firms[firm].name, data.firms[firm].new, 'new', max, baseline);
+        var name = data.firms[firm].name;
+        var oldData = data.firms[firm].old;
+        var newData = data.firms[firm].new;
+
+        views.drawBars(bars, name, oldData, 'old', max, baseline, '#0094ff');
+        views.drawBars(bars, name, newData, 'new', max, baseline, '#0094ff');
+        delete oldData['Income Tax'];
+        delete newData['Income Tax'];
+        views.drawBars(bars, name, oldData, 'old', max, baseline, '#ff0000');
+        views.drawBars(bars, name, newData, 'new', max, baseline, '#ff0000');
+        delete oldData['Unemployment Insurance Tax'];
+        delete newData['Unemployment Insurance Tax'];
+        views.drawBars(bars, name, oldData, 'old', max, baseline, '#009900');
+        views.drawBars(bars, name, newData, 'new', max, baseline, '#009900');
+        delete oldData['Sales Tax'];
+        delete newData['Sales Tax'];
+        views.drawBars(bars, name, oldData, 'old', max, baseline, '#000099');
+        views.drawBars(bars, name, newData, 'new', max, baseline, '#000099');
       }
 
     },
@@ -137,7 +153,7 @@
       return Number(Math.round(value + 'e' + decimals) + 'e-' + decimals);
     },
 
-    drawBars: function(selection, name, data, status, max, baseline) {
+    drawBars: function(selection, name, data, status, max, baseline, fill) {
       var name = name;
       var sumValues = 0;
       var values = data;
@@ -151,7 +167,9 @@
 
       sumValues = views.round(sumValues, 9);
 
-      views.appendRect(selection, name, sumValues, status, max, baseline, '#0094ff');
+      if (condense) { fill = '#888888'; }
+
+      views.appendRect(selection, name, sumValues, status, max, baseline, fill);
     },
 
     appendRect: function(selection, name, value, status, max, baseline, fill) {
