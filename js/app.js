@@ -54,6 +54,7 @@
       this.y = d3.scale.linear().rangeRound([0, views.dimensions.height]);
       this.xAxis = d3.svg.axis().scale(views.x).orient('bottom');
       this.yAxis = d3.svg.axis().scale(views.y).orient('left');
+      this.fills = ['#F44336', '#2196F3', '#4CAF50', '#FF9800'];
 
       views.svg.append('line')
         .attr('class', 'baseline')
@@ -71,11 +72,10 @@
 
       var bars = views.svg.selectAll('.firm').data(data.firms);
       var extent = views.allValues(data.firms);
-      var min = d3.min(extent);
-      var max = d3.max(extent);
+      var min = extent.min;
+      var max = extent.max;
       views.x.domain(data.firms.map(function(d) { return d.name; }));
       views.y.domain([max, min]);
-
       var baseline = views.y(0);
 
       d3.select('.baseline')
@@ -103,27 +103,29 @@
         var name = data.firms[firm].name;
         var oldData = data.firms[firm].old;
         var newData = data.firms[firm].new;
+        var oldKeys = d3.keys(oldData);
+        var newKeys = d3.keys(newData);
+        var oldCondense = false;
+        var newCondense = false;
 
-        views.drawBars(bars, name, oldData, 'old', max, baseline, '#0094ff');
-        views.drawBars(bars, name, newData, 'new', max, baseline, '#0094ff');
-        delete oldData['Income Tax'];
-        delete newData['Income Tax'];
-        views.drawBars(bars, name, oldData, 'old', max, baseline, '#ff0000');
-        views.drawBars(bars, name, newData, 'new', max, baseline, '#ff0000');
-        delete oldData['Unemployment Insurance Tax'];
-        delete newData['Unemployment Insurance Tax'];
-        views.drawBars(bars, name, oldData, 'old', max, baseline, '#009900');
-        views.drawBars(bars, name, newData, 'new', max, baseline, '#009900');
-        delete oldData['Sales Tax'];
-        delete newData['Sales Tax'];
-        views.drawBars(bars, name, oldData, 'old', max, baseline, '#000099');
-        views.drawBars(bars, name, newData, 'new', max, baseline, '#000099');
+        for (var i = 0, j = oldKeys.length; i < j; i++) {
+          views.drawBars(bars, name, oldData, 'old', max, baseline, views.fills[i]);
+          delete oldData[oldKeys[0]];
+          oldKeys.shift();
+        }
+
+        for (var i = 0, j = newKeys.length; i < j; i++) {
+          views.drawBars(bars, name, newData, 'new', max, baseline, views.fills[i]);
+          delete newData[newKeys[0]];
+          newKeys.shift();
+        }
       }
 
     },
 
     allValues: function(data) {
       var taxSums = [];
+      var condense = false;
       for (var firm in data) {
         var sumOldTaxes = 0;
         var sumNewTaxes = 0;
@@ -146,7 +148,10 @@
         taxSums.push(sumNewTaxes);
       }
 
-      return [Math.min(0, d3.min(taxSums)), d3.max(taxSums) + 0.03];
+      return {
+        min: Math.min(0, d3.min(taxSums)),
+        max: d3.max(taxSums) + 0.03
+      };
     },
 
     round: function(value, decimals) {
@@ -157,17 +162,13 @@
       var name = name;
       var sumValues = 0;
       var values = data;
-      var condense = false;
 
       for (var value in values) {
         var thisVal = parseFloat(values[value]);
-        if (thisVal < 0 && !condense) { condense = true; }
         sumValues += thisVal;
       }
 
       sumValues = views.round(sumValues, 9);
-
-      if (condense) { fill = '#888888'; }
 
       views.appendRect(selection, name, sumValues, status, max, baseline, fill);
     },
