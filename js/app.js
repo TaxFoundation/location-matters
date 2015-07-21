@@ -132,8 +132,8 @@
             views.appendRect(
               bars,
               name,
-              oldKeys[0],
-              views.round(oldData[oldKeys[0]], 3),
+              oldKeys[i],
+              views.round(oldData[oldKeys[i]], 3),
               views.round(views.sumValues(barData).sum, 9),
               'old',
               max,
@@ -165,8 +165,8 @@
             views.appendRect(
               bars,
               name,
-              newKeys[0],
-              views.round(newData[newKeys[0]], 3),
+              newKeys[i],
+              views.round(newData[newKeys[i]], 3),
               views.round(views.sumValues(barData).sum, 9),
               'new',
               max,
