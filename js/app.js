@@ -124,19 +124,22 @@
           );
         } else {
           for (var i = 0, j = oldKeys.length; i < j; i++) {
+            var barData = {};
+            for (var m = i, n = j; m < n; m++) {
+              barData[oldKeys[m]] = oldData[oldKeys[m]];
+            }
+
             views.appendRect(
               bars,
               name,
               oldKeys[0],
               views.round(oldData[oldKeys[0]], 3),
-              views.round(views.sumValues(oldData).sum, 9),
+              views.round(views.sumValues(barData).sum, 9),
               'old',
               max,
               baseline,
               views.fills[i]
             );
-            delete oldData[oldKeys[0]];
-            oldKeys.shift();
           }
         }
 
@@ -154,19 +157,22 @@
           );
         } else {
           for (var i = 0, j = newKeys.length; i < j; i++) {
+            var barData = {};
+            for (var m = i, n = j; m < n; m++) {
+              barData[newKeys[m]] = newData[newKeys[m]];
+            }
+
             views.appendRect(
               bars,
               name,
               newKeys[0],
               views.round(newData[newKeys[0]], 3),
-              views.round(views.sumValues(newData).sum, 9),
+              views.round(views.sumValues(barData).sum, 9),
               'new',
               max,
               baseline,
               views.fills[i]
             );
-            delete newData[newKeys[0]];
-            newKeys.shift();
           }
         }
       }
