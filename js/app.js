@@ -50,11 +50,11 @@
       this.svg = d3.select('#state-charts').append('svg')
         .attr('height', views.dimensions.height + views.dimensions.margin.top + views.dimensions.margin.bottom)
         .attr('width', views.dimensions.width + views.dimensions.margin.right + views.dimensions.margin.left);
-      this.x = d3.scale.ordinal().rangeRoundBands([views.dimensions.margin.left, views.dimensions.width], 0.1);
+      this.x = d3.scale.ordinal().rangeRoundBands([views.dimensions.margin.left, views.dimensions.width], 0.3);
       this.y = d3.scale.linear().rangeRound([0, views.dimensions.height]);
       this.xAxis = d3.svg.axis().scale(views.x).orient('bottom');
-      this.yAxis = d3.svg.axis().scale(views.y).orient('left');
-      this.fills = ['#F44336', '#2196F3', '#4CAF50', '#FF9800'];
+      this.yAxis = d3.svg.axis().scale(views.y).orient('left').tickFormat(d3.format('%'));
+      this.fills = ['#da9147', '#833749', '#55897b', '#16416a'];
       this.tooltip = d3.select('body').append('div')
         .attr('class', 'tooltip')
         .style('position', 'absolute')
@@ -120,7 +120,7 @@
             'old',
             max,
             baseline,
-            '#888888'
+            '#7f7f7f'
           );
         } else {
           for (var i = 0, j = oldKeys.length; i < j; i++) {
@@ -153,7 +153,7 @@
             'new',
             max,
             baseline,
-            '#888888'
+            '#7f7f7f'
           );
         } else {
           for (var i = 0, j = newKeys.length; i < j; i++) {
@@ -240,8 +240,8 @@
           return value > 0 ? views.y(value) - views.y(max) : baseline;
         })
         .attr('height', function() { return Math.abs(views.y(value) - baseline); })
-        .attr('width', views.x.rangeBand() / 2)
-        .attr('x', function(d) { return status === 'old' ? views.x(name) : views.x(name) + views.x.rangeBand() / 2; })
+        .attr('width', Math.round(views.x.rangeBand() / 2.5))
+        .attr('x', function(d) { return status === 'old' ? Math.round(views.x(name)) : Math.round(views.x(name) + views.x.rangeBand() / 2); })
         .attr('fill', fill)
         .on('mouseover', function() { return views.addTooltip(tax, taxVal); })
         .on('mousemove', function() { return views.tooltip.style('left', (d3.event.pageX) + 'px').style('top', (d3.event.pageY + 50) + 'px'); })
