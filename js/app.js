@@ -61,14 +61,6 @@
         .style('position', 'absolute')
         .style('opacity', 0);
 
-      views.svg.append('line')
-        .attr('class', 'baseline')
-        .attr('x1', views.dimensions.margin.left)
-        .attr('y1', 0)
-        .attr('x2', views.dimensions.width)
-        .attr('y2', 0)
-        .attr('style', 'stroke:rgb(0,0,0);stroke-width:1');
-
       views.draw(data);
     },
 
@@ -83,22 +75,32 @@
       views.y.domain([max, min]);
       var baseline = views.y(0);
 
-      d3.select('.baseline')
-        .attr('transform', 'translate(0, ' + baseline + ')');
+      views.svg.append('g')
+          .attr('class', 'y axis')
+          .attr('transform', 'translate(' + views.dimensions.margin.left + ', 0)')
+          .call(views.yAxis)
+          .selectAll('.tick line')
+          .attr('x2', views.dimensions.width - views.dimensions.margin.left);
 
       views.svg.append('g')
         .attr('class', 'x axis')
         .attr('transform', 'translate(0,' + views.dimensions.height + ')')
-        .call(views.xAxis);
-
-      views.svg.append('g')
-          .attr('class', 'y axis')
-          .attr('transform', 'translate(' + views.dimensions.margin.left + ', 0)')
-          .call(views.yAxis);
+        .call(views.xAxis)
+        .selectAll('.tick text')
+        .call(views.wrap, views.x.rangeBand());
 
       d3.select('.x').selectAll('.tick').selectAll('text')
         .attr('transform', 'rotate(45)')
         .attr('style', 'text-anchor:start');
+
+      views.svg.append('line')
+        .attr('class', 'baseline')
+        .attr('x1', views.dimensions.margin.left)
+        .attr('y1', 0)
+        .attr('x2', views.dimensions.width)
+        .attr('y2', 0)
+        .attr('transform', 'translate(0, ' + baseline + ')')
+        .attr('style', function() { return min === 0 ? 'display: none' : 'shape-rendering: crispEdges;stroke:rgb(0,0,0);stroke-width:1'; });
 
       bars.enter()
         .append('g')
@@ -258,6 +260,30 @@
       )
         .style('left', (d3.event.pageX) + 'px')
         .style('top', (d3.event.pageY + 50) + 'px');
+    },
+
+    wrap: function(text, width) {
+      text.each(function() {
+        var text = d3.select(this),
+            words = text.text().split(/\s+/).reverse(),
+            word,
+            line = [],
+            lineNumber = 0,
+            lineHeight = 1.1, // ems
+            y = text.attr('y'),
+            dy = parseFloat(text.attr('dy')),
+            tspan = text.text(null).append('tspan').attr('x', 0).attr('y', y).attr('dy', dy + 'em');
+        while (word = words.pop()) {
+          line.push(word);
+          tspan.text(line.join(' '));
+          if (tspan.node().getComputedTextLength() > width) {
+            line.pop();
+            tspan.text(line.join(' '));
+            line = [word];
+            tspan = text.append('tspan').attr('x', 0).attr('y', y).attr('dy', ++lineNumber * lineHeight + dy + 'em').text(word);
+          }
+        }
+      });
     }
   };
 }());

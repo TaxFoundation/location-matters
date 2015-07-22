@@ -1,12 +1,24 @@
 @import url(http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic);
 
-.axis line,
+.axis line {
+  fill: none;
+  shape-rendering: crispEdges;
+  stroke: rgb(210, 210, 210);
+  stroke-width: 1;
+}
+
 .axis path {
   fill: none;
   shape-rendering: crispEdges;
   stroke: rgb(51, 51, 51);
   stroke-width: 1;
 }
+
+.x text,
+.x tspan {
+  font-size: 12px;
+}
+
 html,
 body,
 p,
@@ -17,6 +29,10 @@ h4,
 h5,
 h6 {
   font-family: 'Lato', sans-serif;
+}
+
+#state-charts {
+  margin: 20px 0;
 }
 
 text {
