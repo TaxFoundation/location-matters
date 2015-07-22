@@ -43,17 +43,18 @@
           top: 20,
           right: 30,
           bottom: 100,
-          left: 40
+          left: 50
         }
       };
 
       this.svg = d3.select('#state-charts').append('svg')
         .attr('height', views.dimensions.height + views.dimensions.margin.top + views.dimensions.margin.bottom)
         .attr('width', views.dimensions.width + views.dimensions.margin.right + views.dimensions.margin.left);
+      this.format = {decimal: d3.format(',.1%'), round: d3.format('%')};
       this.x = d3.scale.ordinal().rangeRoundBands([views.dimensions.margin.left, views.dimensions.width], 0.3);
       this.y = d3.scale.linear().rangeRound([0, views.dimensions.height]);
       this.xAxis = d3.svg.axis().scale(views.x).orient('bottom');
-      this.yAxis = d3.svg.axis().scale(views.y).orient('left').tickFormat(d3.format('%'));
+      this.yAxis = d3.svg.axis().scale(views.y).orient('left').tickFormat(views.format.round);
       this.fills = ['#da9147', '#833749', '#55897b', '#16416a'];
       this.tooltip = d3.select('body').append('div')
         .attr('class', 'tooltip')
@@ -253,7 +254,7 @@
         .duration(200)
         .style('opacity', 0.9);
       views.tooltip.html(
-        label + ': ' + (number ? number : 'No Data')
+        label + ': ' + (number ? views.format.decimal(number) : 'No Data')
       )
         .style('left', (d3.event.pageX) + 'px')
         .style('top', (d3.event.pageY + 50) + 'px');
