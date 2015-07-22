@@ -19,6 +19,10 @@
   font-size: 12px;
 }
 
+.x line {
+  display: none;
+}
+
 html,
 body,
 p,

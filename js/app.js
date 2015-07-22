@@ -66,6 +66,7 @@
 
     draw: function(data) {
       d3.selectAll('g').remove();
+      d3.select('.baseline').remove();
 
       var bars = views.svg.selectAll('.firm').data(data.firms);
       var extent = views.allValues(data.firms);
@@ -117,8 +118,8 @@
           views.appendRect(
             bars,
             name,
-            oldKeys[0],
-            views.round(oldData[oldKeys[0]], 3),
+            'Effective Rate',
+            views.round(views.sumValues(oldData).sum, 3),
             views.round(views.sumValues(oldData).sum, 9),
             'old',
             max,
@@ -150,8 +151,8 @@
           views.appendRect(
             bars,
             name,
-            newKeys[0],
-            views.round(newData[newKeys[0]], 3),
+            'Effective Rate',
+            views.round(views.sumValues(newData).sum, 3),
             views.round(views.sumValues(newData).sum, 9),
             'new',
             max,
@@ -208,8 +209,8 @@
       }
 
       return {
-        min: Math.min(0, d3.min(taxSums)),
-        max: d3.max(taxSums) + 0.03
+        min: Math.min(0, d3.min(taxSums) - 0.05),
+        max: d3.max(taxSums) + 0.05
       };
     },
 
@@ -265,23 +266,11 @@
     wrap: function(text, width) {
       text.each(function() {
         var text = d3.select(this),
-            words = text.text().split(/\s+/).reverse(),
-            word,
-            line = [],
-            lineNumber = 0,
-            lineHeight = 1.1, // ems
-            y = text.attr('y'),
-            dy = parseFloat(text.attr('dy')),
-            tspan = text.text(null).append('tspan').attr('x', 0).attr('y', y).attr('dy', dy + 'em');
-        while (word = words.pop()) {
-          line.push(word);
-          tspan.text(line.join(' '));
-          if (tspan.node().getComputedTextLength() > width) {
-            line.pop();
-            tspan.text(line.join(' '));
-            line = [word];
-            tspan = text.append('tspan').attr('x', 0).attr('y', y).attr('dy', ++lineNumber * lineHeight + dy + 'em').text(word);
-          }
+            words = text.text().split(/\s+/),
+            tspan = text.text(null).append('tspan').attr('x', 0).attr('y', text.attr('y')).attr('dy', parseFloat(text.attr('dy')) + 'em');
+
+        for (var i = 0, j = words.length; i < j; i++) {
+          text.append('tspan').attr('x', 0).attr('y', text.attr('y')).attr('dy', i * 1.1 + parseFloat(text.attr('dy')) + 'em').text(words[i])
         }
       });
     }
