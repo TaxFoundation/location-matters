@@ -48,3 +48,8 @@ text {
   background-color: #eee;
   padding: 7px;
 }
+
+.total-effective-rate {
+  font-size: 11px;
+  text-anchor: middle;
+}

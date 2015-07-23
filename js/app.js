@@ -37,7 +37,7 @@
   views = {
     initialize: function(data) {
       this.dimensions = {
-        width: Math.min(600, $('#state-charts').width()),
+        width: Math.min(800, $('#state-charts').width()),
         height: Math.min(500, $('#state-charts').width() * 0.8),
         margin: {
           top: 20,
@@ -67,6 +67,7 @@
     draw: function(data) {
       d3.selectAll('g').remove();
       d3.selectAll('rect').remove();
+      d3.selectAll('.total-effective-rate').remove();
       d3.select('.baseline').remove();
 
       var extent = views.allValues(data.firms);
@@ -91,7 +92,7 @@
         .call(views.wrap, views.x.rangeBand());
 
       d3.select('.x').selectAll('.tick').selectAll('text')
-        .attr('transform', 'rotate(45)')
+        .attr('transform', 'translate(0, 18), rotate(45)')
         .attr('style', 'text-anchor:start');
 
       views.svg.append('line')
@@ -112,6 +113,22 @@
           var taxKeys = d3.keys(taxData);
           var totalEffectiveRate = views.sumValues(taxData);
 
+          // Total effective tax rate labels
+          views.svg.append('text')
+            .attr('x', function() { return views.findX(firmTypes[p], name) + Math.round(views.x.rangeBand() / 5); })
+            .attr('y', function() { return views.findY(totalEffectiveRate.sum, max, baseline); })
+            .attr('transform', 'translate(0, ' + (totalEffectiveRate.sum < 0 ? 5 : -5) + ')')
+            .attr('class', 'total-effective-rate')
+            .text(function() { return views.format.decimal(totalEffectiveRate.sum); });
+
+          // Mature v. New labels
+          views.svg.append('text')
+            .attr('x', function() { return views.findX(firmTypes[p], name) + Math.round(views.x.rangeBand() / 5); })
+            .attr('y', views.y(min) + 18)
+            .attr('style', 'text-anchor:middle')
+            .text(function() { return firmTypes[p] === 'old' ? 'M' : 'N'; });
+
+          // Draw the rects
           if (totalEffectiveRate.condense === true) {
             views.appendRect(
               views.svg,
@@ -207,11 +224,11 @@
     appendRect: function(selection, name, tax, taxVal, value, status, max, baseline, fill) {
       selection.append('rect')
         .attr('y', function() {
-          return value > 0 ? views.y(value) - views.y(max) : baseline;
+          return views.findY(value, max, baseline);
         })
         .attr('height', function() { return Math.abs(views.y(value) - baseline); })
         .attr('width', Math.round(views.x.rangeBand() / 2.5))
-        .attr('x', function(d) { return status === 'old' ? Math.round(views.x(name)) : Math.round(views.x(name) + views.x.rangeBand() / 2); })
+        .attr('x', function() { return views.findX(status, name); })
         .attr('fill', fill)
         .on('mouseover', function() { return views.addTooltip(tax, taxVal); })
         .on('mousemove', function() { return views.tooltip.style('left', (d3.event.pageX) + 'px').style('top', (d3.event.pageY + 50) + 'px'); })
@@ -239,6 +256,14 @@
           text.append('tspan').attr('x', 0).attr('y', text.attr('y')).attr('dy', i * 1.1 + parseFloat(text.attr('dy')) + 'em').text(words[i])
         }
       });
+    },
+
+    findX: function(status, name) {
+      return status === 'old' ? Math.round(views.x(name)) : Math.round(views.x(name) + views.x.rangeBand() / 2);
+    },
+
+    findY: function(value, max, baseline) {
+      return value > 0 ? views.y(value) - views.y(max) : baseline;
     }
   };
 }());
