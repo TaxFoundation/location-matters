@@ -55,7 +55,7 @@
       this.y = d3.scale.linear().rangeRound([0, views.dimensions.height]);
       this.xAxis = d3.svg.axis().scale(views.x).orient('bottom');
       this.yAxis = d3.svg.axis().scale(views.y).orient('left').tickFormat(views.format.round);
-      this.fills = ['#F44336', '#2196F3', '#4CAF50', '#FF9800'];
+      this.fills = ['#EDC950', '#36A6B2', '#CD7177', '#366899'];
       this.tooltip = d3.select('body').append('div')
         .attr('class', 'tooltip')
         .style('position', 'absolute')
@@ -65,9 +65,11 @@
     },
 
     draw: function(data) {
-      d3.selectAll('g').remove();
-      d3.selectAll('rect').remove();
+      // Remove old chart elements
+      d3.selectAll('.axis').remove();
+      d3.selectAll('.tax-bar').remove();
       d3.selectAll('.total-effective-rate').remove();
+      d3.selectAll('.firm-status').remove();
       d3.select('.baseline').remove();
 
       var extent = views.allValues(data.firms);
@@ -77,6 +79,7 @@
       views.y.domain([max, min]);
       var baseline = views.y(0);
 
+      // Call axes
       views.svg.append('g')
           .attr('class', 'y axis')
           .attr('transform', 'translate(' + views.dimensions.margin.left + ', 0)')
@@ -123,6 +126,7 @@
 
           // Mature v. New labels
           views.svg.append('text')
+            .attr('class', 'firm-status')
             .attr('x', function() { return views.findX(firmTypes[p], name) + Math.round(views.x.rangeBand() / 5); })
             .attr('y', views.y(min) + 18)
             .attr('style', 'text-anchor:middle')
@@ -223,6 +227,7 @@
 
     appendRect: function(selection, name, tax, taxVal, value, status, max, baseline, fill) {
       selection.append('rect')
+        .attr('class', 'tax-bar')
         .attr('y', function() {
           return views.findY(value, max, baseline);
         })
