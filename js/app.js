@@ -66,9 +66,9 @@
 
     draw: function(data) {
       d3.selectAll('g').remove();
+      d3.selectAll('rect').remove();
       d3.select('.baseline').remove();
 
-      var bars = views.svg.selectAll('.firm').data(data.firms);
       var extent = views.allValues(data.firms);
       var min = extent.min;
       var max = extent.max;
@@ -103,80 +103,46 @@
         .attr('transform', 'translate(0, ' + baseline + ')')
         .attr('style', function() { return min === 0 ? 'display: none' : 'shape-rendering: crispEdges;stroke:rgb(0,0,0);stroke-width:1'; });
 
-      bars.enter()
-        .append('g')
-        .attr('class', 'firm');
+      var firmTypes = ['old', 'new'];
 
       for (var firm in data.firms) {
-        var name = data.firms[firm].name;
-        var oldData = data.firms[firm].old;
-        var newData = data.firms[firm].new;
-        var oldKeys = d3.keys(oldData);
-        var newKeys = d3.keys(newData);
+        for (var p = 0, q = firmTypes.length; p < q; p++) {
+          var name = data.firms[firm].name;
+          var taxData = data.firms[firm][firmTypes[p]];
+          var taxKeys = d3.keys(taxData);
+          var totalEffectiveRate = views.sumValues(taxData);
 
-        if (views.sumValues(oldData).condense === true) {
-          views.appendRect(
-            bars,
-            name,
-            'Effective Rate',
-            views.round(views.sumValues(oldData).sum, 3),
-            views.round(views.sumValues(oldData).sum, 9),
-            'old',
-            max,
-            baseline,
-            '#7f7f7f'
-          );
-        } else {
-          for (var i = 0, j = oldKeys.length; i < j; i++) {
-            var barData = {};
-            for (var m = i, n = j; m < n; m++) {
-              barData[oldKeys[m]] = oldData[oldKeys[m]];
-            }
-
+          if (totalEffectiveRate.condense === true) {
             views.appendRect(
-              bars,
+              views.svg,
               name,
-              oldKeys[i],
-              views.round(oldData[oldKeys[i]], 3),
-              views.round(views.sumValues(barData).sum, 9),
-              'old',
+              'Effective Rate',
+              views.round(totalEffectiveRate.sum, 3),
+              views.round(totalEffectiveRate.sum, 9),
+              firmTypes[p],
               max,
               baseline,
-              views.fills[i]
+              '#7f7f7f'
             );
-          }
-        }
+          } else {
+            for (var i = 0, j = taxKeys.length; i < j; i++) {
+              var barData = {};
+              for (var m = i, n = j; m < n; m++) {
+                barData[taxKeys[m]] = taxData[taxKeys[m]];
+              }
 
-        if (views.sumValues(newData).condense === true) {
-          views.appendRect(
-            bars,
-            name,
-            'Effective Rate',
-            views.round(views.sumValues(newData).sum, 3),
-            views.round(views.sumValues(newData).sum, 9),
-            'new',
-            max,
-            baseline,
-            '#7f7f7f'
-          );
-        } else {
-          for (var i = 0, j = newKeys.length; i < j; i++) {
-            var barData = {};
-            for (var m = i, n = j; m < n; m++) {
-              barData[newKeys[m]] = newData[newKeys[m]];
+              views.appendRect(
+                views.svg,
+                name,
+                taxKeys[i],
+                views.round(taxData[taxKeys[i]], 3),
+                views.round(views.sumValues(barData).sum, 9),
+                firmTypes[p],
+                max,
+                baseline,
+                views.fills[i]
+              );
             }
-
-            views.appendRect(
-              bars,
-              name,
-              newKeys[i],
-              views.round(newData[newKeys[i]], 3),
-              views.round(views.sumValues(barData).sum, 9),
-              'new',
-              max,
-              baseline,
-              views.fills[i]
-            );
           }
         }
       }
