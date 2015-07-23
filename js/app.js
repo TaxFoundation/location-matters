@@ -37,8 +37,8 @@
   views = {
     initialize: function(data) {
       this.dimensions = {
-        width: 600,
-        height: 500,
+        width: Math.min(600, $('#state-charts').width()),
+        height: Math.min(500, $('#state-charts').width() * 0.8),
         margin: {
           top: 20,
           right: 30,
@@ -209,8 +209,8 @@
       }
 
       return {
-        min: Math.min(0, d3.min(taxSums) - 0.05),
-        max: d3.max(taxSums) + 0.05
+        min: d3.min(taxSums) < 0 ? d3.min(taxSums) - 0.05 : 0,
+        max: Math.max(0.37, d3.max(taxSums) + 0.05)
       };
     },
 
