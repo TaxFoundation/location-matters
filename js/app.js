@@ -55,7 +55,7 @@
       this.y = d3.scale.linear().rangeRound([0, views.dimensions.height]);
       this.xAxis = d3.svg.axis().scale(views.x).orient('bottom');
       this.yAxis = d3.svg.axis().scale(views.y).orient('left').tickFormat(views.format.round);
-      this.fills = ['#da9147', '#833749', '#55897b', '#16416a'];
+      this.fills = ['#F44336', '#2196F3', '#4CAF50', '#FF9800'];
       this.tooltip = d3.select('body').append('div')
         .attr('class', 'tooltip')
         .style('position', 'absolute')
@@ -116,7 +116,7 @@
           // Total effective tax rate labels
           views.svg.append('text')
             .attr('x', function() { return views.findX(firmTypes[p], name) + Math.round(views.x.rangeBand() / 5); })
-            .attr('y', function() { return views.findY(totalEffectiveRate.sum, max, baseline); })
+            .attr('y', function() { return totalEffectiveRate.sum < 0 ? views.y(totalEffectiveRate.sum) + 6 : views.findY(totalEffectiveRate.sum, max, baseline); })
             .attr('transform', 'translate(0, ' + (totalEffectiveRate.sum < 0 ? 5 : -5) + ')')
             .attr('class', 'total-effective-rate')
             .text(function() { return views.format.decimal(totalEffectiveRate.sum); });
