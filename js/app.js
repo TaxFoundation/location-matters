@@ -52,10 +52,10 @@
         .attr('width', views.dimensions.width + views.dimensions.margin.right + views.dimensions.margin.left);
       this.format = {decimal: d3.format(',.1%'), round: d3.format('%')};
       this.x = d3.scale.ordinal().rangeRoundBands([views.dimensions.margin.left, views.dimensions.width], 0.3);
-      this.y = d3.scale.linear().rangeRound([0, views.dimensions.height]);
+      this.y = d3.scale.linear().rangeRound([views.dimensions.margin.top, views.dimensions.height]);
       this.xAxis = d3.svg.axis().scale(views.x).orient('bottom');
       this.yAxis = d3.svg.axis().scale(views.y).orient('left').tickFormat(views.format.round);
-      this.fills = ['#EDC950', '#36A6B2', '#CD7177', '#366899'];
+      this.fills = ['#56B88B', '#CD7177', '#E2AB4B', '#366899'];
       this.tooltip = d3.select('body').append('div')
         .attr('class', 'tooltip')
         .style('position', 'absolute')
@@ -268,7 +268,7 @@
     },
 
     findY: function(value, max, baseline) {
-      return value > 0 ? views.y(value) - views.y(max) : baseline;
+      return value > 0 ? views.y(value) - views.y(max) + views.dimensions.margin.top : baseline;
     }
   };
 }());
