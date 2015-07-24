@@ -55,7 +55,7 @@
       this.y = d3.scale.linear().rangeRound([views.dimensions.margin.top, views.dimensions.height]);
       this.xAxis = d3.svg.axis().scale(views.x).orient('bottom');
       this.yAxis = d3.svg.axis().scale(views.y).orient('left').tickFormat(views.format.round);
-      this.fills = ['#56B88B', '#CD7177', '#E2AB4B', '#366899'];
+      this.fills = ['#faa426', '#1ebf86', '#3a6c83', '#2dbae8'];
       this.tooltip = d3.select('body').append('div')
         .attr('class', 'tooltip')
         .style('position', 'absolute')

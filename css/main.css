@@ -35,6 +35,11 @@ h6 {
   font-family: 'Lato', sans-serif;
 }
 
+main {
+  margin: 0 auto;
+  max-width: 840px;
+}
+
 #state-charts {
   margin: 20px 0;
 }
