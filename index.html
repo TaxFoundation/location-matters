@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Location Matters | Tax Foundation</title>
+    <link rel="stylesheet" href="css/reset.css" media="screen" charset="utf-8">
     <link rel="stylesheet" href="css/main.css" media="screen" charset="utf-8">
   </head>
   <body>
@@ -14,7 +15,7 @@
         State and local taxes represent a significant business cost for corporations operating in the United States and can have a material impact on net operating margins. Consequently, business location decisions for new manufacturing facilities, corporate headquarter relocations, and the like are often influenced by assessments of relative tax burdens across multiple states.
       </p>
       <p>
-        The Tax Foundation, in collaboration with <a href="http://www.kpmg.com/US/en/Pages/default.aspx">KPMG</a>, set out to develop and publish a landmark, apples-to-apples comparison of corporate tax costs in the 50 states. Tax Foundation economists designed seven model firms, and KPMG modeling experts calculated each firm’s tax bill in each state. Each firm was modeled twice in each state: once as a new firm eligible for tax incentives, and once as a mature firm not eligible for such incentives.
+        The <a href="http://taxfoundation.org">Tax Foundation</a>, in collaboration with <a href="http://www.kpmg.com/US/en/Pages/default.aspx">KPMG</a>, set out to develop and publish a landmark, apples-to-apples comparison of corporate tax costs in the 50 states. Tax Foundation economists designed seven model firms, and KPMG modeling experts calculated each firm’s tax bill in each state. Each firm was modeled twice in each state: once as a new firm eligible for tax incentives, and once as a mature firm not eligible for such incentives.
       </p>
       <p>
         The <em>Location Matters</em> study, together with our annual <a href="http://taxfoundation.org/index">State Business Tax Climate Index</a>, provides the tools necessary to understand each state’s business tax system, the burdens it imposes, and a roadmap for improving it.
@@ -76,6 +77,25 @@
           <option value="District of Columbia">District of Columbia</option>
         </select>
         <div id="state-charts"></div>
+        <div id="state-tables">
+          <table>
+            <thead>
+              <tr>
+                <th>
+                  Firm Type
+                </th>
+                <th>
+                  Mature Firm Rate
+                </th>
+                <th>
+                  New Firm Rate
+                </th>
+              </tr>
+            </thead>
+            <tbody id="firm-data">
+            </tbody>
+          </table>
+        </div>
       </section>
     </main>
 

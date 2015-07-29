@@ -21,6 +21,7 @@
 
       $('#state-select').change(function(e) { // Watch for changes to the state selection dropdown and call app.filter
         views.draw(app.filter($(e.target).attr('value')));
+        views.drawTable(app.filter($(e.target).attr('value')));
       });
     },
 
@@ -50,7 +51,7 @@
       this.svg = d3.select('#state-charts').append('svg')
         .attr('height', views.dimensions.height + views.dimensions.margin.top + views.dimensions.margin.bottom)
         .attr('width', views.dimensions.width + views.dimensions.margin.right + views.dimensions.margin.left);
-      this.format = {decimal: d3.format(',.1%'), round: d3.format('%')};
+      this.format = {decimal: d3.format(',.1%'), round: d3.format('%'), twoDecimal: d3.format(',.2%')};
       this.x = d3.scale.ordinal().rangeRoundBands([views.dimensions.margin.left, views.dimensions.width], 0.3);
       this.y = d3.scale.linear().rangeRound([views.dimensions.margin.top, views.dimensions.height]);
       this.xAxis = d3.svg.axis().scale(views.x).orient('bottom');
@@ -62,6 +63,7 @@
         .style('opacity', 0);
 
       views.draw(data);
+      views.drawTable(data);
     },
 
     draw: function(data) {
@@ -168,6 +170,22 @@
         }
       }
 
+    },
+
+    drawTable: function(data) {
+      d3.select('#firm-data').selectAll('tr').remove();
+
+      var rows = d3.select('#firm-data').selectAll('tr');
+
+      rows.data(data.firms).enter()
+        .append('tr')
+        .html(function(d) {
+          var name = d.name;
+          var oldFirm = views.format.twoDecimal(views.sumValues(d.old).sum);
+          var newFirm = views.format.twoDecimal(views.sumValues(d.new).sum);
+
+          return '<td>' + name + '</td><td class="table-data">' + oldFirm + '</td><td class="table-data">' + newFirm + '</td>';
+        });
     },
 
     allValues: function(data) {

@@ -14,6 +14,11 @@
   stroke-width: 1;
 }
 
+a {
+  color: #0094ff;
+  text-decoration: none;
+}
+
 .x text,
 .x tspan {
   font-size: 12px;
@@ -32,12 +37,26 @@ h3,
 h4,
 h5,
 h6 {
+  color: rgba(0, 0, 0, 0.8);
   font-family: 'Lato', sans-serif;
+  -webkit-font-smoothing: subpixel-antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 main {
-  margin: 0 auto;
+  margin: 20px auto;
   max-width: 840px;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  mix-blend-mode: multiply;
+  text-rendering: optimizeLegibility;
 }
 
 #state-charts {
@@ -57,4 +76,68 @@ text {
 .total-effective-rate {
   font-size: 11px;
   text-anchor: middle;
+}
+
+p {
+  margin: 0 0 16px 0;
+}
+
+h1 {
+  font-size: 40px;
+  font-weight: 700;
+  margin: 0 0 24px 0;
+}
+
+h2 {
+  font-size: 28px;
+  font-weight: 700;
+  margin: 0 0 24px 0;
+}
+
+table {
+  border-collapse: separate;
+  border: solid #ddd 1px;
+  border-radius: 4px;
+  border-left: 0px;
+  margin: 25px auto 25px auto;
+  max-width: 100%;
+}
+table tbody > tr:nth-of-type(odd) {
+  background-color: #f9f9f9;
+}
+
+td,
+th {
+  border-left: 1px solid #ddd;
+  border-top: 1px solid #ddd;
+  padding: 10px 15px;
+}
+
+th {
+  font-weight: 700;
+  border-top: none;
+}
+
+th:first-child {
+  border-radius: 4px 0 0 0;
+}
+
+th:last-child {
+  border-radius: 0 4px 0 0;
+}
+
+th:only-child{
+  border-radius: 4px 4px 0 0;
+}
+
+tr:last-child td:first-child {
+  border-radius: 0 0 0 4px;
+}
+
+tr:last-child td:last-child {
+  border-radius: 0 0 4px 0;
+}
+
+.table-data {
+  text-align: right;
 }
