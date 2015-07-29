@@ -82,6 +82,8 @@
       views.y.domain([max, min]);
       var baseline = views.y(0);
 
+      d3.select('#graph-title').html(function() { return 'Graph of Effective Tax Rates in ' + data.name; });
+
       // Call axes
       views.svg.append('g')
           .attr('class', 'y axis')
@@ -175,6 +177,8 @@
 
     drawTable: function(data) {
       d3.select('#firm-data').selectAll('tr').remove();
+
+      d3.select('#table-title').html(function() { return 'Table of Effective Tax Rates in ' + data.name; });
 
       var rows = d3.select('#firm-data').selectAll('tr');
 
