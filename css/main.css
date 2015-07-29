@@ -28,6 +28,10 @@ a {
   display: none;
 }
 
+body {
+  padding: 20px;
+}
+
 html,
 body,
 p,
@@ -182,4 +186,8 @@ tr:last-child td:last-child {
 
 .pick-state select:focus {
   outline: none;
+}
+
+nav {
+  text-align: center;
 }
