@@ -22,7 +22,8 @@
       </p>
 
       <section>
-        <h2>State</h2>
+        <h3>Graph of Effective Tax Rates</h3>
+        <label>Choose a State: </label>
         <select id="state-select">
           <option value="Alabama" selected="selected">Alabama</option>
           <option value="Alaska">Alaska</option>
@@ -76,18 +77,19 @@
           <option value="Wyoming">Wyoming</option>
           <option value="District of Columbia">District of Columbia</option>
         </select>
-        <div id="state-charts"></div>
-        <div id="state-tables">
+        <div class="not-loaded" id="state-charts"></div>
+        <div class="not-loaded" id="state-tables">
+          <h3>Summary of Effective Tax Rates</h3>
           <table>
             <thead>
               <tr>
-                <th>
-                  Firm Type
+                <th style="text-align: left">
+                  Model Firm Type
                 </th>
-                <th>
+                <th style="text-align: right">
                   Mature Firm Rate
                 </th>
-                <th>
+                <th style="text-align: right">
                   New Firm Rate
                 </th>
               </tr>

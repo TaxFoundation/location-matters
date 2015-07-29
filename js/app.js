@@ -64,6 +64,7 @@
 
       views.draw(data);
       views.drawTable(data);
+      d3.selectAll('.not-loaded').classed('not-loaded', false);
     },
 
     draw: function(data) {
