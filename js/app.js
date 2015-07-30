@@ -17,23 +17,55 @@
     initialize: function(data) {
       this.data = data;
 
-      views.initialize(app.filter());
+      views.initialize(app.stateFilter());
 
-      $('#state-select').change(function(e) { // Watch for changes to the state selection dropdown and call app.filter
-        views.draw(app.filter($(e.target).attr('value')));
-        views.drawTable(app.filter($(e.target).attr('value')));
+      $('#state-select').change(function(e) { // Watch for changes to the state selection dropdown and call app.stateFilter
+        var state = $(e.target).attr('value');
+        views.draw(app.stateFilter(state));
+        views.drawTable(app.stateFilter(state));
       });
+
+      $('#firm-select').change(function(e) { // Watch for changes to the state selection dropdown and call app.stateFilter
+        var firm = $(e.target).attr('value');
+        console.log(app.firmFilter(firm));
+      });
+
+      console.log(app.firmFilter('Corporate Headquarters'));
     },
 
-    filter: function(value) {
+    stateFilter: function(value) {
       var state = value || $('#state-select').val();
       var stateData = app.data.filter(function(stateData) {
         return stateData.name === state;
       });
 
       return stateData[0];
+    },
+
+    firmFilter: function(value) {
+      var firm = value || $('#firm-select').val();
+      var firmData = [];
+      app.data.forEach(function(stateEntry) {
+        stateEntry.firms.forEach(function(firmEntry) {
+          if (firmEntry.name === firm) {
+            var oldSum = 0,
+                newSum = 0;
+            for (var taxType in firmEntry.old) {
+              oldSum += +firmEntry.old[taxType];
+            }
+
+            for (var taxType in firmEntry.new) {
+              newSum += +firmEntry.new[taxType];
+            }
+
+            firmData.push({name: stateEntry.name, old: oldSum, new: newSum});
+          }
+        });
+      });
+
+      return firmData;
     }
-  }
+  };
 
   views = {
     initialize: function(data) {
