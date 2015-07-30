@@ -1,35 +1,8 @@
 @import url(http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic);
 
-.axis line {
-  fill: none;
-  shape-rendering: crispEdges;
-  stroke: rgb(210, 210, 210);
-  stroke-width: 1;
-}
-
-.axis path {
-  fill: none;
-  shape-rendering: crispEdges;
-  stroke: rgb(51, 51, 51);
-  stroke-width: 1;
-}
-
 a {
   color: #0094ff;
   text-decoration: none;
-}
-
-.x text,
-.x tspan {
-  font-size: 12px;
-}
-
-.x line {
-  display: none;
-}
-
-body {
-  padding: 20px;
 }
 
 html,
@@ -48,9 +21,37 @@ h6 {
   -moz-osx-font-smoothing: grayscale;
 }
 
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
 main {
   margin: 20px auto;
   max-width: 840px;
+  padding: 0 20px;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 840px;
+  padding: 0 20px;
+}
+
+nav {
+  background-color: #0094ff;
+  padding: 20px;
+  text-align: center;
+}
+
+footer {
+  background-color: #f5f5f5;
+  padding: 20px;
+}
+
+footer p {
+  margin: 0;
 }
 
 p,
@@ -62,25 +63,6 @@ h5,
 h6 {
   mix-blend-mode: multiply;
   text-rendering: optimizeLegibility;
-}
-
-#state-charts {
-  margin: 20px 0;
-}
-
-text {
-  font-family: 'Lato', sans-serif;
-  font-size: 14px;
-}
-
-.tooltip {
-  background-color: #eee;
-  padding: 7px;
-}
-
-.total-effective-rate {
-  font-size: 11px;
-  text-anchor: middle;
 }
 
 p {
@@ -153,15 +135,57 @@ tr:last-child td:last-child {
   text-align: right;
 }
 
+#state-charts {
+  margin: 20px 0;
+}
+
+text {
+  font-family: 'Lato', sans-serif;
+  font-size: 14px;
+}
+
+.tooltip {
+  background-color: #eee;
+  padding: 7px;
+}
+
+.total-effective-rate {
+  font-size: 11px;
+  text-anchor: middle;
+}
+
+.axis line {
+  fill: none;
+  shape-rendering: crispEdges;
+  stroke: rgb(210, 210, 210);
+  stroke-width: 1;
+}
+
+.axis path {
+  fill: none;
+  shape-rendering: crispEdges;
+  stroke: rgb(51, 51, 51);
+  stroke-width: 1;
+}
+
+.x text,
+.x tspan {
+  font-size: 12px;
+}
+
+.x line {
+  display: none;
+}
+
 .not-loaded {
   visibility: hidden;
 }
 
 .pick-state {
   background-color: #0094ff;
-  border-radius: 4px 4px 4px 4px;
+  border-radius: 4px;
   color: white;
-  font-size: 22px;
+  font-size: 18px;
   margin: 0 auto;
   padding: 20px;
   text-align: center;
@@ -174,7 +198,7 @@ tr:last-child td:last-child {
 .pick-state select {
   color: #0094ff;
   font-family: 'Lato', sans-serif;
-  font-size: 22px;
+  font-size: 18px;
   padding: 5px 8px;
   border: none;
   box-shadow: none;
@@ -188,6 +212,14 @@ tr:last-child td:last-child {
   outline: none;
 }
 
-nav {
-  text-align: center;
+.download {
+  background-color: #0094ff;
+  border-radius: 4px;
+  color: white;
+  padding: 10px;
+}
+
+.logo-footer {
+  float: left;
+  margin: 10px 20px 20px 0;
 }
