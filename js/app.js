@@ -73,7 +73,7 @@
   views = {
     initialize: function(data) {
       this.dimensions = {
-        width: Math.min(800, $('#state-charts').width()),
+        width: Math.min(800, $('#state-charts').width() - 70),
         height: Math.min(500, $('#state-charts').width() * 0.8),
         margin: {
           top: 20,
