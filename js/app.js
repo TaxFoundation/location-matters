@@ -1,9 +1,9 @@
 (function() {
   'use strict';
 
-  var app,
-    views,
-    DATA_PATH = 'data/location-matters-2015.json';
+  var app;
+  var views;
+  var DATA_PATH = 'data/location-matters-2015.json';
 
   $(function() {
     d3.json(DATA_PATH, function(error, data) {
@@ -19,13 +19,15 @@
 
       views.initialize(app.stateFilter());
 
-      $('#state-select').change(function(e) { // Watch for changes to the state selection dropdown and call app.stateFilter
+      // Watch for changes to the state selection dropdown, call app.stateFilter
+      $('#state-select').change(function(e) {
         var state = $(e.target).attr('value');
         views.draw(app.stateFilter(state));
         views.drawTable(app.stateFilter(state));
       });
 
-      $('#firm-select').change(function(e) { // Watch for changes to the state selection dropdown and call app.stateFilter
+      // Watch for changes to the firm selection dropdown, call app.firmFilter
+      $('#firm-select').change(function(e) {
         var firm = $(e.target).attr('value');
         console.log(app.firmFilter(firm));
       });
@@ -48,8 +50,8 @@
       app.data.forEach(function(stateEntry) {
         stateEntry.firms.forEach(function(firmEntry) {
           if (firmEntry.name === firm) {
-            var oldSum = 0,
-                newSum = 0;
+            var oldSum = 0;
+            var newSum = 0;
             for (var taxType in firmEntry.old) {
               oldSum += +firmEntry.old[taxType];
             }
@@ -64,7 +66,7 @@
       });
 
       return firmData;
-    }
+    },
   };
 
   views = {
@@ -76,8 +78,8 @@
           top: 20,
           right: 30,
           bottom: 100,
-          left: 50
-        }
+          left: 50,
+        },
       };
 
       this.svg = d3.select('#state-charts').append('svg')
@@ -110,11 +112,17 @@
       var extent = views.allValues(data.firms);
       var min = extent.min;
       var max = extent.max;
-      views.x.domain(data.firms.map(function(d) { return d.name; }));
+
+      views.x.domain(data.firms.map(function(d) {
+        return d.name;
+      }));
+
       views.y.domain([max, min]);
       var baseline = views.y(0);
 
-      d3.select('#graph-title').html(function() { return 'Graph of Effective Tax Rates in ' + data.name; });
+      d3.select('#graph-title').html(function() {
+        return 'Graph of Effective Tax Rates in ' + data.name;
+      });
 
       // Call axes
       views.svg.append('g')
@@ -142,7 +150,11 @@
         .attr('x2', views.dimensions.width)
         .attr('y2', 0)
         .attr('transform', 'translate(0, ' + baseline + ')')
-        .attr('style', function() { return min === 0 ? 'display: none' : 'shape-rendering: crispEdges;stroke:rgb(0,0,0);stroke-width:1'; });
+        .attr('style', function() {
+          return min === 0
+          ? 'display: none'
+          : 'shape-rendering: crispEdges;stroke:rgb(0,0,0);stroke-width:1';
+        });
 
       var firmTypes = ['old', 'new'];
 
@@ -155,19 +167,39 @@
 
           // Total effective tax rate labels
           views.svg.append('text')
-            .attr('x', function() { return views.findX(firmTypes[p], name) + Math.round(views.x.rangeBand() / 5); })
-            .attr('y', function() { return totalEffectiveRate.sum < 0 ? views.y(totalEffectiveRate.sum) + 6 : views.findY(totalEffectiveRate.sum, max, baseline); })
-            .attr('transform', 'translate(0, ' + (totalEffectiveRate.sum < 0 ? 5 : -5) + ')')
+            .attr('x', function() {
+              return views.findX(firmTypes[p], name)
+              + Math.round(views.x.rangeBand() / 5);
+            })
+            .attr('y', function() {
+              return totalEffectiveRate.sum < 0
+              ? views.y(totalEffectiveRate.sum) + 6
+              : views.findY(totalEffectiveRate.sum, max, baseline);
+            })
+            .attr('transform', 'translate(0, ' + (
+              totalEffectiveRate.sum < 0
+              ? 5
+              : -5
+            ) + ')')
             .attr('class', 'total-effective-rate')
-            .text(function() { return views.format.decimal(totalEffectiveRate.sum); });
+            .text(function() {
+              return views.format.decimal(totalEffectiveRate.sum);
+            });
 
           // Mature v. New labels
           views.svg.append('text')
             .attr('class', 'firm-status')
-            .attr('x', function() { return views.findX(firmTypes[p], name) + Math.round(views.x.rangeBand() / 5); })
+            .attr('x', function() {
+              return views.findX(firmTypes[p], name)
+              + Math.round(views.x.rangeBand() / 5);
+            })
             .attr('y', views.y(min) + 18)
             .attr('style', 'text-anchor:middle')
-            .text(function() { return firmTypes[p] === 'old' ? 'M' : 'N'; });
+            .text(function() {
+              return firmTypes[p] === 'old'
+              ? 'M'
+              : 'N';
+            });
 
           // Draw the rects
           if (totalEffectiveRate.condense === true) {
@@ -210,7 +242,9 @@
     drawTable: function(data) {
       d3.select('#firm-data').selectAll('tr').remove();
 
-      d3.select('#table-title').html(function() { return 'Table of Effective Tax Rates in ' + data.name; });
+      d3.select('#table-title').html(function() {
+        return 'Table of Effective Tax Rates in ' + data.name;
+      });
 
       var rows = d3.select('#firm-data').selectAll('tr');
 
@@ -221,7 +255,13 @@
           var oldFirm = views.format.twoDecimal(views.sumValues(d.old).sum);
           var newFirm = views.format.twoDecimal(views.sumValues(d.new).sum);
 
-          return '<td>' + name + '</td><td class="table-data">' + oldFirm + '</td><td class="table-data">' + newFirm + '</td>';
+          return '<td>'
+          + name
+          + '</td><td class="table-data">'
+          + oldFirm
+          + '</td><td class="table-data">'
+          + newFirm
+          + '</td>';
         });
     },
 
@@ -252,7 +292,7 @@
 
       return {
         min: d3.min(taxSums) < 0 ? d3.min(taxSums) - 0.05 : 0,
-        max: Math.max(0.37, d3.max(taxSums) + 0.05)
+        max: Math.max(0.37, d3.max(taxSums) + 0.05),
       };
     },
 
@@ -276,7 +316,7 @@
 
       return {
         sum: sumValues,
-        condense: condense
+        condense: condense,
       };
     },
 
@@ -290,9 +330,20 @@
         .attr('width', Math.round(views.x.rangeBand() / 2.5))
         .attr('x', function() { return views.findX(status, name); })
         .attr('fill', fill)
-        .on('mouseover', function() { return views.addTooltip(tax, taxVal); })
-        .on('mousemove', function() { return views.tooltip.style('left', (d3.event.pageX) + 'px').style('top', (d3.event.pageY + 50) + 'px'); })
-        .on('mouseout', function() { return views.tooltip.transition().duration(200).style('opacity', 0); });
+        .on('mouseover', function() {
+           return views.addTooltip(tax, taxVal);
+         })
+        .on('mousemove', function() {
+           return views.tooltip
+            .style('left', (d3.event.pageX) + 'px')
+            .style('top', (d3.event.pageY + 50) + 'px');
+         })
+        .on('mouseout', function() {
+           return views.tooltip
+            .transition()
+            .duration(200)
+            .style('opacity', 0);
+         });
     },
 
     addTooltip: function(label, number) {
@@ -308,22 +359,35 @@
 
     wrap: function(text, width) {
       text.each(function() {
-        var text = d3.select(this),
-            words = text.text().split(/\s+/),
-            tspan = text.text(null).append('tspan').attr('x', 0).attr('y', text.attr('y')).attr('dy', parseFloat(text.attr('dy')) + 'em');
+        var text = d3.select(this);
+        var words = text.text().split(/\s+/);
+        var tspan = text.text(null)
+          .append('tspan')
+          .attr('x', 0)
+          .attr('y', text.attr('y'))
+          .attr('dy', parseFloat(text.attr('dy')) + 'em');
 
         for (var i = 0, j = words.length; i < j; i++) {
-          text.append('tspan').attr('x', 0).attr('y', text.attr('y')).attr('dy', i * 1.1 + parseFloat(text.attr('dy')) + 'em').text(words[i])
+          text
+            .append('tspan')
+            .attr('x', 0)
+            .attr('y', text.attr('y'))
+            .attr('dy', i * 1.1 + parseFloat(text.attr('dy')) + 'em')
+            .text(words[i]);
         }
       });
     },
 
     findX: function(status, name) {
-      return status === 'old' ? Math.round(views.x(name)) : Math.round(views.x(name) + views.x.rangeBand() / 2);
+      return status === 'old'
+      ? Math.round(views.x(name))
+      : Math.round(views.x(name) + views.x.rangeBand() / 2);
     },
 
     findY: function(value, max, baseline) {
-      return value > 0 ? views.y(value) - views.y(max) + views.dimensions.margin.top : baseline;
-    }
+      return value > 0
+      ? views.y(value) - views.y(max) + views.dimensions.margin.top
+      : baseline;
+    },
   };
 }());
