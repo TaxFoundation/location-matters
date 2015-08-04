@@ -136,6 +136,7 @@ tr:last-child td:last-child {
   text-align: right;
 }
 
+#firm-charts,
 #state-charts {
   margin: 20px 0;
 }

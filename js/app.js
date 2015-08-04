@@ -23,16 +23,14 @@
       $('#state-select').change(function(e) {
         var state = $(e.target).attr('value');
         views.draw(app.stateFilter(state));
-        views.drawTable(app.stateFilter(state));
+        views.drawStateTable(app.stateFilter(state));
       });
 
       // Watch for changes to the firm selection dropdown, call app.firmFilter
       $('#firm-select').change(function(e) {
         var firm = $(e.target).attr('value');
-        console.log(app.firmFilter(firm));
+        views.drawFirmTable(app.firmFilter(firm));
       });
-
-      console.log(app.firmFilter('Corporate Headquarters'));
     },
 
     stateFilter: function(value) {
@@ -46,7 +44,10 @@
 
     firmFilter: function(value) {
       var firm = value || $('#firm-select').val();
-      var firmData = [];
+      var firmData = {
+        name: firm,
+        states: [],
+      };
       app.data.forEach(function(stateEntry) {
         stateEntry.firms.forEach(function(firmEntry) {
           if (firmEntry.name === firm) {
@@ -60,7 +61,7 @@
               newSum += +firmEntry.new[taxType];
             }
 
-            firmData.push({name: stateEntry.name, old: oldSum, new: newSum});
+            firmData.states.push({name: stateEntry.name, old: oldSum, new: newSum});
           }
         });
       });
@@ -97,7 +98,8 @@
         .style('opacity', 0);
 
       views.draw(data);
-      views.drawTable(data);
+      views.drawStateTable(data);
+      views.drawFirmTable(app.firmFilter());
       d3.selectAll('.not-loaded').classed('not-loaded', false);
     },
 
@@ -239,7 +241,7 @@
 
     },
 
-    drawTable: function(data) {
+    drawStateTable: function(data) {
       d3.select('#firm-data').selectAll('tr').remove();
 
       d3.select('#table-title').html(function() {
@@ -254,6 +256,32 @@
           var name = d.name;
           var oldFirm = views.format.twoDecimal(views.sumValues(d.old).sum);
           var newFirm = views.format.twoDecimal(views.sumValues(d.new).sum);
+
+          return '<td>'
+          + name
+          + '</td><td class="table-data">'
+          + oldFirm
+          + '</td><td class="table-data">'
+          + newFirm
+          + '</td>';
+        });
+    },
+
+    drawFirmTable: function(data) {
+      d3.select('#state-firm-data').selectAll('tr').remove();
+
+      d3.select('#firm-graph-title').html(function() {
+        return 'Table of Effective Tax Rates for ' + data.name;
+      });
+
+      var rows = d3.select('#state-firm-data').selectAll('tr');
+
+      rows.data(data.states).enter()
+        .append('tr')
+        .html(function(d) {
+          var name = d.name;
+          var oldFirm = views.format.twoDecimal(d.old);
+          var newFirm = views.format.twoDecimal(d.new);
 
           return '<td>'
           + name
