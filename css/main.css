@@ -150,6 +150,43 @@ text {
   text-anchor: middle;
 }
 
+.chart-legend {
+  list-style: none;
+}
+
+.chart-legend li {
+  display: inline-block;
+  font-size: 14px;
+  padding: 0 0 0 15px;
+  text-indent: -10px;
+}
+
+.chart-legend li::before {
+  content: '•';
+  font-size: 24px;
+  padding: 0 10px 0 0;
+}
+
+li.income::before {
+  color: #faa426;
+}
+
+li.ui::before {
+  color: #1ebf86;
+}
+
+li.sales::before {
+  color: #3a6c83;
+}
+
+li.property::before {
+  color: #2dbae8;
+}
+
+li.tetr::before {
+  color: #7f7f7f;
+}
+
 .axis line {
   fill: none;
   shape-rendering: crispEdges;
