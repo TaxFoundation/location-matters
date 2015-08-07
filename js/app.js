@@ -4,24 +4,31 @@
   var app;
   var views;
   var DATA_PATH = 'data/location-matters-2015.json';
+  var TEXT_PATH = 'data/lm-text.json';
 
   $(function() {
-    d3.json(DATA_PATH, function(error, data) {
-      if (error) { console.log(error); }
+    queue()
+      .defer(d3.json, DATA_PATH)
+      .defer(d3.json, TEXT_PATH)
+      .await(function(error, data, text) {
+        if (error) { console.log(error); }
 
-      app.initialize(data);
-    });
+        app.initialize(data, text);
+      });
   });
 
   app = {
-    initialize: function(data) {
+    initialize: function(data, text) {
       this.data = data;
+      this.text = text;
 
       views.initialize(app.stateFilter());
+      d3.select('#state-text').html(app.text[app.stateFilter().name]);
 
       // Watch for changes to the state selection dropdown, call app.stateFilter
       $('#state-select').change(function(e) {
         var state = $(e.target).attr('value');
+        d3.select('#state-text').html(app.text[app.stateFilter(state).name]);
         views.draw(app.stateFilter(state));
         views.drawStateTable(app.stateFilter(state));
       });

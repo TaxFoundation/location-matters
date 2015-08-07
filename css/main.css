@@ -157,7 +157,7 @@ text {
 .chart-legend li {
   display: inline-block;
   font-size: 14px;
-  padding: 0 0 0 15px;
+  padding: 0 15px;
   text-indent: -10px;
 }
 
