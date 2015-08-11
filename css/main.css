@@ -1,5 +1,3 @@
-@import url(http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic);
-
 a {
   color: #0094ff;
   text-decoration: none;
@@ -14,6 +12,7 @@ h3,
 h4,
 h5,
 h6 {
+  color: #333333;
   color: rgba(0, 0, 0, 0.8);
   font-family: 'Lato', sans-serif;
   line-height: 1.5;
@@ -167,23 +166,23 @@ text {
   padding: 0 10px 0 0;
 }
 
-li.income::before {
+.income::before {
   color: #faa426;
 }
 
-li.ui::before {
-  color: #1ebf86;
-}
-
-li.sales::before {
-  color: #3a6c83;
-}
-
-li.property::before {
+.ui::before {
   color: #2dbae8;
 }
 
-li.tetr::before {
+.sales::before {
+  color: #3a6c83;
+}
+
+.property::before {
+  color: #1ebf86;
+}
+
+.tetr::before {
   color: #7f7f7f;
 }
 
