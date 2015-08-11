@@ -167,19 +167,19 @@ text {
 }
 
 .income::before {
-  color: #faa426;
+  color: #13416C;
 }
 
 .ui::before {
-  color: #2dbae8;
+  color: #D84315;
 }
 
 .sales::before {
-  color: #3a6c83;
+  color: #FFB74D;
 }
 
 .property::before {
-  color: #1ebf86;
+  color: #0097A7;
 }
 
 .tetr::before {
