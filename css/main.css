@@ -150,12 +150,12 @@ text {
 }
 
 .chart-legend {
+  font-size: 14px;
   list-style: none;
 }
 
 .chart-legend li {
   display: inline-block;
-  font-size: 14px;
   padding: 0 15px;
   text-indent: -10px;
 }
