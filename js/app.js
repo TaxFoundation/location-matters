@@ -93,7 +93,11 @@
       this.svg = d3.select('#state-charts').append('svg')
         .attr('height', views.dimensions.height + views.dimensions.margin.top + views.dimensions.margin.bottom)
         .attr('width', views.dimensions.width + views.dimensions.margin.right + views.dimensions.margin.left);
-      this.format = {decimal: d3.format(',.1%'), round: d3.format('%'), twoDecimal: d3.format(',.2%')};
+      this.format = {
+        decimal: d3.format(',.1%'),
+        round: d3.format('%'),
+        twoDecimal: d3.format(',.2%'),
+      };
       this.x = d3.scale.ordinal().rangeRoundBands([views.dimensions.margin.left, views.dimensions.width], 0.3);
       this.y = d3.scale.linear().rangeRound([views.dimensions.margin.top, views.dimensions.height]);
       this.xAxis = d3.svg.axis().scale(views.x).orient('bottom');
@@ -192,7 +196,7 @@
             ) + ')')
             .attr('class', 'total-effective-rate')
             .text(function() {
-              return views.format.decimal(totalEffectiveRate.sum);
+              return views.format.round(totalEffectiveRate.sum);
             });
 
           // Mature v. New labels
@@ -261,8 +265,8 @@
         .append('tr')
         .html(function(d) {
           var name = d.name;
-          var oldFirm = views.format.twoDecimal(views.sumValues(d.old).sum);
-          var newFirm = views.format.twoDecimal(views.sumValues(d.new).sum);
+          var oldFirm = d.old < 0.005 ? '< 1%' : views.format.round(views.sumValues(d.old).sum);
+          var newFirm = d.new < 0.005 ? '< 1%' : views.format.round(views.sumValues(d.new).sum);
 
           return '<td>'
           + name
@@ -287,8 +291,8 @@
         .append('tr')
         .html(function(d) {
           var name = d.name;
-          var oldFirm = views.format.twoDecimal(d.old);
-          var newFirm = views.format.twoDecimal(d.new);
+          var oldFirm = d.old < 0.005 ? '< 1%' : views.format.round(d.old);
+          var newFirm = d.new < 0.005 ? '< 1%' : views.format.round(d.new);
 
           return '<td>'
           + name
@@ -386,7 +390,7 @@
         .duration(200)
         .style('opacity', 0.9);
       views.tooltip.html(
-        label + ': ' + (number ? views.format.decimal(number) : 'No Data')
+        label + ': ' + (number ? (number < 0.005 ? '< 1%' : views.format.round(number)) : 'No Data')
       )
         .style('left', (d3.event.pageX) + 'px')
         .style('top', (d3.event.pageY + 50) + 'px');
