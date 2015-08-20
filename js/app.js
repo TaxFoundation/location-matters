@@ -68,7 +68,12 @@
               newSum += +firmEntry.new[taxType];
             }
 
-            firmData.states.push({name: stateEntry.name, old: oldSum, new: newSum});
+            firmData.states.push({
+              name: stateEntry.name,
+              rank: firmEntry.rank,
+              old: oldSum,
+              new: newSum,
+            });
           }
         });
       });
@@ -265,11 +270,19 @@
         .append('tr')
         .html(function(d) {
           var name = d.name;
-          var oldFirm = d.old < 0.005 ? '< 1%' : views.format.round(views.sumValues(d.old).sum);
-          var newFirm = d.new < 0.005 ? '< 1%' : views.format.round(views.sumValues(d.new).sum);
+          var sumOld = views.sumValues(d.old).sum;
+          var sumNew = views.sumValues(d.new).sum;
+          var oldFirm = sumOld < 0.005
+            ? '< 1%'
+            : views.format.round(sumOld);
+          var newFirm = sumNew < 0.005
+            ? '< 1%'
+            : views.format.round(sumNew);
 
           return '<td>'
           + name
+          + '</td><td class="table-data">'
+          + d.rank
           + '</td><td class="table-data">'
           + oldFirm
           + '</td><td class="table-data">'
@@ -296,6 +309,8 @@
 
           return '<td>'
           + name
+          + '</td><td class="table-data">'
+          + d.rank
           + '</td><td class="table-data">'
           + oldFirm
           + '</td><td class="table-data">'
