@@ -255,3 +255,40 @@ text {
   float: left;
   margin: 10px 20px 20px 0;
 }
+
+@media print {
+  body,
+  p,
+  h1,
+  h2,
+  h3,
+  text {
+    color: #000000;
+  }
+
+  p {
+    font-size: 10pt;
+    line-height: 1.4;
+  }
+
+  h1 {
+    font-size: 24pt;
+  }
+
+  h2 {
+    font-size: 18pt;
+  }
+
+  h1,
+  h2,
+  h3 {
+    margin: 0 0 6px;
+  }
+
+  nav,
+  .download,
+  .pick-state {
+    display: none;
+    page-break-after: avoid;
+  }
+}
