@@ -50,6 +50,8 @@
     },
 
     firmFilter: function(value) {
+      // returns object with name of firm and array of states and their ranks and TETRs
+      // { name: "Firm Name", states: [ { name: "Alabama", rank: "#", old: "#", new: "#" }, ... ] }
       var firm = value || $('#firm-select').val();
       var firmData = {
         name: firm,
@@ -58,21 +60,11 @@
       app.data.forEach(function(stateEntry) {
         stateEntry.firms.forEach(function(firmEntry) {
           if (firmEntry.name === firm) {
-            var oldSum = 0;
-            var newSum = 0;
-            for (var taxType in firmEntry.old) {
-              oldSum += +firmEntry.old[taxType];
-            }
-
-            for (var taxType in firmEntry.new) {
-              newSum += +firmEntry.new[taxType];
-            }
-
             firmData.states.push({
               name: stateEntry.name,
               rank: firmEntry.rank,
-              old: oldSum,
-              new: newSum,
+              old: firmEntry.tetr.old,
+              new: firmEntry.tetr.new,
             });
           }
         });
@@ -176,10 +168,10 @@
 
       var firmTypes = ['old', 'new'];
 
-      for (var firm in data.firms) {
-        for (var p = 0, q = firmTypes.length; p < q; p++) {
+      for (var firm in data.firms) { // For each firm in the state
+        for (var p = 0, q = firmTypes.length; p < q; p++) { // for each age of firm, old and new
           var name = data.firms[firm].name;
-          var taxData = data.firms[firm][firmTypes[p]];
+          var taxData = data.firms[firm][firmTypes[p]]; // Data = rates for firm of particular age
           var taxKeys = d3.keys(taxData);
           var totalEffectiveRate = views.sumValues(taxData);
 
@@ -201,7 +193,8 @@
             ) + ')')
             .attr('class', 'total-effective-rate')
             .text(function() {
-              return views.format.round(totalEffectiveRate.sum);
+              // return static labels for stupid reasons I don't want to discuss
+              return views.format.decimal(data.firms[firm].tetr[firmTypes[p]]);
             });
 
           // Mature v. New labels
@@ -269,24 +262,14 @@
       rows.data(data.firms).enter()
         .append('tr')
         .html(function(d) {
-          var name = d.name;
-          var sumOld = views.sumValues(d.old).sum;
-          var sumNew = views.sumValues(d.new).sum;
-          var oldFirm = sumOld < 0.005
-            ? '< 1%'
-            : views.format.round(sumOld);
-          var newFirm = sumNew < 0.005
-            ? '< 1%'
-            : views.format.round(sumNew);
-
           return '<td>'
-          + name
+          + d.name
           + '</td><td class="table-data">'
           + d.rank
           + '</td><td class="table-data">'
-          + oldFirm
+          + views.format.decimal(d.tetr.old)
           + '</td><td class="table-data">'
-          + newFirm
+          + views.format.decimal(d.tetr.new)
           + '</td>';
         });
     },
@@ -303,18 +286,14 @@
       rows.data(data.states).enter()
         .append('tr')
         .html(function(d) {
-          var name = d.name;
-          var oldFirm = d.old < 0.005 ? '< 1%' : views.format.round(d.old);
-          var newFirm = d.new < 0.005 ? '< 1%' : views.format.round(d.new);
-
           return '<td>'
-          + name
+          + d.name
           + '</td><td class="table-data">'
           + d.rank
           + '</td><td class="table-data">'
-          + oldFirm
+          + views.format.decimal(d.old)
           + '</td><td class="table-data">'
-          + newFirm
+          + views.format.decimal(d.new)
           + '</td>';
         });
     },
