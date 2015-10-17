@@ -54,7 +54,7 @@ h3,
 h4,
 h5,
 h6 {
-  mix-blend-mode: multiply;
+  /* mix-blend-mode: multiply; */
   text-rendering: optimizeLegibility;
 }
 
