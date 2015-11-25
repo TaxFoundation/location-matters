@@ -7102,62 +7102,62 @@
             },
             {
                 "name": "Retail Store",
-                "rank": "42",
+                "rank": "38",
                 "new": {
                     "Unemployment Insurance Tax": "0.041791045",
                     "Sales Tax": "0.065671642",
-                    "Property Tax": "0.247761194",
+                    "Property Tax": "0.232835821",
                     "Income Tax": "0.044776119"
                 },
                 "old": {
                     "Unemployment Insurance Tax": "0.023217247",
                     "Sales Tax": "0.019900498",
-                    "Property Tax": "0.089552239",
-                    "Income Tax": "0.064676617"
+                    "Property Tax": "0.081260365",
+                    "Income Tax": "0.066334992"
                 },
                 "tetr": {
-                    "old": "0.199",
-                    "new": "0.4"
+                    "old": "0.191",
+                    "new": "0.385"
                 }
             },
             {
                 "name": "Capital-Intensive Manufacturing",
-                "rank": "46",
+                "rank": "15",
                 "new": {
                     "Unemployment Insurance Tax": "0.004372727",
                     "Sales Tax": "0.013659933",
-                    "Property Tax": "0.070505379",
-                    "Income Tax": "0.009906354"
+                    "Property Tax": "0.019812708",
+                    "Income Tax": "-0.006152775"
                 },
                 "old": {
                     "Unemployment Insurance Tax": "0.003750204",
                     "Sales Tax": "0.010891896",
-                    "Property Tax": "0.055861732",
-                    "Income Tax": "0.094179031"
+                    "Property Tax": "0.013174199",
+                    "Income Tax": "0.054685971"
                 },
                 "tetr": {
-                    "old": "0.165",
-                    "new": "0.098"
+                    "old": "0.082",
+                    "new": "0.032"
                 }
             },
             {
                 "name": "Labor-Intensive Manufacturing",
-                "rank": "42",
+                "rank": "28",
                 "new": {
                     "Unemployment Insurance Tax": "0.011571639",
                     "Sales Tax": "0.03064731",
-                    "Property Tax": "0.038992917",
-                    "Income Tax": "-0.004558524"
+                    "Property Tax": "0.035907146",
+                    "Income Tax": "-0.034504523"
                 },
                 "old": {
-                    "Unemployment Insurance Tax": "0.008675477",
-                    "Sales Tax": "0.02133562",
-                    "Property Tax": "0.02259659",
-                    "Income Tax": "0.077423585"
+                    "Unemployment Insurance Tax": "0.0086755",
+                    "Sales Tax": "0.0213356",
+                    "Property Tax": "0.0203773",
+                    "Income Tax": "0.0436296"
                 },
                 "tetr": {
-                    "old": "0.13",
-                    "new": "0.077"
+                    "old": "0.094",
+                    "new": "0.044"
                 }
             },
             {
@@ -7182,22 +7182,22 @@
             },
             {
                 "name": "Distribution Center",
-                "rank": "26",
+                "rank": "25",
                 "new": {
                     "Unemployment Insurance Tax": "0.023344652",
                     "Sales Tax": "0.061120543",
-                    "Property Tax": "0.352716469",
+                    "Property Tax": "0.348047538",
                     "Income Tax": "-0.063242784"
                 },
                 "old": {
                     "Unemployment Insurance Tax": "0.017690576",
                     "Sales Tax": "0.027983274",
-                    "Property Tax": "0.223544548",
+                    "Property Tax": "0.220006433",
                     "Income Tax": "0"
                 },
                 "tetr": {
-                    "old": "0.269",
-                    "new": "0.374"
+                    "old": "0.265",
+                    "new": "0.369"
                 }
             }
         ]
