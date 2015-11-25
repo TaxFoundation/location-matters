@@ -20,6 +20,10 @@ h6 {
   -moz-osx-font-smoothing: grayscale;
 }
 
+em {
+  font-style: italic;
+}
+
 main {
   margin: 20px auto;
   max-width: 840px;
