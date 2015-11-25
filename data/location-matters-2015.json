@@ -7142,22 +7142,22 @@
             },
             {
                 "name": "Labor-Intensive Manufacturing",
-                "rank": "42",
+                "rank": "28",
                 "new": {
                     "Unemployment Insurance Tax": "0.011571639",
                     "Sales Tax": "0.03064731",
-                    "Property Tax": "0.038992917",
-                    "Income Tax": "-0.004558524"
+                    "Property Tax": "0.035907146",
+                    "Income Tax": "-0.034504523"
                 },
                 "old": {
-                    "Unemployment Insurance Tax": "0.008675477",
-                    "Sales Tax": "0.02133562",
-                    "Property Tax": "0.02259659",
-                    "Income Tax": "0.077423585"
+                    "Unemployment Insurance Tax": "0.0086755",
+                    "Sales Tax": "0.0213356",
+                    "Property Tax": "0.0203773",
+                    "Income Tax": "0.0436296"
                 },
                 "tetr": {
-                    "old": "0.13",
-                    "new": "0.077"
+                    "old": "0.094",
+                    "new": "0.044"
                 }
             },
             {
@@ -7182,22 +7182,22 @@
             },
             {
                 "name": "Distribution Center",
-                "rank": "26",
+                "rank": "25",
                 "new": {
                     "Unemployment Insurance Tax": "0.023344652",
                     "Sales Tax": "0.061120543",
-                    "Property Tax": "0.352716469",
+                    "Property Tax": "0.348047538",
                     "Income Tax": "-0.063242784"
                 },
                 "old": {
                     "Unemployment Insurance Tax": "0.017690576",
                     "Sales Tax": "0.027983274",
-                    "Property Tax": "0.223544548",
+                    "Property Tax": "0.220006433",
                     "Income Tax": "0"
                 },
                 "tetr": {
-                    "old": "0.269",
-                    "new": "0.374"
+                    "old": "0.265",
+                    "new": "0.369"
                 }
             }
         ]
